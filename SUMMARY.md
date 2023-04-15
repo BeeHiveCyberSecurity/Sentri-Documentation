@@ -2,4 +2,4 @@
 
 ## ℹ About
 
-* [About Sentri](README.md)
+* [Welcome!](README.md)
