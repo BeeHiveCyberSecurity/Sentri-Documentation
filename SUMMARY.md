@@ -2,7 +2,7 @@
 
 ## ℹ About
 
-* [Welcome!](README.md)
+* [👋 Welcome!](README.md)
 
 ## 🗃 Modules
 
