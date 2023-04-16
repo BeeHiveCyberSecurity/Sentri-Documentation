@@ -28,8 +28,6 @@ If your argument includes spaces like `Hello world!`, most of the time you will 
 
 Arguments followed by an ellipsis `...` means that you may provide multiple arguments for the command.
 
-For example, the command `[p]cog install` in the downloader cog has the syntax `cog install <repo> <cogs...>`, meaning that you can provide 1 or more `cogs` to install from the `repo`.
-
 Arguments followed by `=value` means that, if not specified, the argument will be equal to `value`.
 
 For example, the command `[p]cleanup messages` in the cleanup cog has the syntax `cleanup messages <number> [delete_pinned=False]`, which means `delete_pinned` default will be false, unless you specify it as true.
