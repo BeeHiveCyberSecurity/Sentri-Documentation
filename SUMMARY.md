@@ -17,3 +17,7 @@
 * [📁 Filter](modules/filter.md)
 * [🔓 Permissions](modules/permissions.md)
 * [⚒ Mod](modules/mod.md)
+* [📜 ModLog](modules/modlog.md)
+* [🔇 Mutes](modules/mutes.md)
+* [📧 Reports](modules/reports.md)
+* [⚠ Warnings](modules/warnings.md)
