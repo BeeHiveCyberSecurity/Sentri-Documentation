@@ -16,3 +16,4 @@
 * [🧹 Cleanup](modules/cleanup.md)
 * [📁 Filter](modules/filter.md)
 * [🔓 Permissions](modules/permissions.md)
+* [⚒ Mod](modules/mod.md)
