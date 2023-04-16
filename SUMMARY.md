@@ -21,3 +21,4 @@
 * [🔇 Mutes](modules/mutes.md)
 * [📧 Reports](modules/reports.md)
 * [⚠ Warnings](modules/warnings.md)
+* [🎟 Admin](modules/admin.md)
