@@ -12,3 +12,4 @@
   * [🚨 Warden](modules/defender/warden/README.md)
     * [Actions and Conditions](modules/defender/warden/actions-and-conditions.md)
     * [Example Rules](modules/defender/warden/example-rules.md)
+* [🧹 Cleanup](modules/cleanup.md)
