@@ -6,6 +6,7 @@
 
 ## 🗃 Modules
 
+* [😨 Setting Up](modules/setting-up.md)
 * [🛡 Defender](modules/defender/README.md)
   * [👋 Introduction](modules/defender/introduction.md)
   * [⚙ Configuration](modules/defender/configuration.md)
