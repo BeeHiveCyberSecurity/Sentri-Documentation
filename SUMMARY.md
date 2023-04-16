@@ -14,3 +14,4 @@
     * [Example Rules](modules/defender/warden/example-rules.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [📁 Filter](modules/filter.md)
+* [🔓 Permissions](modules/permissions.md)
