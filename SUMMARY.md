@@ -4,22 +4,26 @@
 
 * [👋 Welcome!](README.md)
 
-## 🗃 Modules
+## 🎯 Always-On Modules
 
-* [😨 Setting Up](modules/setting-up.md)
-* [🛡 Defender](modules/defender/README.md)
-  * [👋 Introduction](modules/defender/introduction.md)
-  * [⚙ Configuration](modules/defender/configuration.md)
-  * [🚨 Warden](modules/defender/warden/README.md)
-    * [Actions and Conditions](modules/defender/warden/actions-and-conditions.md)
-    * [Example Rules](modules/defender/warden/example-rules.md)
-* [🚩 Channel Enforcer](modules/channel-enforcer.md)
-* [🧹 Cleanup](modules/cleanup.md)
-* [📁 Filter](modules/filter.md)
-* [🔓 Permissions](modules/permissions.md)
-* [⚒ Mod](modules/mod.md)
-* [📜 ModLog](modules/modlog.md)
-* [🔇 Mutes](modules/mutes.md)
-* [📧 Reports](modules/reports.md)
-* [⚠ Warnings](modules/warnings.md)
-* [🎟 Admin](modules/admin.md)
+* [🐟 Phishing Detection](always-on-modules/phishing-detection.md)
+
+## 🗃 Configurable Modules
+
+* [😨 Setting Up](configurable-modules/setting-up.md)
+* [🛡 Defender](configurable-modules/defender/README.md)
+  * [👋 Introduction](configurable-modules/defender/introduction.md)
+  * [⚙ Configuration](configurable-modules/defender/configuration.md)
+  * [🚨 Warden](configurable-modules/defender/warden/README.md)
+    * [Actions and Conditions](configurable-modules/defender/warden/actions-and-conditions.md)
+    * [Example Rules](configurable-modules/defender/warden/example-rules.md)
+* [🚩 Channel Enforcer](configurable-modules/channel-enforcer.md)
+* [🧹 Cleanup](configurable-modules/cleanup.md)
+* [📁 Filter](configurable-modules/filter.md)
+* [🔓 Permissions](configurable-modules/permissions.md)
+* [⚒ Mod](configurable-modules/mod.md)
+* [📜 ModLog](configurable-modules/modlog.md)
+* [🔇 Mutes](configurable-modules/mutes.md)
+* [📧 Reports](configurable-modules/reports.md)
+* [⚠ Warnings](configurable-modules/warnings.md)
+* [🎟 Admin](configurable-modules/admin.md)
