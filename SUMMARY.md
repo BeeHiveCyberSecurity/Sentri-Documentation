@@ -13,6 +13,7 @@
   * [🚨 Warden](modules/defender/warden/README.md)
     * [Actions and Conditions](modules/defender/warden/actions-and-conditions.md)
     * [Example Rules](modules/defender/warden/example-rules.md)
+* [🚩 Channel Enforcer](modules/channel-enforcer.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [📁 Filter](modules/filter.md)
 * [🔓 Permissions](modules/permissions.md)
