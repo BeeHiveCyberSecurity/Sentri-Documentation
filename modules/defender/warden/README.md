@@ -20,9 +20,9 @@ And now let's break this down.
 
 * `name` is the name of this rule. Every rule that you add will have an unique name to tell them apart. If you try to add a rule with a name that is already registered a confirmation will be asked before proceeding with overwrite.
 * `rank` is the highest rank that this rule will target. As explained in `[p]defender status`, Rank 1 is the highest rank there is. This means that every message that is sent will be targeted, even staff's.
-* `event` is _when_ this rule will enter into effect. You can find the complete [event list](https://twentysix26.github.io/defender-docs/warden/overview/#events) below. A rule can also be defined with multiple events by using a list, example: `[on-message, on-message-edit]`
-* `if` is the section where the [conditions](https://twentysix26.github.io/defender-docs/warden/statements#conditions) are defined. It supports both basic condition and special condition blocks (we'll get to that later). Every condition (and condition block) must resolve to `true` for the rule's action to be executed.
-* `do` is the section where the [actions](https://twentysix26.github.io/defender-docs/warden/statements#actions) are defined. Actions are ordered and will be executed in the order you have defined them. If one of them errors out for whatever reason, the action's execution will stop. You can monitor errors in `[p]defender monitor`.
+* `event` is _when_ this rule will enter into effect. You can find the complete event list below. A rule can also be defined with multiple events by using a list, example: `[on-message, on-message-edit]`
+* `if` is the section where the conditions are defined. It supports both basic condition and special condition blocks (we'll get to that later). Every condition (and condition block) must resolve to `true` for the rule's action to be executed.
+* `do` is the section where the actions are defined. Actions are ordered and will be executed in the order you have defined them. If one of them errors out for whatever reason, the action's execution will stop. You can monitor errors in `[p]defender monitor`.
 
 The condition `message-matches-any` takes the message in the _context_ and analyzes its content. Here we have put the word spider surrounded by the wildcard `*`: this means that the word spider simply being present in a message is enough for this condition to pass.
 
@@ -32,7 +32,7 @@ As you may have noticed the action `delete-user-message` doesn't need any parame
 
 Events have a context. `on-message` for example, will have `message` and `user` (the message author's) available, so any condition and action that is bound to analyze or take action on a message will be allowed to be used in that rule.\
 A rule with the condition `message-matches-any` combined with the event `on-user-join` will be rejected: Warden doesn't have a message to analyze in this event, therefore the rule will be simply deemed invalid.\
-Depending on the context you will have certain [context variables](https://twentysix26.github.io/defender-docs/warden/overview/#context-variables) available: there are some special actions that accept these variables in their parameters.\
+Depending on the context you will have certain context variables available: there are some special actions that accept these variables in their parameters.\
 Example:\
 
 
@@ -82,7 +82,7 @@ Rules are triggered when the specified event takes place.\
 The user's rank (if applicable, not every event has a user context) will be matched against the one defined in the rule.\
 After that, the conditions will be evaluated and finally, if the conditions have passed, Warden will start processing the actions one by one.\
 If any of the actions fail execution will stop and the error will be reported in `[p]defender monitor`.\
-Rules can have an order of execution. See [advanced features](https://twentysix26.github.io/defender-docs/warden/overview/#advanced-features) for more informations.
+Rules can have an order of execution. See advanced features for more informations.
 
 #### Final notes <a href="#final-notes" id="final-notes"></a>
 
@@ -127,13 +127,13 @@ But how do you check for heat points in rules? With conditions:\
 `user-heat-is: 5` or\
 `user-heat-more-than: 2`
 
-You may want to first assign heatpoints and _then_, in a separate rule, check the heat level. Since rules are normally executed in an unordered manner, remember to use the [priority parameter](https://twentysix26.github.io/defender-docs/warden/overview/#execution-order) to make sure that your heat-assigning rules are executed first.\
-Channels also have heat levels and they work the same way as users'. You can find all the related conditions and actions in the sections below plus some handy [examples](https://twentysix26.github.io/defender-docs/warden/examples) in their dedicated page.
+You may want to first assign heatpoints and _then_, in a separate rule, check the heat level. Since rules are normally executed in an unordered manner, remember to use the priority parameter to make sure that your heat-assigning rules are executed first.\
+Channels also have heat levels and they work the same way as users'. You can find all the related conditions and actions in the sections below plus some handy examples in their dedicated page.
 
 #### Custom heat level <a href="#custom-heat-level" id="custom-heat-level"></a>
 
 Assuming you've read the previous section before this (please do so!), you may be wondering if you're limited to only two heat levels, per-channel and per-user. What if you want separate heat levels for each different rule, for example?\
-This is where _custom_ heat levels can help. They work exactly like channel and user heat levels, except for the fact that you can assign to them the name you want. A few [context variables](https://twentysix26.github.io/defender-docs/warden/overview/#context-variables) (specifically the IDs and rule name) are also available for extra flexibility.\
+This is where _custom_ heat levels can help. They work exactly like channel and user heat levels, except for the fact that you can assign to them the name you want. A few context variables (specifically the IDs and rule name) are also available for extra flexibility.\
 Custom heat levels are extremely versatile. To demonstrate the variety of use cases they can used for we'll build a rule specific cooldown using them.
 
 ```
@@ -177,20 +177,20 @@ rank: 1name: dehoisterevent: [periodic, on-user-join]run-every: 5 minutesif:  - 
 
 ### Events <a href="#events" id="events"></a>
 
-| Event                | When                                                                                                                                                                                                                                                                                  | Context       |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| `on-message`         | A new message is sent                                                                                                                                                                                                                                                                 | message, user |
-| `on-message-edit`    | A message is edited                                                                                                                                                                                                                                                                   | message, user |
-| `on-message-delete`  | A message is deleted                                                                                                                                                                                                                                                                  | message, user |
-| `on-user-join`       | A new user joins the server                                                                                                                                                                                                                                                           | user          |
-| `on-user-leave`      | A user leaves the server                                                                                                                                                                                                                                                              | user          |
-| `on-role-add`        | A role is assigned to a user                                                                                                                                                                                                                                                          | user          |
-| `on-role-remove`     | A role is removed from a user                                                                                                                                                                                                                                                         | user          |
-| `on-reaction-add`    | A user added a reaction                                                                                                                                                                                                                                                               | message, user |
-| `on-reaction-remove` | A reaction is removed from a message. 'User' will always be the messages' original author.                                                                                                                                                                                            | message, user |
-| `on-emergency`       | The server enters a state of emergency, either automatic or manual                                                                                                                                                                                                                    | none          |
-| `manual`             | The rule is manually run by an admin with `[p]defender warden run`                                                                                                                                                                                                                    | user          |
-| `periodic`           | <p>The rule runs periodically, as defined by its own <code>run-every</code> parameter.<br>The interval can be set between 5 minutes and 24 hours.<br>See more info about <a href="https://twentysix26.github.io/defender-docs/warden/overview/#periodic-rules">periodic rules</a></p> | user          |
+| Event                | When                                                                                                                                                                                        | Context       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `on-message`         | A new message is sent                                                                                                                                                                       | message, user |
+| `on-message-edit`    | A message is edited                                                                                                                                                                         | message, user |
+| `on-message-delete`  | A message is deleted                                                                                                                                                                        | message, user |
+| `on-user-join`       | A new user joins the server                                                                                                                                                                 | user          |
+| `on-user-leave`      | A user leaves the server                                                                                                                                                                    | user          |
+| `on-role-add`        | A role is assigned to a user                                                                                                                                                                | user          |
+| `on-role-remove`     | A role is removed from a user                                                                                                                                                               | user          |
+| `on-reaction-add`    | A user added a reaction                                                                                                                                                                     | message, user |
+| `on-reaction-remove` | A reaction is removed from a message. 'User' will always be the messages' original author.                                                                                                  | message, user |
+| `on-emergency`       | The server enters a state of emergency, either automatic or manual                                                                                                                          | none          |
+| `manual`             | The rule is manually run by an admin with `[p]defender warden run`                                                                                                                          | user          |
+| `periodic`           | <p>The rule runs periodically, as defined by its own <code>run-every</code> parameter.<br>The interval can be set between 5 minutes and 24 hours.<br>See more info about periodic rules</p> | user          |
 
 Important
 
@@ -205,42 +205,40 @@ The following syntax is deprecated: while there are currently no plans to remove
 
 ### Context variables <a href="#context-variables" id="context-variables"></a>
 
-For more informations see [context](https://twentysix26.github.io/defender-docs/warden/overview/#context)
-
-| Context variable           | Description                                                                                         |
-| -------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$rule_name`               | The rule's name                                                                                     |
-| `$notification_channel_id` | The notification channel ID for the server                                                          |
-| `$guild`                   | The guild's name                                                                                    |
-| `$guild_id`                | The guild's ID                                                                                      |
-| `$guild_icon_url`          | The guild's icon url                                                                                |
-| `$guild_banner_url`        | The guild's banner url                                                                              |
-| `$user`                    | The user's name + the discriminator                                                                 |
-| `$user_name`               | The user's name                                                                                     |
-| `$user_display`            | The user's name or nickname, if one is set                                                          |
-| `$user_id`                 | The user's ID                                                                                       |
-| `$user_mention`            | The user's mention                                                                                  |
-| `$user_avatar_url`         | The user avatar's url                                                                               |
-| `$user_nickname`           | The user's nickname. "None" if not set                                                              |
-| `$user_created_at`         | The date and time in which the user created the account                                             |
-| `$user_joined_at`          | The date and time in which the user joined the server                                               |
-| `$user_heat`               | The user's [heat level](https://twentysix26.github.io/defender-docs/warden/overview/#heat-level)    |
-| `$message`                 | The raw message content. Mentions are automatically escaped                                         |
-| `$message_clean`           | The message content. Mentions are transformed into the way the client shows it                      |
-| `$message_id`              | The message's ID                                                                                    |
-| `$message_created_at`      | The date and time in which the message was created                                                  |
-| `$message_link`            | The URL pointing to the message                                                                     |
-| `$message_reaction`        | In a `on-reaction-*` event this contains the reaction that triggered it                             |
-| `$attachment_filename`     | The message attachment's filename, if any                                                           |
-| `$attachment_url`          | The message attachment's url, if any                                                                |
-| `$channel`                 | The channel's name in the form of #channel\_name                                                    |
-| `$channel_name`            | The channel's name                                                                                  |
-| `$channel_id`              | The channel's ID                                                                                    |
-| `$channel_mention`         | The channel's mention                                                                               |
-| `$channel_category`        | The channel category's name, if any                                                                 |
-| `$channel_category_id`     | The channel category's id, if any                                                                   |
-| `$channel_heat`            | The channel's [heat level](https://twentysix26.github.io/defender-docs/warden/overview/#heat-level) |
-| `$role_id`                 | The role's id in a `on-role-*` event                                                                |
-| `$role_name`               | The role's name in a `on-role-*` event                                                              |
-| `$role_mention`            | The role's mention in a `on-role-*` event                                                           |
-| `$role_added`              | Equals to 'true' in `on-role-add`, 'false' in `on-role-remove`                                      |
+| Context variable           | Description                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| `$rule_name`               | The rule's name                                                                |
+| `$notification_channel_id` | The notification channel ID for the server                                     |
+| `$guild`                   | The guild's name                                                               |
+| `$guild_id`                | The guild's ID                                                                 |
+| `$guild_icon_url`          | The guild's icon url                                                           |
+| `$guild_banner_url`        | The guild's banner url                                                         |
+| `$user`                    | The user's name + the discriminator                                            |
+| `$user_name`               | The user's name                                                                |
+| `$user_display`            | The user's name or nickname, if one is set                                     |
+| `$user_id`                 | The user's ID                                                                  |
+| `$user_mention`            | The user's mention                                                             |
+| `$user_avatar_url`         | The user avatar's url                                                          |
+| `$user_nickname`           | The user's nickname. "None" if not set                                         |
+| `$user_created_at`         | The date and time in which the user created the account                        |
+| `$user_joined_at`          | The date and time in which the user joined the server                          |
+| `$user_heat`               | The user's heat level                                                          |
+| `$message`                 | The raw message content. Mentions are automatically escaped                    |
+| `$message_clean`           | The message content. Mentions are transformed into the way the client shows it |
+| `$message_id`              | The message's ID                                                               |
+| `$message_created_at`      | The date and time in which the message was created                             |
+| `$message_link`            | The URL pointing to the message                                                |
+| `$message_reaction`        | In a `on-reaction-*` event this contains the reaction that triggered it        |
+| `$attachment_filename`     | The message attachment's filename, if any                                      |
+| `$attachment_url`          | The message attachment's url, if any                                           |
+| `$channel`                 | The channel's name in the form of #channel\_name                               |
+| `$channel_name`            | The channel's name                                                             |
+| `$channel_id`              | The channel's ID                                                               |
+| `$channel_mention`         | The channel's mention                                                          |
+| `$channel_category`        | The channel category's name, if any                                            |
+| `$channel_category_id`     | The channel category's id, if any                                              |
+| `$channel_heat`            | The channel's heat level                                                       |
+| `$role_id`                 | The role's id in a `on-role-*` event                                           |
+| `$role_name`               | The role's name in a `on-role-*` event                                         |
+| `$role_mention`            | The role's mention in a `on-role-*` event                                      |
+| `$role_added`              | Equals to 'true' in `on-role-add`, 'false' in `on-role-remove`                 |
