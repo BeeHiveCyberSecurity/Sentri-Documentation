@@ -1,5 +1,7 @@
 ---
-description: Learn about how Comment Analysis works...
+description: >-
+  Learn more about the technology behind PerspectiveAPI and our integrated chat
+  monitoring and moderation
 ---
 
 # 💬 Chat Monitoring
