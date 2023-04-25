@@ -17,6 +17,7 @@
   * [🚨 Warden](configurable-modules/defender/warden/README.md)
     * [Actions and Conditions](configurable-modules/defender/warden/actions-and-conditions.md)
     * [Example Rules](configurable-modules/defender/warden/example-rules.md)
+  * [💬 Chat Monitoring](configurable-modules/defender/chat-monitoring.md)
 * [🚩 Channel Enforcer](configurable-modules/channel-enforcer.md)
 * [🧹 Cleanup](configurable-modules/cleanup.md)
 * [📁 Filter](configurable-modules/filter.md)
