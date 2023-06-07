@@ -1,8 +1,10 @@
+---
+description: >-
+  We are thrilled to have you join us on this journey to learn more about Sentri
+  and how it can help you and your community.
+---
+
 # 👋 Welcome!
-
-Welcome to the official documentation site for Sentri!
-
-We are thrilled to have you join us on this journey to learn more about Sentri and how it can help you and your community.
 
 On this documentation site, you will find everything you need to get started with Sentri, including command information, a changelog, and in-depth tutorials for how to best integrate Sentri into your community. Whether you are new to Sentri or have been using it for a while, you will find all the information you need to optimize your experience.
 
