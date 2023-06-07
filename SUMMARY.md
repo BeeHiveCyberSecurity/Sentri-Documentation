@@ -30,5 +30,6 @@
 * [📧 Reports](modules/reports.md)
 * [🚎 Role Management](modules/role-management.md)
 * [🔍 Search](modules/search.md)
+* [🔃 Server Management](modules/server-management.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
