@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Sentri's default permissions to customize them for your server's
+  needs and usage
+---
+
 # 🔓 Permissions
 
 ### Usage[¶](broken-reference)
@@ -16,307 +22,127 @@ When additional rules are set using this module, those rules will be checked pri
 
 ### Commands[¶](broken-reference)
 
-#### permissions[¶](broken-reference)
+## permissions
 
-**Syntax**
-
-**Description**
+* Usage: `!permissions`
 
 Command permission management tools.
 
-**permissions acl**[**¶**](broken-reference)
-
-**Syntax**
-
-**Description**
-
-Manage permissions with YAML files.
-
-Tip
-
-See here for more information with configuring these yaml files.
-
-**permissions acl getglobal**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions acl getglobal
-```
-
-**Description**
-
-Get a YAML file detailing all global rules.
-
-**permissions acl getserver**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions acl getserver
-```
-
-**Description**
-
-Get a YAML file detailing all rules in this server.
-
-**permissions acl setglobal**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions acl setglobal
-```
-
-**Description**
-
-Set global rules with a YAML file.
-
-Warning
-
-This will override reset _all_ global rules to the rules specified in the uploaded file.
-
-This does not validate the names of commands and cogs before setting the new rules.
-
-**permissions acl setserver**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions acl setserver
-```
-
-**Description**
-
-Set rules for this server with a YAML file.
-
-Warning
-
-This will override reset _all_ rules in this server to the rules specified in the uploaded file.
-
-**permissions acl updateglobal**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions acl updateglobal
-```
-
-**Description**
-
-Update global rules with a YAML file.
-
-This won’t touch any rules not specified in the YAML file.
-
-**permissions acl updateserver**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions acl updateserver
-```
-
-**Description**
-
-Update rules for this server with a YAML file.
-
-This won’t touch any rules not specified in the YAML file.
-
-**permissions acl yamlexample**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions acl yamlexample
-```
-
-**Description**
-
-Sends an example of the yaml layout for permissions
-
-**permissions addglobalrule**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions addglobalrule <allow_or_deny> <cog_or_command> <who_or_what...>
-```
-
-**Description**
-
-Add a global rule to a cog or command.
-
-**Arguments**
-
-* `<allow_or_deny>`: This should be one of “allow” or “deny”.
-* `<cog_or_command>`: The cog or command to add the rule to. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
-
-**permissions addserverrule**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions addserverrule <allow_or_deny> <cog_or_command> <who_or_what...>
-```
-
-**Description**
-
-Add a rule to a cog or command in this server.
-
-**Arguments**
-
-* `<allow_or_deny>`: This should be one of “allow” or “deny”.
-* `<cog_or_command>`: The cog or command to add the rule to. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
-
-**permissions canrun**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions canrun <user> <command>
-```
-
-**Description**
-
-Check if a user can run a command.
-
-This will take the current context into account, such as the server and text channel.
-
-**Arguments**
-
-* `<user>`: The user to check permissions for.
-* `<command>`: The command to check whether the user can run it or not.
-
-**permissions clearglobalrules**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions clearglobalrules
-```
-
-**Description**
-
-Reset all global rules.
-
-**permissions clearserverrules**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions clearserverrules
-```
-
-**Description**
+### permissions canrun
+
+* Usage: `!permissions canrun <user> <command>`
+
+Check if a user can run a command.\
+\
+This will take the current context into account, such as the\
+server and text channel.
+
+### permissions setdefaultserverrule
+
+* Usage: `!permissions setdefaultserverrule <allow_or_deny> <cog_or_command>`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `setdefaultserverrule`
+* Checks: `server_only`
+
+Set the default rule for a command in this server.\
+\
+This is the rule a command will default to when no other rule\
+is found.\
+\
+\<allow\_or\_deny> should be one of "allow", "deny" or "clear".\
+"clear" will reset the default rule.\
+\
+\<cog\_or\_command> is the cog or command to set the default\
+rule for. This is case sensitive.
+
+### permissions clearserverrules
+
+* Usage: `!permissions clearserverrules`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `clearserverrules`
+* Checks: `server_only`
 
 Reset all rules in this server.
 
-**permissions explain**[**¶**](broken-reference)
+### permissions removeserverrule
 
-**Syntax**
+* Usage: `!permissions removeserverrule <cog_or_command> <who_or_what>`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `removeserverrule`
+* Checks: `server_only`
 
-**Description**
+Remove a server rule from a command.\
+\
+\<cog\_or\_command> is the cog or command to remove the rule\
+from. This is case sensitive.\
+\
+\<who\_or\_what...> is one or more users, channels or roles the rule is for.
+
+### permissions acl
+
+* Usage: `!permissions acl`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `yaml`
+
+Manage permissions with YAML files.
+
+#### permissions acl yamlexample
+
+* Usage: `!permissions acl yamlexample`
+
+Sends an example of the yaml layout for permissions
+
+#### permissions acl updateserver
+
+* Usage: `!permissions acl updateserver`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `updateserver`
+* Checks: `server_only`
+
+Update rules for this server with a YAML file.\
+\
+This won't touch any rules not specified in the YAML\
+file.
+
+#### permissions acl setserver
+
+* Usage: `!permissions acl setserver`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `setserver`
+* Checks: `server_only`
+
+Set rules for this server with a YAML file.\
+\
+**WARNING**: This will override reset _all_ rules in this\
+server to the rules specified in the uploaded file.
+
+#### permissions acl getserver
+
+* Usage: `!permissions acl getserver`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `getserver`
+* Checks: `server_only`
+
+Get a YAML file detailing all rules in this server.
+
+### permissions explain
+
+* Usage: `!permissions explain`
 
 Explain how permissions works.
 
-**permissions removeglobalrule**[**¶**](broken-reference)
+### permissions addserverrule
 
-Note
+* Usage: `!permissions addserverrule <allow_or_deny> <cog_or_command> <who_or_what>`
+* Restricted to: `GUILD_OWNER`
+* Aliases: `addserverrule`
+* Checks: `server_only`
 
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions removeglobalrule <cog_or_command> <who_or_what...>
-```
-
-**Description**
-
-Remove a global rule from a command.
-
-**Arguments**
-
-* `<cog_or_command>`: The cog or command to remove the rule from. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
-
-**permissions removeserverrule**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions removeserverrule <cog_or_command> <who_or_what...>
-```
-
-**Description**
-
-Remove a server rule from a command.
-
-**Arguments**
-
-* `<cog_or_command>`: The cog or command to remove the rule from. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
-
-**permissions setdefaultglobalrule**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]permissions setdefaultglobalrule <allow_or_deny> <cog_or_command>
-```
-
-**Description**
-
-Set the default global rule for a command or a cog.
-
-This is the rule a command will default to when no other rule is found.
-
-**Arguments**
-
-* `<cog_or_command>`: The cog or command to add the rule to. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
-
-**permissions setdefaultserverrule**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]permissions setdefaultserverrule <allow_or_deny> <cog_or_command>
-```
-
-**Description**
-
-Set the default rule for a command or a cog in this server.
-
-This is the rule a command will default to when no other rule is found.
-
-**Arguments**
-
-* `<cog_or_command>`: The cog or command to add the rule to. This is case sensitive.
-* `<who_or_what...>`: One or more users, channels or roles the rule is for.
+Add a rule to a command in this server.\
+\
+\<allow\_or\_deny> should be one of "allow" or "deny".\
+\
+\<cog\_or\_command> is the cog or command to add the rule to.\
+This is case sensitive.\
+\
+\<who\_or\_what...> is one or more users, channels or roles the rule is for.
