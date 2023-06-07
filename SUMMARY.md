@@ -21,6 +21,7 @@
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🧠 Language AI](modules/language-ai.md)
+* [↗ Leveling](modules/leveling.md)
 * [📜 Logging](modules/logging.md)
 * [🎧 Music](modules/music.md)
 * [⚒ Mod](modules/mod.md)
