@@ -1,314 +1,176 @@
+---
+description: Temporarily or permanently remove a user's text or voice ability.
+---
+
 # 🔇 Mutes
 
-### Usage[¶](broken-reference)
+## voicemute
 
-Mute users temporarily or indefinitely.
+* Usage: `!voicemute <users> [time_and_reason]`
+* Checks: `server_only`
 
-### Commands[¶](broken-reference)
+Mute a user in their current voice channel.\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[time\_and\_reason] is the time to mute for and reason. Time is\
+any valid time length such as 30 minutes or 2 days. If nothing\
+is provided the mute will use the set default time or indefinite if not set.\
+\
+Examples:\
+!voicemute @member1 @member2 spam 5 hours\
+!voicemute @member1 3 days
 
-#### activemutes[¶](broken-reference)
+## voiceunmute
 
-Note
+* Usage: `!voiceunmute <users> [reason]`
+* Checks: `server_only`
 
-This command is locked to the mod role.
+Unmute a user in their current voice channel.\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[reason] is the reason for the unmute.
 
-**Syntax**
+## muteset
 
-**Description**
-
-Displays active mutes on this server.
-
-#### mute[¶](broken-reference)
-
-Note
-
-This command is locked to the mod role.
-
-**Syntax**
-
-```
-[p]mute <users...> [time_and_reason]
-```
-
-**Description**
-
-Mute users.
-
-Examples:
-
-* `[p]mute @member1 @member2 spam 5 hours`
-* `[p]mute @member1 3 days`
-
-**Arguments**
-
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[time_and_reason]`: The time and reason. If no time is provided, the mute will use the default set time or indefinite if this hasn’t been configured.
-
-#### mutechannel[¶](broken-reference)
-
-Note
-
-This command is locked to the mod role.
-
-**Syntax**
-
-```
-[p]mutechannel <users...> [time_and_reason]
-```
-
-**Description**
-
-Mute a user in the current text channel.
-
-Examples:
-
-* `[p]mutechannel @member1 @member2 spam 5 hours`
-* `[p]mutechannel @member1 3 days`
-
-**Arguments**
-
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[time_and_reason]`: The time and reason. If no time is provided, the mute will use the default set time or indefinite if this hasn’t been configured.
-
-#### muteset[¶](broken-reference)
-
-**Syntax**
-
-**Description**
+* Usage: `!muteset`
+* Checks: `server_only`
 
 Mute settings.
 
-**muteset defaulttime**[**¶**](broken-reference)
+### muteset role
 
-Note
+* Usage: `!muteset role [role]`
+* Restricted to: `ADMIN`
+* Checks: `bot_has_server_permissions`
 
-This command is locked to the mod role.
+Sets the role to be applied when muting a user.\
+\
+If no role is setup the bot will attempt to mute a user by setting\
+channel overwrites in all channels to prevent the user from sending messages.\
+\
+Note: If no role is setup a user may be able to leave the server\
+and rejoin no longer being muted.
 
-**Syntax**
+### muteset settings
 
-```
-[p]muteset defaulttime [time]
-```
+* Usage: `!muteset settings`
+* Restricted to: `MOD`
+* Aliases: `showsettings`
 
-**Description**
+Shows the current mute settings for this server.
 
-Set the default mute time for the mute command.
+### muteset makerole
 
+* Usage: `!muteset makerole <name>`
+* Restricted to: `ADMIN`
+* Checks: `bot_has_server_permissions`
+
+Create a Muted role.\
+\
+This will create a role and apply overwrites to all available channels\
+to more easily setup muting a user.\
+\
+If you already have a muted role created on the server use\
+!muteset role ROLE\_NAME\_HERE
+
+### muteset defaulttime
+
+* Usage: `!muteset defaulttime [time]`
+* Restricted to: `MOD`
+* Aliases: `time`
+
+Set the default mute time for the mute command.\
+\
 If no time interval is provided this will be cleared.
 
-**Arguments**
+### muteset senddm
 
-* `[time]`: The length of time for a default mute.
-
-**muteset forcerole**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the bot owner.
-
-**Syntax**
-
-```
-[p]muteset forcerole <true_or_false>
-```
-
-**Description**
-
-Whether or not to force role only mutes on the bot.
-
-**Arguments**
-
-* `<true_or_false>`: Whether to enable or disable this setting, must provide `true` or `false`.
-
-**muteset makerole**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]muteset makerole <name>
-```
-
-**Description**
-
-Create a Muted role.
-
-This will create a role and apply overwrites to all available channels to more easily setup muting a user.
-
-If you already have a muted role created on the server use `[p]muteset role ROLE_NAME_HERE`
-
-**Arguments**
-
-* `<name>`: The name of the muted role to create.
-
-**muteset notification**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]muteset notification [channel]
-```
-
-**Description**
-
-Set the notification channel for automatic unmute issues.
-
-If no channel is provided this will be cleared and notifications about issues when unmuting users will not be sent anywhere.
-
-**Arguments**
-
-* `[channel]`: The channel to receive unmute issue updates. You can either mention the channel, provide its exact name or its ID.
-
-**muteset role**[**¶**](broken-reference)
-
-**Syntax**
-
-**Description**
-
-Sets the role to be applied when muting a user.
-
-If no role is setup the bot will attempt to mute a user by setting channel overwrites in all channels to prevent the user from sending messages.
-
-Note
-
-If no role is setup a user may be able to leave the server and rejoin no longer being muted.
-
-**Arguments**
-
-* `[role]`: The role for muted users to receive. Please give **the exact role name or ID**, or it won’t be detected.
-
-**muteset senddm**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the mod role.
-
-**Syntax**
-
-```
-[p]muteset senddm <true_or_false>
-```
-
-**Description**
+* Usage: `!muteset senddm <true_or_false>`
+* Restricted to: `MOD`
+* Checks: `server_only`
 
 Set whether mute notifications should be sent to users in DMs.
 
-**Arguments**
+### muteset showmoderator
 
-* `<true_or_false>`: Whether to enable or disable this setting, must provide `true` or `false`.
-
-**muteset settings**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the mod role.
-
-**Syntax**
-
-Tip
-
-Alias: `muteset showsettings`
-
-**Description**
-
-Shows the current mute settings for this guild.
-
-**muteset showmoderator**[**¶**](broken-reference)
-
-Note
-
-This command is locked to the mod role.
-
-**Syntax**
-
-```
-[p]muteset showmoderator <true_or_false>
-```
-
-**Description**
+* Usage: `!muteset showmoderator <true_or_false>`
+* Restricted to: `MOD`
+* Checks: `server_only`
 
 Decide whether the name of the moderator muting a user should be included in the DM to that user.
 
-**Arguments**
+### muteset notification
 
-* `<true_or_false>`: Whether to enable or disable this setting, must provide `true` or `false`.
+* Usage: `!muteset notification [channel=None]`
+* Restricted to: `ADMIN`
 
-#### unmute[¶](broken-reference)
+Set the notification channel for automatic unmute issues.\
+\
+If no channel is provided this will be cleared and notifications\
+about issues when unmuting users will not be sent anywhere.
 
-Note
+## activemutes
 
-This command is locked to the mod role.
+* Usage: `!activemutes`
+* Restricted to: `MOD`
+* Checks: `server_only`
 
-**Syntax**
+Displays active mutes on this server.
 
-```
-[p]unmute <users...> [reason]
-```
+## mute
 
-**Description**
+* Usage: `!mute <users> [time_and_reason]`
+* Restricted to: `MOD`
+* Checks: `server_only`
 
-Unmute users.
+Mute users.\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[time\_and\_reason] is the time to mute for and reason. Time is\
+any valid time length such as 30 minutes or 2 days. If nothing\
+is provided the mute will use the set default time or indefinite if not set.\
+\
+Examples:\
+!mute @member1 @member2 spam 5 hours\
+!mute @member1 3 days
 
-**Arguments**
+## mutechannel
 
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[reason]`: The reason for the unmute.
+* Usage: `!mutechannel <users> [time_and_reason]`
+* Restricted to: `MOD`
+* Aliases: `channelmute`
+* Checks: `bot_has_server_permissions`
 
-#### unmutechannel[¶](broken-reference)
+Mute a user in the current text channel (or in the parent of the current thread).\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[time\_and\_reason] is the time to mute for and reason. Time is\
+any valid time length such as 30 minutes or 2 days. If nothing\
+is provided the mute will use the set default time or indefinite if not set.\
+\
+Examples:\
+!mutechannel @member1 @member2 spam 5 hours\
+!mutechannel @member1 3 days
 
-Note
+## unmute
 
-This command is locked to the mod role.
+* Usage: `!unmute <users> [reason]`
+* Restricted to: `MOD`
+* Checks: `server_only`
 
-**Syntax**
+Unmute users.\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[reason] is the reason for the unmute.
 
-```
-[p]unmutechannel <users...> [reason]
-```
+## unmutechannel
 
-**Description**
+* Usage: `!unmutechannel <users> [reason]`
+* Restricted to: `MOD`
+* Aliases: `channelunmute`
+* Checks: `bot_has_server_permissions`
 
-Unmute a user in this channel.
-
-**Arguments**
-
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[reason]`: The reason for the unmute.
-
-#### voicemute[¶](broken-reference)
-
-**Syntax**
-
-```
-[p]voicemute <users...> [reason]
-```
-
-**Description**
-
-Mute a user in their current voice channel.
-
-Examples:
-
-* `[p]voicemute @member1 @member2 spam 5 hours`
-* `[p]voicemute @member1 3 days`
-
-**Arguments**
-
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[time_and_reason]`: The time and reason. If no time is provided, the mute will use the default set time or indefinite if this hasn’t been configured.
-
-#### voiceunmute[¶](broken-reference)
-
-**Syntax**
-
-```
-[p]voiceunmute <users...> [reason]
-```
-
-**Description**
-
-Unmute a user in their current voice channel.
-
-**Arguments**
-
-* `<users...>`: A space separated list of usernames, ID’s, or mentions.
-* `[reason]`: The reason for the unmute
+Unmute a user in this channel (or in the parent of this thread).\
+\
+\<users...> is a space separated list of usernames, ID's, or mentions.\
+\[reason] is the reason for the unmute.
