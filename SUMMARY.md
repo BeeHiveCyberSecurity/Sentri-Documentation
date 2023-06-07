@@ -28,5 +28,6 @@
 * [🔇 Mutes](modules/mutes.md)
 * [🔓 Permissions](modules/permissions.md)
 * [📧 Reports](modules/reports.md)
+* [🔍 Search](modules/search.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
