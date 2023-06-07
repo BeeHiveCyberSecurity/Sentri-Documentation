@@ -1,262 +1,165 @@
+---
+description: Warn misbehaving users and take automated actions.
+---
+
 # ⚠ Warnings
 
-### Usage[¶](broken-reference)
 
-Warn misbehaving users and take automated actions.
 
 ### Commands[¶](broken-reference)
 
-#### actionlist[¶](broken-reference)
+## warningset
 
-**Syntax**
-
-**Description**
-
-List all configured automated actions for Warnings.
-
-#### mywarnings[¶](broken-reference)
-
-**Syntax**
-
-**Description**
-
-List warnings for yourself.
-
-#### reasonlist[¶](broken-reference)
-
-**Syntax**
-
-**Description**
-
-List all configured reasons for Warnings.
-
-#### unwarn[¶](broken-reference)
-
-**Syntax**
-
-```
-[p]unwarn <member> <warn_id> [reason]
-```
-
-**Description**
-
-Remove a warning from a member.
-
-**Arguments**
-
-* `<member>`: The member to remove the warning from. You can either mention the member, provide their ID, their exact name with the tag or not, or their nickname enclosed in quotes if there are spaces.
-* `<warn_id>`: The warning ID to remove from the member.
-* `[reason]`: The reason for unwarning this member.
-
-#### warn[¶](broken-reference)
-
-**Syntax**
-
-```
-[p]warn <member> [points=1] <reason>
-```
-
-**Description**
-
-Warn the user for the specified reason.
-
-**Arguments**
-
-* `<member>`: The member to warn. You can either mention the member, provide their ID, their exact name with the tag or not, or their nickname enclosed in quotes if there are spaces.
-* `[points]`: The number of points the warning should be for. If no number is supplied, 1 point will be given. Pre-set warnings disregard this.
-* `<reason>`: The reason for the warning. This can be a registered reason, or a custom reason if `[p]warningset allowcustomreasons` is set.
-
-#### warnaction[¶](broken-reference)
-
-**Syntax**
-
-**Description**
-
-Manage automated actions for Warnings.
-
-Actions are essentially command macros. Any command can be run when the action is initially triggered, and/or when the action is lifted.
-
-Actions must be given a name and a points threshold. When a user is warned enough so that their points go over this threshold, the action will be executed.
-
-**warnaction add**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]warnaction add <name> <points>
-```
-
-**Description**
-
-Create an automated action.
-
-Duplicate action names are not allowed.
-
-**Arguments**
-
-* `<name>`: The name of the action.
-* `<points>`: The number of points for this action.
-
-**warnaction delete**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]warnaction delete <action_name>
-```
-
-**Description**
-
-Delete the action with the specified name.
-
-**Arguments**
-
-* `<action_name>`: The name of the action to delete.
-
-#### warnings[¶](broken-reference)
-
-**Syntax**
-
-**Description**
-
-List the warnings for the specified member.
-
-**Arguments**
-
-* `<member>`: The member to get the warnings for. You can either mention the member, provide their ID, their exact name with the tag or not, or their nickname.
-
-#### warningset[¶](broken-reference)
-
-**Syntax**
-
-**Description**
+* Usage: `!warningset`
+* Restricted to: `GUILD_OWNER`
+* Checks: `server_only`
 
 Manage settings for Warnings.
 
-**warningset allowcustomreasons**[**¶**](broken-reference)
+### warningset senddm
 
-**Syntax**
-
-```
-[p]warningset allowcustomreasons <true_or_false>
-```
-
-**Description**
-
-Enable or disable custom reasons for a warning.
-
-**Arguments**
-
-* `<true_or_false>`: You should provide either ‘true’ or ‘false’.
-
-**warningset senddm**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]warningset senddm <true_or_false>
-```
-
-**Description**
+* Usage: `!warningset senddm <true_or_false>`
+* Checks: `server_only`
 
 Set whether warnings should be sent to users in DMs.
 
-**Arguments**
+### warningset showmoderator
 
-* `<true_or_false>`: You should provide either ‘true’ or ‘false’.
-
-**warningset showmoderator**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]warningset showmoderator <true_or_false>
-```
-
-**Description**
+* Usage: `!warningset showmoderator <true_or_false>`
+* Checks: `server_only`
 
 Decide whether the name of the moderator warning a user should be included in the DM to that user.
 
-**Arguments**
+### warningset warnchannel
 
-* `<true_or_false>`: You should provide either ‘true’ or ‘false’.
+* Usage: `!warningset warnchannel [channel=None]`
+* Checks: `server_only`
 
-**warningset usewarnchannel**[**¶**](broken-reference)
+Set the channel where warnings should be sent to.\
+\
+Leave empty to use the channel !warn command was called in.
 
-**Syntax**
+### warningset usewarnchannel
 
-```
-[p]warningset usewarnchannel <true_or_false>
-```
+* Usage: `!warningset usewarnchannel <true_or_false>`
+* Checks: `server_only`
 
-**Description**
+Set if warnings should be sent to a channel set with !warningset warnchannel.
 
-Set if warnings should be sent to a channel set with `[p]warningset warnchannel`.
+### warningset allowcustomreasons
 
-**Arguments**
+* Usage: `!warningset allowcustomreasons <allowed>`
+* Checks: `server_only`
 
-* `<true_or_false>`: You should provide either ‘true’ or ‘false’.
+Enable or disable custom reasons for a warning.
 
-**warningset warnchannel**[**¶**](broken-reference)
+## warnaction
 
-**Syntax**
+* Usage: `!warnaction`
+* Restricted to: `GUILD_OWNER`
+* Checks: `server_only`
 
-```
-[p]warningset warnchannel [channel]
-```
+Manage automated actions for Warnings.\
+\
+Actions are essentially command macros. Any command can be run\
+when the action is initially triggered, and/or when the action\
+is lifted.\
+Actions must be given a name and a points threshold. When a\
+user is warned enough so that their points go over this\
+threshold, the action will be executed.
 
-**Description**
+### warnaction delete
 
-Set the channel where warnings should be sent to.
+* Usage: `!warnaction delete <action_name>`
+* Aliases: `del and remove`
+* Checks: `server_only`
 
-**Arguments**
+Delete the action with the specified name.
 
-* `[channel]`: You can either mention the channel, provide its exact name or its ID. Leave empty to use the channel `[p]warn` command was called in.
+### warnaction add
 
-#### warnreason[¶](broken-reference)
+* Usage: `!warnaction add <name> <points>`
+* Checks: `server_only`
 
-**Syntax**
+Create an automated action.\
+\
+Duplicate action names are not allowed.
 
-**Description**
+## warnreason
 
-Manage warning reasons.
+* Usage: `!warnreason`
+* Restricted to: `GUILD_OWNER`
+* Checks: `server_only`
 
-Reasons must be given a name, description and points value. The name of the reason must be given when a user is warned.
+Manage warning reasons.\
+\
+Reasons must be given a name, description and points value. The\
+name of the reason must be given when a user is warned.
 
-**warnreason create**[**¶**](broken-reference)
+### warnreason delete
 
-**Syntax**
-
-```
-[p]warnreason create <name> <points> <description>
-```
-
-Tip
-
-Alias: `warnreason add`
-
-**Description**
-
-Create a warning reason.
-
-**Arguments**
-
-* `<name>`: The name for the new reason.
-* `<points>`: The number of points with the new reason.
-* `<description>`: The description of the new warn reason.
-
-**warnreason delete**[**¶**](broken-reference)
-
-**Syntax**
-
-```
-[p]warnreason delete <reason_name>
-```
-
-**Description**
+* Usage: `!warnreason delete <reason_name>`
+* Aliases: `remove and del`
+* Checks: `server_only`
 
 Delete a warning reason.
 
-**Arguments**
+### warnreason create
 
-* `<reason_name>`: The name of the reason to delete
+* Usage: `!warnreason create <name> <points> <description>`
+* Aliases: `add`
+* Checks: `server_only`
+
+Create a warning reason.
+
+## reasonlist
+
+* Usage: `!reasonlist`
+* Restricted to: `ADMIN`
+* Checks: `server_only`
+
+List all configured reasons for Warnings.
+
+## actionlist
+
+* Usage: `!actionlist`
+* Restricted to: `ADMIN`
+* Checks: `server_only`
+
+List all configured automated actions for Warnings.
+
+## warn
+
+* Usage: `!warn <member> [points=1] <reason>`
+* Restricted to: `ADMIN`
+* Checks: `server_only`
+
+Warn the user for the specified reason.\
+\
+number of points the warning should be for. If no number is supplied\
+1 point will be given. Pre-set warnings disregard this.\
+is reason for the warning. This can be a registered reason,\
+or a custom reason if !warningset allowcustomreasons is set.
+
+## warnings
+
+* Usage: `!warnings <member>`
+* Restricted to: `ADMIN`
+* Checks: `server_only`
+
+List the warnings for the specified user.
+
+## mywarnings
+
+* Usage: `!mywarnings`
+* Checks: `server_only`
+
+List warnings for yourself.
+
+## unwarn
+
+* Usage: `!unwarn <member> <warn_id> [reason]`
+* Restricted to: `ADMIN`
+* Checks: `server_only`
+
+Remove a warning from a user.
