@@ -28,3 +28,4 @@
 * [🔓 Permissions](modules/permissions.md)
 * [📧 Reports](modules/reports.md)
 * [⚠ Warnings](modules/warnings.md)
+* [👋 Welcomer](modules/welcomer.md)
