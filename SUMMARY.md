@@ -8,6 +8,7 @@
 
 ## 🗃 Configurable Modules
 
+* [🎧 Music](configurable-modules/music.md)
 * [😨 Setting Up](configurable-modules/setting-up.md)
 * [🎟 Admin](configurable-modules/admin.md)
 * [🐟 AntiPhishing](always-on-modules/phishing-detection.md)
