@@ -16,6 +16,7 @@
     * [Actions and Conditions](modules/defender/warden/actions-and-conditions.md)
     * [Example Rules](modules/defender/warden/example-rules.md)
   * [💬 Chat Monitoring](modules/defender/chat-monitoring.md)
+* [📚 Dictionary](modules/dictionary.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
