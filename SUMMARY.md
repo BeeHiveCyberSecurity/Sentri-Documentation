@@ -20,6 +20,7 @@
 * [🧹 Cleanup](modules/cleanup.md)
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
+* [🎉 Giveaways](modules/giveaways.md)
 * [🧠 Language AI](modules/language-ai.md)
 * [↗ Leveling](modules/leveling.md)
 * [📜 Logging](modules/logging.md)
