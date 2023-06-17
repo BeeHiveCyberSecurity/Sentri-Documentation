@@ -4,6 +4,8 @@ description: Utilize OpenAI to reply to messages and images in approved channels
 
 # 🧠 Language AI
 
+Utilize OpenAI to reply to messages and images in approved channels.
+
 ## chat (Slash Command)
 
 * Usage: `/chat <text>`
@@ -19,26 +21,123 @@ Talk directly to this bot's AI. Ask it anything you want!
 
 Utilize OpenAI to reply to messages and images in approved channels
 
+### ai\_user config
+
+* Usage: `!ai_user config`
+* Aliases: `settings and showsettings`
+
+Returns current config\
+\
+(Current config per server)
+
+### ai\_user trigger
+
+* Usage: `!ai_user trigger`
+
+Configure trigger settings for the bot to respond to
+
+#### ai\_user trigger public\_forget
+
+* Usage: `!ai_user trigger public_forget`
+* Restricted to: `ADMIN`
+
+Toggles whether anyone can use the forget command, or only moderators
+
+#### ai\_user trigger ignore
+
+* Usage: `!ai_user trigger ignore <regex_pattern>`
+* Restricted to: `ADMIN`
+* Aliases: `ignoreregex`
+
+Messages matching this regex won't be replied to or seen, by the bot
+
 ### ai\_user remove
 
 * Usage: `!ai_user remove <channel>`
 * Restricted to: `ADMIN`
 
-Remove a channel from the whitelist
+Remove a channel from the whitelist\
+\
+**Arguments**\
+\- channel A mention of the channel
+
+### ai\_user add
+
+* Usage: `!ai_user add <channel>`
+* Restricted to: `ADMIN`
+
+Adds a channel to the whitelist\
+\
+**Arguments**\
+\- channel A mention of the channel
+
+### ai\_user prompt
+
+* Usage: `!ai_user prompt`
+* Restricted to: `ADMIN`
+
+Change the prompt settings for the current server\
+\
+(All subcommands are per server)
+
+#### ai\_user prompt show
+
+* Usage: `!ai_user prompt show`
+
+Show the prompt for the current context. Subcommands: server, members, channels
+
+**ai\_user prompt show server**
+
+* Usage: `!ai_user prompt show server`
+* Aliases: `server`
+
+Show the current server prompt
+
+**ai\_user prompt show members**
+
+* Usage: `!ai_user prompt show members`
+* Aliases: `users`
+
+Show users with custom prompts
+
+**ai\_user prompt show channels**
+
+* Usage: `!ai_user prompt show channels`
+
+Show all channels with custom prompts
+
+#### ai\_user prompt preset
+
+* Usage: `!ai_user prompt preset <preset>`
+* Restricted to: `ADMIN`
+
+List presets using 'list', or set a preset
+
+### ai\_user forget
+
+* Usage: `!ai_user forget`
+* Aliases: `lobotomize`
+
+Forces the bot to forget the current conversation up to this point\
+\
+This is useful if the LLM is stuck doing unwanted behaviour or giving undesirable results.\
+See !ai\_user triggers public\_forget to allow non-admins to use this command.
 
 ### ai\_user response
 
 * Usage: `!ai_user response`
 * Restricted to: `ADMIN`
 
-Change bot response settings
+Change bot response settings\
+\
+(All subcommands are per server)
 
 #### ai\_user response blocklist
 
 * Usage: `!ai_user response blocklist`
 * Restricted to: `ADMIN`
 
-Any generated bot messages matching these regex patterns will not sent
+Any generated responses matching these regex patterns will not sent
 
 **ai\_user response blocklist reset**
 
@@ -73,7 +172,7 @@ Show the current regex patterns in the blocklist
 * Usage: `!ai_user response removelist`
 * Restricted to: `ADMIN`
 
-Any string in generated bot messages matching these regex patterns will be removed
+Any string in a generated response matching these regex patterns will be removed
 
 **ai\_user response removelist show**
 
@@ -81,13 +180,6 @@ Any string in generated bot messages matching these regex patterns will be remov
 * Restricted to: `ADMIN`
 
 Show the current regex patterns in the removelist
-
-**ai\_user response removelist remove**
-
-* Usage: `!ai_user response removelist remove <regex_pattern>`
-* Restricted to: `ADMIN`
-
-Remove a regex pattern from the removelist
 
 **ai\_user response removelist reset**
 
@@ -103,76 +195,9 @@ Reset the removelist to default
 
 Add a regex pattern to the removelist
 
-### ai\_user public\_forget
+**ai\_user response removelist remove**
 
-* Usage: `!ai_user public_forget`
+* Usage: `!ai_user response removelist remove <regex_pattern>`
 * Restricted to: `ADMIN`
 
-Toggles whether anyone can use the forget command, or only moderators
-
-### ai\_user add
-
-* Usage: `!ai_user add <channel>`
-* Restricted to: `ADMIN`
-
-Add a channel to the whitelist to allow the bot to reply in
-
-### ai\_user forget
-
-* Usage: `!ai_user forget`
-
-Forces the AI to forget the current conversation up to this point
-
-### ai\_user prompt
-
-* Usage: `!ai_user prompt`
-* Restricted to: `ADMIN`
-
-Change the prompt settings for the current server
-
-#### ai\_user prompt show
-
-* Usage: `!ai_user prompt show`
-
-Show the prompt for the current context. Subcommands: server, members, channels
-
-**ai\_user prompt show server**
-
-* Usage: `!ai_user prompt show server`
-* Aliases: `server`
-
-Show the current server prompt
-
-**ai\_user prompt show members**
-
-* Usage: `!ai_user prompt show members`
-* Aliases: `users`
-
-Show all users with custom prompts
-
-**ai\_user prompt show channels**
-
-* Usage: `!ai_user prompt show channels`
-
-Show all channels with custom prompts
-
-#### ai\_user prompt preset
-
-* Usage: `!ai_user prompt preset <preset>`
-* Restricted to: `ADMIN`
-
-List presets using 'list', or set a preset
-
-### ai\_user config
-
-* Usage: `!ai_user config`
-* Aliases: `settings and showsettings`
-
-Returns current config
-
-### ai\_user ignore
-
-* Usage: `!ai_user ignore <regex_pattern>`
-* Restricted to: `ADMIN`
-
-Messages matching this regex won't be replied to by the AI
+Remove a regex pattern from the removelist
