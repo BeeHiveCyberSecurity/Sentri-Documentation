@@ -33,5 +33,6 @@
 * [🚎 Role Management](modules/role-management.md)
 * [🔍 Search](modules/search.md)
 * [🔃 Server Management](modules/server-management.md)
+* [🕐 Timeout](modules/timeout.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
