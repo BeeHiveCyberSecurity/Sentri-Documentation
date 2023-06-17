@@ -24,6 +24,74 @@ Customize your profile colors\
 Here is a link to google's color picker:\
 [**Hex Color Picker**](https://htmlcolorcodes.com/)
 
+### myprofile fonts
+
+* Usage: `!myprofile fonts`
+* Cooldown: `1 per 30.0 seconds`
+
+View available fonts to use
+
+### myprofile levelbar
+
+* Usage: `!myprofile levelbar <hex_color>`
+* Aliases: `lvlbar and bar`
+
+Set a hex color for your level bar\
+\
+Here is a link to google's color picker:\
+[**Hex Color Picker**](https://htmlcolorcodes.com/)\
+\
+Set to default to randomize your name color each time you run the command
+
+### myprofile namecolor
+
+* Usage: `!myprofile namecolor <hex_color>`
+* Aliases: `name`
+
+Set a hex color for your username\
+\
+Here is a link to google's color picker:\
+[**Hex Color Picker**](https://htmlcolorcodes.com/)\
+\
+Set to default to randomize your name color each time you run the command
+
+### myprofile statcolor
+
+* Usage: `!myprofile statcolor <hex_color>`
+* Aliases: `stat`
+
+Set a hex color for your server stats\
+\
+Here is a link to google's color picker:\
+[**Hex Color Picker**](https://htmlcolorcodes.com/)\
+\
+Set to default to randomize your name color each time you run the command
+
+### myprofile type
+
+* Usage: `!myprofile type`
+
+Toggle your profile image type (full/slim)\
+\
+Full size includes your balance, role icon and prestige icon\
+Slim is a smaller slimmed down version
+
+### myprofile font
+
+* Usage: `!myprofile font <font_name>`
+
+Set a font for your profile\
+\
+To view available fonts, type !myprofile fonts\
+To revert to the default font, use default for the font\_name argument
+
+### myprofile backgrounds
+
+* Usage: `!myprofile backgrounds`
+* Cooldown: `1 per 30.0 seconds`
+
+View the default backgrounds
+
 ### myprofile background
 
 * Usage: `!myprofile background [image_url=None]`
@@ -51,79 +119,11 @@ Here are some good places to look.\
 \- random will randomly select from a pool of default backgrounds each time\
 \- filename run !mypf backgrounds to view default options you can use by including their filename
 
-### myprofile backgrounds
-
-* Usage: `!myprofile backgrounds`
-* Cooldown: `1 per 30.0 seconds`
-
-View the default backgrounds
-
 ### myprofile blur
 
 * Usage: `!myprofile blur`
 
 Toggle a slight blur effect on the background image where the text is displayed.
-
-### myprofile levelbar
-
-* Usage: `!myprofile levelbar <hex_color>`
-* Aliases: `lvlbar and bar`
-
-Set a hex color for your level bar\
-\
-Here is a link to google's color picker:\
-[**Hex Color Picker**](https://htmlcolorcodes.com/)\
-\
-Set to default to randomize your name color each time you run the command
-
-### myprofile fonts
-
-* Usage: `!myprofile fonts`
-* Cooldown: `1 per 30.0 seconds`
-
-View available fonts to use
-
-### myprofile namecolor
-
-* Usage: `!myprofile namecolor <hex_color>`
-* Aliases: `name`
-
-Set a hex color for your username\
-\
-Here is a link to google's color picker:\
-[**Hex Color Picker**](https://htmlcolorcodes.com/)\
-\
-Set to default to randomize your name color each time you run the command
-
-### myprofile type
-
-* Usage: `!myprofile type`
-
-Toggle your profile image type (full/slim)\
-\
-Full size includes your balance, role icon and prestige icon\
-Slim is a smaller slimmed down version
-
-### myprofile statcolor
-
-* Usage: `!myprofile statcolor <hex_color>`
-* Aliases: `stat`
-
-Set a hex color for your server stats\
-\
-Here is a link to google's color picker:\
-[**Hex Color Picker**](https://htmlcolorcodes.com/)\
-\
-Set to default to randomize your name color each time you run the command
-
-### myprofile font
-
-* Usage: `!myprofile font <font_name>`
-
-Set a font for your profile\
-\
-To view available fonts, type !myprofile fonts\
-To revert to the default font, use default for the font\_name argument
 
 ## pf
 
@@ -187,35 +187,141 @@ View the last weekly embed
 ## lvlset
 
 * Usage: `!lvlset`
-* Restricted to: `ADMIN`
 * Aliases: `lset and levelup`
 * Checks: `server_only`
 
 Access LevelUp setting commands
 
+### lvlset showbalance
+
+* Usage: `!lvlset showbalance`
+
+Toggle whether to show user's economy credit balance in their profile
+
+### lvlset starcooldown
+
+* Usage: `!lvlset starcooldown <time_in_seconds>`
+
+Set the star cooldown\
+\
+Users can give another user a star every X seconds
+
+### lvlset voice
+
+* Usage: `!lvlset voice`
+
+Voice settings
+
+#### lvlset voice invisible
+
+* Usage: `!lvlset voice invisible`
+
+Ignore invisible voice users\
+Toggle whether invisible users in a voice channel can gain voice XP
+
+#### lvlset voice muted
+
+* Usage: `!lvlset voice muted`
+
+Ignore muted voice users\
+Toggle whether self-muted users in a voice channel can gain voice XP
+
+#### lvlset voice rolebonus
+
+* Usage: `!lvlset voice rolebonus <role> <min_xp> <max_xp>`
+
+Add a range of bonus XP to apply to certain roles\
+\
+This bonus applies to voice time xp\
+\
+Set both min and max to 0 to remove the role bonus
+
+#### lvlset voice channelbonus
+
+* Usage: `!lvlset voice channelbonus <channel> <min_xp> <max_xp>`
+
+Add a range of bonus XP to apply to certain channels\
+\
+This bonus applies to voice time xp\
+\
+Set both min and max to 0 to remove the role bonus
+
+#### lvlset voice xp
+
+* Usage: `!lvlset voice xp <voice_xp>`
+
+Set voice XP gain\
+Sets the amount of XP gained per minute in a voice channel (default is 2)
+
+#### lvlset voice streambonus
+
+* Usage: `!lvlset voice streambonus <min_xp> <max_xp>`
+
+Add a range of bonus XP to users who are Discord streaming\
+\
+This bonus applies to voice time xp\
+\
+Set both min and max to 0 to remove the bonus
+
+#### lvlset voice deafened
+
+* Usage: `!lvlset voice deafened`
+
+Ignore deafened voice users\
+Toggle whether deafened users in a voice channel can gain voice XP
+
+#### lvlset voice solo
+
+* Usage: `!lvlset voice solo`
+
+Ignore solo voice users\
+Toggle whether solo users in a voice channel can gain voice XP
+
+### lvlset embeds
+
+* Usage: `!lvlset embeds`
+
+Toggle using embeds or generated pics
+
+### lvlset ignored
+
+* Usage: `!lvlset ignored`
+
+Base command for all ignore lists
+
+#### lvlset ignored member
+
+* Usage: `!lvlset ignored member <member>`
+
+Add/Remove a member from the ignore list\
+Members in the ignore list don't gain XP\
+\
+Use the command with a member already in the ignore list to remove them
+
+#### lvlset ignored role
+
+* Usage: `!lvlset ignored role <role>`
+
+Add/Remove a role from the ignore list\
+Roles in the ignore list don't gain XP\
+\
+Use the command with a role already in the ignore list to remove it
+
+#### lvlset ignored channel
+
+* Usage: `!lvlset ignored channel <channel>`
+
+Add/Remove a channel in the ignore list\
+Channels in the ignore list don't gain XP\
+\
+Use the command with a channel already in the ignore list to remove it
+
 ### lvlset roles
 
 * Usage: `!lvlset roles`
+* Restricted to: `ADMIN`
 
 Level role assignment
-
-#### lvlset roles autoremove
-
-* Usage: `!lvlset roles autoremove`
-
-Automatic removal of previous level roles
-
-#### lvlset roles add
-
-* Usage: `!lvlset roles add <level> <role>`
-
-Assign a role to a level
-
-#### lvlset roles del
-
-* Usage: `!lvlset roles del <level>`
-
-Assign a role to a level
 
 #### lvlset roles initialize
 
@@ -226,11 +332,36 @@ Initialize level roles\
 This command is for if you added level roles after users have achieved that level,\
 it will apply all necessary roles to a user according to their level and prestige
 
-### lvlset embeds
+#### lvlset roles del
 
-* Usage: `!lvlset embeds`
+* Usage: `!lvlset roles del <level>`
 
-Toggle using embeds or generated pics
+Assign a role to a level
+
+#### lvlset roles add
+
+* Usage: `!lvlset roles add <level> <role>`
+
+Assign a role to a level
+
+#### lvlset roles autoremove
+
+* Usage: `!lvlset roles autoremove`
+
+Automatic removal of previous level roles
+
+### lvlset mention
+
+* Usage: `!lvlset mention`
+
+Toggle levelup mentions\
+Toggle whether the user in mentioned in LevelUp messages
+
+### lvlset levelnotify
+
+* Usage: `!lvlset levelnotify`
+
+Toggle the level up message when a user levels up
 
 ### lvlset messages
 
@@ -239,14 +370,15 @@ Toggle using embeds or generated pics
 
 Message settings
 
-#### lvlset messages cooldown
+#### lvlset messages rolebonus
 
-* Usage: `!lvlset messages cooldown <cooldown>`
+* Usage: `!lvlset messages rolebonus <role> <min_xp> <max_xp>`
 
-Cooldown threshold for message XP\
+Add a range of bonus XP to apply to certain roles\
 \
-When a user sends a message they will have to wait X seconds before their message\
-counts as XP gained
+This bonus applies to message xp\
+\
+Set both min and max to 0 to remove the role bonus
 
 #### lvlset messages length
 
@@ -274,15 +406,33 @@ Set both min and max to 0 to remove the role bonus
 Set message XP range\
 Set the Min and Max amount of XP that a message can gain
 
-#### lvlset messages rolebonus
+#### lvlset messages cooldown
 
-* Usage: `!lvlset messages rolebonus <role> <min_xp> <max_xp>`
+* Usage: `!lvlset messages cooldown <cooldown>`
 
-Add a range of bonus XP to apply to certain roles\
+Cooldown threshold for message XP\
 \
-This bonus applies to message xp\
-\
-Set both min and max to 0 to remove the role bonus
+When a user sends a message they will have to wait X seconds before their message\
+counts as XP gained
+
+### lvlset barlength
+
+* Usage: `!lvlset barlength <bar_length>`
+
+Set the progress bar length for embed profiles
+
+### lvlset addxp
+
+* Usage: `!lvlset addxp <user_or_role> <xp>`
+
+Add XP to a user or role
+
+### lvlset seelevels
+
+* Usage: `!lvlset seelevels`
+
+Test the level algorithm\
+View the first 20 levels using the current algorithm to test experience curve
 
 ### lvlset starmention
 
@@ -291,51 +441,55 @@ Set both min and max to 0 to remove the role bonus
 Toggle star reaction mentions\
 Toggle whether the bot mentions that a user reacted to a message with a star
 
-### lvlset view
+### lvlset levelchannel
 
-* Usage: `!lvlset view`
+* Usage: `!lvlset levelchannel [levelup_channel=None]`
 
-View all LevelUP settings
+Set LevelUP message channel\
+Set a channel for all level up messages to send to
 
-### lvlset ignored
+### lvlset setlevel
 
-* Usage: `!lvlset ignored`
+* Usage: `!lvlset setlevel <user> <level>`
 
-Base command for all ignore lists
+Set a user to a specific level
 
-#### lvlset ignored member
+### lvlset dm
 
-* Usage: `!lvlset ignored member <member>`
+* Usage: `!lvlset dm`
 
-Add/Remove a member from the ignore list\
-Members in the ignore list don't gain XP\
+Toggle DM notifications\
+Toggle whether LevelUp messages are DM'd to the user
+
+### lvlset setprestige
+
+* Usage: `!lvlset setprestige <user> <prestige>`
+
+Set a user to a specific prestige level\
 \
-Use the command with a member already in the ignore list to remove them
+Prestige roles will need to be manually added/removed when using this command
 
-#### lvlset ignored channel
+### lvlset algorithm
 
-* Usage: `!lvlset ignored channel <channel>`
+* Usage: `!lvlset algorithm`
 
-Add/Remove a channel in the ignore list\
-Channels in the ignore list don't gain XP\
+Customize the leveling algorithm for your server
+
+#### lvlset algorithm exp
+
+* Usage: `!lvlset algorithm exp <exponent_multiplier>`
+
+Exponent multiplier for the leveling algorithm\
 \
-Use the command with a channel already in the ignore list to remove it
+Affects leveling on an exponential scale(higher values makes leveling take exponentially longer)
 
-#### lvlset ignored role
+#### lvlset algorithm base
 
-* Usage: `!lvlset ignored role <role>`
+* Usage: `!lvlset algorithm base <base_multiplier>`
 
-Add/Remove a role from the ignore list\
-Roles in the ignore list don't gain XP\
+Base multiplier for the leveling algorithm\
 \
-Use the command with a role already in the ignore list to remove it
-
-### lvlset mention
-
-* Usage: `!lvlset mention`
-
-Toggle levelup mentions\
-Toggle whether the user in mentioned in LevelUp messages
+Affects leveling on a more linear scale(higher values makes leveling take longer)
 
 ### lvlset admin
 
@@ -346,14 +500,17 @@ Cog admin commands\
 \
 Reset levels, backup and restore cog data
 
-#### lvlset admin cleanup
+#### lvlset admin view
 
-* Usage: `!lvlset admin cleanup`
-* Restricted to: `GUILD_OWNER`
+* Usage: `!lvlset admin view`
 
-Delete users no longer in the server\
-\
-Also cleans up any missing keys or discrepancies in the config
+View current loop times and cached data
+
+#### lvlset admin serverreset
+
+* Usage: `!lvlset admin serverreset`
+
+Reset cog data for this server
 
 #### lvlset admin importmee6
 
@@ -380,120 +537,20 @@ Restore a server backup\
 \
 Attach the .json file to the command message to import
 
-#### lvlset admin serverreset
-
-* Usage: `!lvlset admin serverreset`
-
-Reset cog data for this server
-
-#### lvlset admin view
-
-* Usage: `!lvlset admin view`
-
-View current loop times and cached data
-
 #### lvlset admin statreset
 
 * Usage: `!lvlset admin statreset`
 
 Reset everyone's exp and level
 
-### lvlset voice
+#### lvlset admin cleanup
 
-* Usage: `!lvlset voice`
+* Usage: `!lvlset admin cleanup`
+* Restricted to: `GUILD_OWNER`
 
-Voice settings
-
-#### lvlset voice invisible
-
-* Usage: `!lvlset voice invisible`
-
-Ignore invisible voice users\
-Toggle whether invisible users in a voice channel can gain voice XP
-
-#### lvlset voice channelbonus
-
-* Usage: `!lvlset voice channelbonus <channel> <min_xp> <max_xp>`
-
-Add a range of bonus XP to apply to certain channels\
+Delete users no longer in the server\
 \
-This bonus applies to voice time xp\
-\
-Set both min and max to 0 to remove the role bonus
-
-#### lvlset voice deafened
-
-* Usage: `!lvlset voice deafened`
-
-Ignore deafened voice users\
-Toggle whether deafened users in a voice channel can gain voice XP
-
-#### lvlset voice solo
-
-* Usage: `!lvlset voice solo`
-
-Ignore solo voice users\
-Toggle whether solo users in a voice channel can gain voice XP
-
-#### lvlset voice xp
-
-* Usage: `!lvlset voice xp <voice_xp>`
-
-Set voice XP gain\
-Sets the amount of XP gained per minute in a voice channel (default is 2)
-
-#### lvlset voice muted
-
-* Usage: `!lvlset voice muted`
-
-Ignore muted voice users\
-Toggle whether self-muted users in a voice channel can gain voice XP
-
-#### lvlset voice streambonus
-
-* Usage: `!lvlset voice streambonus <min_xp> <max_xp>`
-
-Add a range of bonus XP to users who are Discord streaming\
-\
-This bonus applies to voice time xp\
-\
-Set both min and max to 0 to remove the bonus
-
-#### lvlset voice rolebonus
-
-* Usage: `!lvlset voice rolebonus <role> <min_xp> <max_xp>`
-
-Add a range of bonus XP to apply to certain roles\
-\
-This bonus applies to voice time xp\
-\
-Set both min and max to 0 to remove the role bonus
-
-### lvlset barlength
-
-* Usage: `!lvlset barlength <bar_length>`
-
-Set the progress bar length for embed profiles
-
-### lvlset seelevels
-
-* Usage: `!lvlset seelevels`
-
-Test the level algorithm\
-View the first 20 levels using the current algorithm to test experience curve
-
-### lvlset dm
-
-* Usage: `!lvlset dm`
-
-Toggle DM notifications\
-Toggle whether LevelUp messages are DM'd to the user
-
-### lvlset addxp
-
-* Usage: `!lvlset addxp <user_or_role> <xp>`
-
-Add XP to a user or role
+Also cleans up any missing keys or discrepancies in the config
 
 ### lvlset starmentiondelete
 
@@ -502,25 +559,24 @@ Add XP to a user or role
 Toggle whether the bot auto-deletes the star mentions\
 Set to 0 to disable auto-delete
 
-### lvlset setlevel
+### lvlset view
 
-* Usage: `!lvlset setlevel <user> <level>`
+* Usage: `!lvlset view`
 
-Set a user to a specific level
-
-### lvlset setprestige
-
-* Usage: `!lvlset setprestige <user> <prestige>`
-
-Set a user to a specific prestige level\
-\
-Prestige roles will need to be manually added/removed when using this command
+View all LevelUP settings
 
 ### lvlset prestige
 
 * Usage: `!lvlset prestige`
 
 Level Prestige Settings
+
+#### lvlset prestige level
+
+* Usage: `!lvlset prestige level <level>`
+
+Set the level required to prestige\
+Set to 0 to disable prestige
 
 #### lvlset prestige add
 
@@ -531,12 +587,11 @@ Add a role and emoji associated with a specific prestige level\
 \
 When a user prestiges, they will get that role and the emoji will show on their profile
 
-#### lvlset prestige level
+#### lvlset prestige autoremove
 
-* Usage: `!lvlset prestige level <level>`
+* Usage: `!lvlset prestige autoremove`
 
-Set the level required to prestige\
-Set to 0 to disable prestige
+Automatic removal of previous prestige level roles
 
 #### lvlset prestige del
 
@@ -544,76 +599,38 @@ Set to 0 to disable prestige
 
 Delete a prestige level role
 
-#### lvlset prestige autoremove
-
-* Usage: `!lvlset prestige autoremove`
-
-Automatic removal of previous prestige level roles
-
-### lvlset showbalance
-
-* Usage: `!lvlset showbalance`
-
-Toggle whether to show user's economy credit balance in their profile
-
-### lvlset algorithm
-
-* Usage: `!lvlset algorithm`
-
-Customize the leveling algorithm for your server
-
-#### lvlset algorithm base
-
-* Usage: `!lvlset algorithm base <base_multiplier>`
-
-Base multiplier for the leveling algorithm\
-\
-Affects leveling on a more linear scale(higher values makes leveling take longer)
-
-#### lvlset algorithm exp
-
-* Usage: `!lvlset algorithm exp <exponent_multiplier>`
-
-Exponent multiplier for the leveling algorithm\
-\
-Affects leveling on an exponential scale(higher values makes leveling take exponentially longer)
-
-### lvlset levelchannel
-
-* Usage: `!lvlset levelchannel [levelup_channel=None]`
-
-Set LevelUP message channel\
-Set a channel for all level up messages to send to
-
-### lvlset starcooldown
-
-* Usage: `!lvlset starcooldown <time_in_seconds>`
-
-Set the star cooldown\
-\
-Users can give another user a star every X seconds
-
-### lvlset levelnotify
-
-* Usage: `!lvlset levelnotify`
-
-Toggle the level up message when a user levels up
-
 ## weeklyset
 
 * Usage: `!weeklyset`
-* Restricted to: `ADMIN`
 * Aliases: `wset`
 * Checks: `server_only`
 
 Access the weekly settings for levelUp
 
-### weeklyset role
+### weeklyset toggle
 
-* Usage: `!weeklyset role <role>`
+* Usage: `!weeklyset toggle`
 
-Weekly winner role reward\
-Set the role awarded to the top member of the weekly leaderboard
+Toggle weekly stat tracking
+
+### weeklyset view
+
+* Usage: `!weeklyset view`
+
+View the current weekly settings
+
+### weeklyset reset
+
+* Usage: `!weeklyset reset <yes_or_no>`
+
+Reset the weekly leaderboard manually and announce winners
+
+### weeklyset top
+
+* Usage: `!weeklyset top <top_count>`
+
+Top weekly member count\
+Set amount of members to include in the weekly top leaderboard
 
 ### weeklyset autoremove
 
@@ -622,18 +639,26 @@ Set the role awarded to the top member of the weekly leaderboard
 One role holder at a time\
 Toggle whether the winner role is removed from the previous holder when a new winner is selected
 
-### weeklyset autoreset
-
-* Usage: `!weeklyset autoreset`
-
-Toggle weekly auto-reset
-
 ### weeklyset channel
 
 * Usage: `!weeklyset channel <channel>`
 
 Weekly winner announcement channel\
 set the channel for weekly winners to be announced in when auto-reset is enabled
+
+### weeklyset role
+
+* Usage: `!weeklyset role <role>`
+
+Weekly winner role reward\
+Set the role awarded to the top member of the weekly leaderboard
+
+### weeklyset day
+
+* Usage: `!weeklyset day <day_of_the_week>`
+
+What day of the week the weekly stats reset\
+Set the day of the week (0 - 6 = Monday - Sunday) for weekly reset to take place
 
 ### weeklyset roleall
 
@@ -648,31 +673,11 @@ Toggle whether to give the weekly winner role to all winners or only 1st place
 What hour the weekly stats reset\
 Set the hour (0 - 23 in UTC) for the weekly reset to take place
 
-### weeklyset view
+### weeklyset autoreset
 
-* Usage: `!weeklyset view`
+* Usage: `!weeklyset autoreset`
 
-View the current weekly settings
-
-### weeklyset top
-
-* Usage: `!weeklyset top <top_count>`
-
-Top weekly member count\
-Set amount of members to include in the weekly top leaderboard
-
-### weeklyset reset
-
-* Usage: `!weeklyset reset <yes_or_no>`
-
-Reset the weekly leaderboard manually and announce winners
-
-### weeklyset day
-
-* Usage: `!weeklyset day <day_of_the_week>`
-
-What day of the week the weekly stats reset\
-Set the day of the week (0 - 6 = Monday - Sunday) for weekly reset to take place
+Toggle weekly auto-reset
 
 ### weeklyset bonus
 
@@ -680,9 +685,3 @@ Set the day of the week (0 - 6 = Monday - Sunday) for weekly reset to take place
 
 Weekly winners bonus experience points\
 Set to 0 to disable exp bonus
-
-### weeklyset toggle
-
-* Usage: `!weeklyset toggle`
-
-Toggle weekly stat tracking
