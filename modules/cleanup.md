@@ -6,125 +6,26 @@ description: Tools for cleaning up messages within your server
 
 
 
-### Usage[¶](broken-reference)
-
-This module contains commands used for “cleaning up” (deleting) messages.
-
-This is designed as a moderator tool and offers many convenient use cases. All cleanup commands only apply to the channel the command is executed in.
-
-Messages older than two weeks cannot be mass deleted. This is a limitation of the API. It used to be different, but then the Fire Nation attacked (it was getting abused, so it was taken away from developers as if we are children).
-
-### Commands[¶](broken-reference)
-
 ## cleanup
 
 * Usage: `!cleanup`
 
 Base command for deleting messages.
 
-### cleanup duplicates
+### cleanup messages
 
-* Usage: `!cleanup duplicates [number=50]`
-* Restricted to: `MOD`
-* Aliases: `spam`
-* Checks: `server_only`
-
-Deletes duplicate messages in the channel from the last X messages and keeps only one copy.\
-\
-Defaults to 50.\
-\
-**Arguments:**\
-\
-\- The number of messages to check for duplicates. Must be a positive integer.
-
-### cleanup self
-
-* Usage: `!cleanup self <number> [match_pattern=None] [delete_pinned=False]`
-
-Clean up messages owned by the bot in the current channel.\
-\
-By default, all messages are cleaned. If a second argument is specified,\
-it is used for pattern matching - only messages containing the given text will be deleted.\
-\
-Examples:\
-\- !cleanup self 6\
-\- !cleanup self 10 Pong\
-\- !cleanup self 7 "" True\
-\
-**Arguments:**\
-\
-\- The max number of messages to cleanup. Must be a positive integer.\
-\- \<match\_pattern> The text that messages must contain to be deleted. Use "" to skip this.\
-\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
-
-### cleanup bot
-
-* Usage: `!cleanup bot <number> [delete_pinned=False]`
+* Usage: `!cleanup messages <number> [delete_pinned=False]`
 * Restricted to: `MOD`
 * Checks: `server_only`
 
-Clean up command messages and messages from the bot in the current channel.\
-\
-Can only cleanup custom commands and alias commands if those cogs are loaded.\
-\
-**Arguments:**\
-\
-\- The max number of messages to cleanup. Must be a positive integer.\
-\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
-
-### cleanup before
-
-* Usage: `!cleanup before <message_id> <number> [delete_pinned=False]`
-* Restricted to: `MOD`
-* Checks: `server_only`
-
-Deletes X messages before the specified message.\
-\
-To get a message id, enable developer mode in Discord's\
-settings, 'appearance' tab. Then right click a message\
-and copy its id.\
-Replying to a message will cleanup all messages before it.\
-\
-**Arguments:**\
-\
-\- \<message\_id> The id of the message to cleanup before. This message won't be deleted.\
-\- The max number of messages to cleanup. Must be a positive integer.\
-\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
-
-### cleanup text
-
-* Usage: `!cleanup text <text> <number> [delete_pinned=False]`
-* Restricted to: `MOD`
-* Checks: `server_only`
-
-Delete the last X messages matching the specified text in the current channel.\
+Delete the last X messages in the current channel.\
 \
 Example:\
-\- !cleanup text "test" 5\
-\
-Remember to use double quotes.\
+\- !cleanup messages 26\
 \
 **Arguments:**\
 \
 \- The max number of messages to cleanup. Must be a positive integer.\
-\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
-
-### cleanup after
-
-* Usage: `!cleanup after <message_id> [delete_pinned=False]`
-* Restricted to: `MOD`
-* Checks: `server_only`
-
-Delete all messages after a specified message.\
-\
-To get a message id, enable developer mode in Discord's\
-settings, 'appearance' tab. Then right click a message\
-and copy its id.\
-Replying to a message will cleanup all messages after it.\
-\
-**Arguments:**\
-\
-\- \<message\_id> The id of the message to cleanup after. This message won't be deleted.\
 \- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
 
 ### cleanup user
@@ -164,19 +65,108 @@ Example:\
 \- The id of the message to cleanup before. This message won't be deleted.\
 \- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
 
-### cleanup messages
+### cleanup text
 
-* Usage: `!cleanup messages <number> [delete_pinned=False]`
+* Usage: `!cleanup text <text> <number> [delete_pinned=False]`
 * Restricted to: `MOD`
 * Checks: `server_only`
 
-Delete the last X messages in the current channel.\
+Delete the last X messages matching the specified text in the current channel.\
 \
 Example:\
-\- !cleanup messages 26\
+\- !cleanup text "test" 5\
+\
+Remember to use double quotes.\
 \
 **Arguments:**\
 \
+\- The max number of messages to cleanup. Must be a positive integer.\
+\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
+
+### cleanup self
+
+* Usage: `!cleanup self <number> [match_pattern=None] [delete_pinned=False]`
+
+Clean up messages owned by the bot in the current channel.\
+\
+By default, all messages are cleaned. If a second argument is specified,\
+it is used for pattern matching - only messages containing the given text will be deleted.\
+\
+Examples:\
+\- !cleanup self 6\
+\- !cleanup self 10 Pong\
+\- !cleanup self 7 "" True\
+\
+**Arguments:**\
+\
+\- The max number of messages to cleanup. Must be a positive integer.\
+\- \<match\_pattern> The text that messages must contain to be deleted. Use "" to skip this.\
+\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
+
+### cleanup bot
+
+* Usage: `!cleanup bot <number> [delete_pinned=False]`
+* Restricted to: `MOD`
+* Checks: `server_only`
+
+Clean up command messages and messages from the bot in the current channel.\
+\
+Can only cleanup custom commands and alias commands if those cogs are loaded.\
+\
+**Arguments:**\
+\
+\- The max number of messages to cleanup. Must be a positive integer.\
+\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
+
+### cleanup duplicates
+
+* Usage: `!cleanup duplicates [number=50]`
+* Restricted to: `MOD`
+* Aliases: `spam`
+* Checks: `server_only`
+
+Deletes duplicate messages in the channel from the last X messages and keeps only one copy.\
+\
+Defaults to 50.\
+\
+**Arguments:**\
+\
+\- The number of messages to check for duplicates. Must be a positive integer.
+
+### cleanup after
+
+* Usage: `!cleanup after <message_id> [delete_pinned=False]`
+* Restricted to: `MOD`
+* Checks: `server_only`
+
+Delete all messages after a specified message.\
+\
+To get a message id, enable developer mode in Discord's\
+settings, 'appearance' tab. Then right click a message\
+and copy its id.\
+Replying to a message will cleanup all messages after it.\
+\
+**Arguments:**\
+\
+\- \<message\_id> The id of the message to cleanup after. This message won't be deleted.\
+\- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
+
+### cleanup before
+
+* Usage: `!cleanup before <message_id> <number> [delete_pinned=False]`
+* Restricted to: `MOD`
+* Checks: `server_only`
+
+Deletes X messages before the specified message.\
+\
+To get a message id, enable developer mode in Discord's\
+settings, 'appearance' tab. Then right click a message\
+and copy its id.\
+Replying to a message will cleanup all messages before it.\
+\
+**Arguments:**\
+\
+\- \<message\_id> The id of the message to cleanup before. This message won't be deleted.\
 \- The max number of messages to cleanup. Must be a positive integer.\
 \- \<delete\_pinned> Whether to delete pinned messages or not. Defaults to False
 
