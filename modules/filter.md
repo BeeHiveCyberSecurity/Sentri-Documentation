@@ -1,14 +1,11 @@
+---
+description: >-
+  This cog is designed for "filtering" unwanted words and phrases from a server.
+  It provides tools to manage a list of words or sentences, and to customize
+  automatic actions to be taken against.
+---
+
 # 📁 Filter
-
-### Usage[¶](broken-reference)
-
-This module is designed for “filtering” unwanted words and phrases from a server.
-
-It provides tools to manage a list of words or sentences, and to customize automatic actions to be taken against users who use those words in channels or in their name/nickname.
-
-This can be used to prevent inappropriate language, off-topic discussions, invite links, and more.
-
-### Commands[¶](broken-reference)
 
 ## filterset
 
@@ -66,22 +63,6 @@ Base command to add or remove words from the server filter.\
 \
 Use double quotes to add or remove sentences.
 
-### filter add
-
-* Usage: `!filter add <words>`
-
-Add words to the filter.\
-\
-Use double quotes to add sentences.\
-\
-Examples:\
-\- !filter add word1 word2 word3\
-\- !filter add "This is a sentence"\
-\
-**Arguments:**\
-\
-\- \[words...] The words or sentences to filter.
-
 ### filter channel
 
 * Usage: `!filter channel`
@@ -89,18 +70,6 @@ Examples:\
 Base command to add or remove words from the channel filter.\
 \
 Use double quotes to add or remove sentences.
-
-#### filter channel clear
-
-* Usage: `!filter channel clear`
-
-Clears this channel's filter list.
-
-#### filter channel list
-
-* Usage: `!filter channel list`
-
-Send a list of the channel's filtered words.
 
 #### filter channel delete
 
@@ -120,6 +89,18 @@ Examples:\
 \- The text, voice, stage, or forum channel to add filtered words to.\
 \- \[words...] The words or sentences to no longer filter.
 
+#### filter channel clear
+
+* Usage: `!filter channel clear`
+
+Clears this channel's filter list.
+
+#### filter channel list
+
+* Usage: `!filter channel list`
+
+Send a list of the channel's filtered words.
+
 #### filter channel add
 
 * Usage: `!filter channel add <channel> <words>`
@@ -137,25 +118,27 @@ Examples:\
 \- The text, voice, stage, or forum channel to add filtered words to.\
 \- \[words...] The words or sentences to filter.
 
-### filter names
-
-* Usage: `!filter names`
-
-Toggle name and nickname filtering.\
-\
-This is disabled by default.
-
 ### filter list
 
 * Usage: `!filter list`
 
 Send a list of this server's filtered words.
 
-### filter clear
+### filter add
 
-* Usage: `!filter clear`
+* Usage: `!filter add <words>`
 
-Clears this server's filter list.
+Add words to the filter.\
+\
+Use double quotes to add sentences.\
+\
+Examples:\
+\- !filter add word1 word2 word3\
+\- !filter add "This is a sentence"\
+\
+**Arguments:**\
+\
+\- \[words...] The words or sentences to filter.
 
 ### filter delete
 
@@ -173,3 +156,17 @@ Examples:\
 **Arguments:**\
 \
 \- \[words...] The words or sentences to no longer filter.
+
+### filter clear
+
+* Usage: `!filter clear`
+
+Clears this server's filter list.
+
+### filter names
+
+* Usage: `!filter names`
+
+Toggle name and nickname filtering.\
+\
+This is disabled by default.
