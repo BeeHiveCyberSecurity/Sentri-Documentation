@@ -1,4 +1,12 @@
+---
+description: Get started configuring Sentri to serve your staff and userbase!
+---
+
 # 😨 Setting Up
+
+#### Inviting Sentri
+
+First, you'll need to invite Sentri. That's easy enough, just click [here!](https://discord.com/oauth2/authorize?client\_id=1095981492884209804\&scope=bot\&permissions=8)
 
 #### The commands
 
