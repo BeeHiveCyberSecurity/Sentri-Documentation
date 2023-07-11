@@ -74,7 +74,7 @@ For example, in the mod cog, an admin can use the `[p]modset` command which defi
 
 #### Moderator
 
-A moderator is a step above the average users. You can set multiple moderator roles with the `[p]set addmodrole` and `[p]set removemodrole` commands.
+A moderator is a step above the average users. You can set multiple moderator roles with the `[p]set roles addmodrole` and `[p]set roles removemodrole` commands.
 
 For example, in the filter cog, a mod will be able to use the various commands under `[p]filter` (such as adding and removing filtered words), but they will not be able to modify the cog settings with the `[p]filterset` command.
 
