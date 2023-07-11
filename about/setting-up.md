@@ -58,13 +58,17 @@ When using subcommands, you also need to specify the command group. As an exampl
 
 Sentri works with different levels of permissions. Every module defines the level of permission needed for a command.
 
+{% hint style="danger" %}
+Permissions configuration is **REQUIRED** for Sentri to function properly. Sentri will **NOT** assume any permissions you've previously given a user are intended. A server owner **MUST** specify a Moderator-level and Administrator-level role for proper function and usage.
+{% endhint %}
+
 #### Server owner
 
 The server owner can access all commands on his guild, except the global ones or those that can interact with system files (available for the bot owner).
 
 #### Administrator
 
-The administrator is defined by its roles. You can set multiple admin roles with the `[p]set addadminrole` and `[p]set removeadminrole` commands.
+The administrator is defined by its roles. You can set multiple admin roles with the `[p]set roles` commands.
 
 For example, in the mod cog, an admin can use the `[p]modset` command which defines the cog settings.
 
