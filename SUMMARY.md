@@ -36,7 +36,4 @@
 * [🕐 Timeout](modules/timeout.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
-
-***
-
-* [✅ Verifyer](verifyer.md)
+* [✅ Verifyer](modules/verifyer.md)
