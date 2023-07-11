@@ -1,6 +1,8 @@
-# 🐟 AntiPhishing
+---
+description: Protects users against phishing attacks
+---
 
-Protects users against phishing attacks.
+# 🐟 AntiPhishing
 
 ## checkphish
 
@@ -20,12 +22,6 @@ You can either provide a url or reply to a message containing a url.
 
 Settings to set up the anti-phishing integration.
 
-### antiphishing stats
-
-* Usage: `!antiphishing stats`
-
-Shows the current stats for the anti-phishing integration.
-
 ### antiphishing action
 
 * Usage: `!antiphishing action <action>`
@@ -38,3 +34,9 @@ notify - Sends a message to the channel and says it's a phishing scam\
 delete - Deletes the message\
 kick - Kicks the author (also deletes the message)\
 ban - Bans the author (also deletes the message)
+
+### antiphishing stats
+
+* Usage: `!antiphishing stats`
+
+Shows the current stats for the anti-phishing integration.
