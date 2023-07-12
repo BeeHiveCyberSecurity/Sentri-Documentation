@@ -42,6 +42,7 @@
 * [📻 Radio (Beta)](modules/radio-beta.md)
 * [🚎 Role Management](modules/role-management.md)
 * [⏰ Reminders](modules/reminders.md)
+* [\* RSS](modules/rss.md)
 * [📜 Simplified ModLog](modules/simplified-modlog.md)
 * [🔍 Search](modules/search.md)
 * [🔃 Server Management](modules/server-management.md)
