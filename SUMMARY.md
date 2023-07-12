@@ -31,6 +31,7 @@
 * [⚒ Mod](modules/mod.md)
 * [🔇 Mutes](modules/mutes.md)
 * [🔓 Permissions](modules/permissions.md)
+* [📔 Polls](modules/polls.md)
 * [📧 Reports](modules/reports.md)
 * [📻 Radio (Beta)](modules/radio-beta.md)
 * [🚎 Role Management](modules/role-management.md)
