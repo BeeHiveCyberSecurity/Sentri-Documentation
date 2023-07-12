@@ -16,9 +16,11 @@ The command you’re going to use the most is **help**. This command will show y
 [p]help
 ```
 
-Tip
+{% hint style="info" %}
+The help message is generated dynamically and users will only see the commands they can use. If users roles change, they'll see additional commands unlock - equally, removing permissions may remove their ability to use particular commands inside your server. You can change what commands users can use with the permissions module, command is `!permissions`.
+{% endhint %}
 
-The message is generated dynamically and users will only see the commands they can use. You can change what commands users can use with the permissions module.
+
 
 You can also pick a command to get its detailed description and the parameters.
 
@@ -26,8 +28,7 @@ You can also pick a command to get its detailed description and the parameters.
 [p]help command
 ```
 
-Note
-
+{% hint style="info" %}
 Arguments enclosed in `< >` are **required** for the command to work.
 
 Arguments enclosed in `[ ]` are **optional** for the command; you can decide whether to use them or not.
@@ -37,10 +38,11 @@ If your argument includes spaces like `Hello world!`, most of the time you will 
 Arguments followed by an ellipsis `...` means that you may provide multiple arguments for the command.
 
 Arguments followed by `=value` means that, if not specified, the argument will be equal to `value`.
+{% endhint %}
 
 For example, the command `[p]cleanup messages` in the cleanup cog has the syntax `cleanup messages <number> [delete_pinned=False]`, which means `delete_pinned` default will be false, unless you specify it as true.
 
-You can use help to show the **categories** too, generally called cogs, by doing the following (notice the capitalization):
+You can use help to show the **categories** too, generally called cogs or modules, by doing the following (notice the capitalization):
 
 ```
 [p]help YourCategory
