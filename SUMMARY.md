@@ -9,6 +9,7 @@
 
 * [🎟 Admin](modules/admin.md)
 * [🐟 AntiPhishing](modules/antiphishing.md)
+* [☢ AntiNuke](modules/antinuke.md)
 * [🎉 Birthdays](modules/birthdays.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [🛡 Defender](modules/defender/README.md)
