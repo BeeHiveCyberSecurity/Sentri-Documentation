@@ -21,7 +21,7 @@ Defender system settings
 
 Comment analysis configuration\
 \
-See [Chat Monitoring](chat-monitoring.md) for more information about this module
+See [Chat Monitoring](introduction/chat-monitoring.md) for more information about this module
 
 #### dset commentanalysis reason
 

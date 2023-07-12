@@ -6,7 +6,7 @@ description: >-
 
 # 💬 Chat Monitoring
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>The PerspectiveAPI Work Cycle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>The PerspectiveAPI Work Cycle</p></figcaption></figure>
 
 ### Overview
 
