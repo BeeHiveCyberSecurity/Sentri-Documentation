@@ -9,13 +9,13 @@ description: Get started configuring Sentri to serve your staff and userbase!
 First, you'll need to invite Sentri. That's easy enough, just click [here!](https://discord.com/oauth2/authorize?client\_id=1095981492884209804\&scope=bot\&permissions=8)
 
 {% hint style="warning" %}
-While Sentri doesn't **require** `Administrator`, it's a security bot - it asks for it and more than likely will need it at some point in time. You are welcome to select your own permissions that you feel comfortable with, but, you may then introduce complexities with your own roles system. Customize Sentri's permissions at your own risk.
+While Sentri doesn't **require** `Administrator`, it's a security bot - it asks for it and more than likely will need it at some point in time. You are welcome to select your own permissions that you feel comfortable with, but, you may then introduce complexities with your own roles system or inadvertently remove a permission that a Sentri feature relies on to protect your server. Customize Sentri's permissions at your own risk.
 {% endhint %}
 
 {% hint style="info" %}
 After invite, you'll need to adjust Sentri's role position for the sake of Discord moderative hierarchy.
 
-`MOVE THE SENTRI INTEGRATION ROLE JUST ABOVE THE HIGHEST ROLE THAT YOU WOULD LIKE SENTRI TO MODERATE`
+`MOVE THE SENTRI INTEGRATION ROLE ABOVE THE HIGHEST ROLE THAT YOU WOULD LIKE SENTRI TO MODERATE`
 {% endhint %}
 
 #### The commands
