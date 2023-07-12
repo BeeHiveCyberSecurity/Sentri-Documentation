@@ -29,6 +29,7 @@
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🎉 Giveaways](modules/giveaways.md)
 * [ℹ Info Channels](modules/info-channels.md)
+* [💠 Invites](modules/invites.md)
 * [🧠 Language AI](modules/language-ai.md)
 * [↗ Leveling](modules/leveling.md)
 * [📜 Logging](modules/logging.md)
