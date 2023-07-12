@@ -12,6 +12,7 @@
 * [☢ AntiNuke](modules/antinuke.md)
 * [🏒 AutoDisconnect](modules/autodisconnect.md)
 * [🎉 Birthdays](modules/birthdays.md)
+* [🏧 Calculator](modules/calculator.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [🛡 Defender](modules/defender/README.md)
   * [👋 Introduction](modules/defender/introduction/README.md)
