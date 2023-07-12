@@ -44,6 +44,7 @@
 * [📜 Simplified ModLog](modules/simplified-modlog.md)
 * [🔍 Search](modules/search.md)
 * [🔃 Server Management](modules/server-management.md)
+* [📸 Streams](modules/streams.md)
 * [🕐 Timeout](modules/timeout.md)
 * [⌛ Time Channels](modules/time-channels.md)
 * [🎫 Ticketing](modules/ticketing.md)
