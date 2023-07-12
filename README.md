@@ -2,6 +2,22 @@
 description: >-
   We are thrilled to have you join us on this journey to learn more about Sentri
   and how it can help you and your community.
+cover: .gitbook/assets/1295197.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # 👋 Welcome!
