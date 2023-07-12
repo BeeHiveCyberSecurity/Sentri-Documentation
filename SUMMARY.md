@@ -32,6 +32,7 @@
 * [🔓 Permissions](modules/permissions.md)
 * [📧 Reports](modules/reports.md)
 * [🚎 Role Management](modules/role-management.md)
+* [⏰ Reminders](modules/reminders.md)
 * [🔍 Search](modules/search.md)
 * [🔃 Server Management](modules/server-management.md)
 * [🕐 Timeout](modules/timeout.md)
