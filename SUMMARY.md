@@ -31,6 +31,7 @@
 * [🔇 Mutes](modules/mutes.md)
 * [🔓 Permissions](modules/permissions.md)
 * [📧 Reports](modules/reports.md)
+* [📻 Radio (Beta)](modules/radio-beta.md)
 * [🚎 Role Management](modules/role-management.md)
 * [⏰ Reminders](modules/reminders.md)
 * [📜 Simplified ModLog](modules/simplified-modlog.md)
