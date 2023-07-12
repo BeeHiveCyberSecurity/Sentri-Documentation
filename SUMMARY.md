@@ -54,4 +54,5 @@
 * [✅ Verifyer](modules/verifyer.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
+* [☁ Weather](modules/weather.md)
 * [🪝 Webhooks](modules/webhooks.md)
