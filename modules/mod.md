@@ -366,4 +366,87 @@ Unban a user from this server.\
 Requires specifying the target user's ID. To find this, you may either:\
 1\. Copy it from the mod log case (if one was created), or\
 2\. enable developer mode, go to Bans in this server's settings, right-\
-click the user and select 'Copy ID'.
+click the user and select 'Copy ID'.\
+\
+A mod note cog for moderators to add notes to users
+
+## modnoteset
+
+* Usage: `!modnoteset`
+* Restricted to: `ADMIN`
+
+Setup modnotes
+
+### modnoteset usemodlog
+
+* Usage: `!modnoteset usemodlog <toggle>`
+
+Toggle whether to use the modlog or not.\
+\
+If toggled, whenever a note is created on a user it will create a case in the modlog.\
+\
+**Arguments**\
+\- toggle Whether to enable or disable the modlog logging.
+
+### modnoteset nonauthoredits
+
+* Usage: `!modnoteset nonauthoredits <toggle>`
+* Aliases: `nae`
+
+Allow any moderator to edit notes, regardless of who authored it\
+\
+**Arguments**\
+\- toggle Whether moderators other than the author can edit notes.
+
+## modnote
+
+* Usage: `!modnote <user> <note>`
+* Restricted to: `MOD`
+* Aliases: `mnote`
+* Checks: `server_only`
+
+Create a note for a user. This user cannot be a bot.\
+\
+If enabled this will also log to the modlog.\
+\
+**Arguments**\
+\- user A non-bot user to log for.\
+\- note The note to add to them.
+
+### modnote list
+
+* Usage: `!modnote list <user>`
+
+List the notes on a certain user.\
+\
+This user cannot be a bot.\
+\
+**Arguments**\
+\- user The user to view notes of.
+
+### modnote edit
+
+* Usage: `!modnote edit <user> <index> <note>`
+
+Edit a note on a user. This user cannot be a bot.\
+\
+**Arguments**\
+\- user The user to edit a note on. This user cannot be a bot.\
+\- index The index of the reason to edit.\
+\- note The new note.
+
+### modnote remove
+
+* Usage: `!modnote remove <user> <index>`
+
+Remove a note from a user. This user cannot be a bot.\
+\
+**Arguments**\
+\- user The user to remove a note from.\
+\- index The index of the note to remove.
+
+### modnote listall
+
+* Usage: `!modnote listall`
+
+List all the members with notes in this server
