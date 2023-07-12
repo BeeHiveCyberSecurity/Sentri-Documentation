@@ -29,3 +29,5 @@ On this documentation site, you will find everything you need to get started wit
 At BeeHive, we value our community and are always striving to make our products better. That's why we encourage you to provide us with feedback and suggestions for improvement. After all, we want to ensure that Sentri is meeting your needs and exceeding your expectations. If something doesn't seem to be functioning correctly, please let us know so we can repair it. The sooner we know, the sooner things are back working properly. To get in touch, simply submit a ticket using the `Support` Tab!
 
 Thank you for choosing Sentri, and we hope you find our documentation site helpful!
+
+{% @mailchimp/mailchimpSubscribe cta="Get periodic updates about Sentri" %}
