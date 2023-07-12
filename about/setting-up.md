@@ -13,7 +13,7 @@ While Sentri doesn't **require** `Administrator`, it's a security bot - it asks 
 {% endhint %}
 
 {% hint style="info" %}
-After invite, you'll need to adjust the role for Discord hierarchy sake. Do so as follows.
+After invite, you'll need to adjust Sentri's role position for the sake of Discord moderative hierarchy.
 
 `MOVE THE SENTRI INTEGRATION ROLE JUST ABOVE THE HIGHEST ROLE THAT YOU WOULD LIKE SENTRI TO MODERATE`
 {% endhint %}
