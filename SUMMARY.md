@@ -43,6 +43,7 @@
 * [🔍 Search](modules/search.md)
 * [🔃 Server Management](modules/server-management.md)
 * [🕐 Timeout](modules/timeout.md)
+* [⌛ Time Channels](modules/time-channels.md)
 * [🛄 Translate](modules/translate.md)
 * [✅ Verifyer](modules/verifyer.md)
 * [⚠ Warnings](modules/warnings.md)
