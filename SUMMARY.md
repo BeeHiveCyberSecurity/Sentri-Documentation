@@ -10,6 +10,7 @@
 * [🎟 Admin](modules/admin.md)
 * [🐟 AntiPhishing](modules/antiphishing.md)
 * [🛡 Defender](modules/defender/README.md)
+  * [🤖 Commands](modules/defender/commands.md)
   * [👋 Introduction](modules/defender/introduction.md)
   * [⚙ Configuration](modules/defender/configuration.md)
   * [🚨 Warden](modules/defender/warden/README.md)
