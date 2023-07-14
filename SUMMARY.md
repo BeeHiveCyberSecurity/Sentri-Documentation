@@ -38,6 +38,7 @@
 * [📜 Logging](modules/logging.md)
 * [🎧 Music](modules/music.md)
 * [⚒ Mod](modules/mod.md)
+* [🔳 Modals](modules/modals.md)
 * [🔇 Mutes](modules/mutes.md)
 * [🔓 Permissions](modules/permissions.md)
 * [📔 Polls](modules/polls.md)
