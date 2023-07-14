@@ -10,6 +10,7 @@
 * [🎟 Admin](modules/admin.md)
 * [👮 AltDentification](modules/altdentification.md)
 * [🐟 AntiPhishing](modules/antiphishing.md)
+* [🔗 AntiLink](modules/antilink.md)
 * [☢ AntiNuke](modules/antinuke.md)
 * [🏒 AutoDisconnect](modules/autodisconnect.md)
 * [🎉 Birthdays](modules/birthdays.md)
