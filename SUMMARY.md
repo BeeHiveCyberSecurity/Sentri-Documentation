@@ -25,6 +25,7 @@
 * [📚 Dictionary](modules/dictionary.md)
 * [⏮ DISBOARD](modules/disboard.md)
 * [🟢 Embed Designer](modules/embed-designer.md)
+* [🍋 Emoji AI](modules/emoji-ai.md)
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🎉 Giveaways](modules/giveaways.md)
