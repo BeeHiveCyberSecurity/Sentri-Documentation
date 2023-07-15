@@ -12,6 +12,7 @@
 * [🐟 AntiPhishing](modules/antiphishing.md)
 * [🔗 AntiLink](modules/antilink.md)
 * [☢ AntiNuke](modules/antinuke.md)
+* [🔆 AntiRichPresence](modules/antirichpresence.md)
 * [🏒 AutoDisconnect](modules/autodisconnect.md)
 * [🎉 Birthdays](modules/birthdays.md)
 * [🏧 Calculator](modules/calculator.md)
