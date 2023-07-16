@@ -80,13 +80,21 @@ The server owner can access all commands on his guild, except the global ones or
 
 #### Administrator
 
-The administrator is defined by its roles. You can set multiple admin roles with the `[p]set roles` commands.
+The administrator is defined by its roles. You can set multiple admin roles with the `!set roles` commands.
 
-For example, in the mod cog, an admin can use the `[p]modset` command which defines the cog settings.
+For example, in the mod cog, an admin can use the `!modset` command which defines the cog settings.
 
 #### Moderator
 
-A moderator is a step above the average users. You can set multiple moderator roles with the `[p]set roles addmodrole` and `[p]set roles removemodrole` commands.
+A moderator is a step above the average users. You can set multiple moderator roles with the !`set roles addmodrole` and !`set roles removemodrole` commands.
 
-For example, in the filter cog, a mod will be able to use the various commands under `[p]filter` (such as adding and removing filtered words), but they will not be able to modify the cog settings with the `[p]filterset` command.
+For example, in the filter cog, a mod will be able to use the various commands under `!filter` (such as adding and removing filtered words), but they will not be able to modify the cog settings with the `!filterset` command.
+
+
+
+### Updates
+
+Sentri's updated frequently with new and improved features! Thus, it's easy to sometimes miss out on changes we've made. However, we also solved our own problem of creation with update alerts! While not required, we **highly recommend** opting into update alerts, so we have a way to notify you of new, improved, or potentially leaving-soon features.&#x20;
+
+To do so, run `!updatefeed #tagthechannelhere` in the channel you would like for Sentri to send it's update alerts to. Note that in order to be able to do this, Sentri needs to be able to access the channel, and send messages and embeds in the channel.
 
