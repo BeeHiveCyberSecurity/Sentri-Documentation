@@ -4,7 +4,7 @@ description: Get started configuring Sentri to serve your staff and userbase!
 
 # 😨 Setting Up
 
-#### Inviting Sentri
+## Inviting Sentri
 
 First, you'll need to invite Sentri. That's easy enough, just click [here!](https://discord.com/oauth2/authorize?client\_id=1095981492884209804\&scope=bot\&permissions=8)
 
@@ -66,7 +66,7 @@ Help also shows **command groups**. They are group of commands. To get the descr
 
 When using subcommands, you also need to specify the command group. As an example, `cleanup` has 6 subcommands. If you want to use one of them, do: `[p]cleanup messages 10`
 
-### Permissions
+## Permissions
 
 Sentri works with different levels of permissions. Every module defines the level of permission needed for a command.
 
@@ -74,17 +74,17 @@ Sentri works with different levels of permissions. Every module defines the leve
 Permissions configuration is **REQUIRED** for Sentri to function properly. Sentri will **NOT** assume any permissions you've previously given a user are intended. A server owner **MUST** specify a Moderator-level and Administrator-level role for proper function and usage.
 {% endhint %}
 
-#### Server owner
+### Server owner
 
 The server owner can access all commands on his guild, except the global ones or those that can interact with system files (available for the bot owner).
 
-#### Administrator
+### Administrator
 
 The administrator is defined by its roles. You can set multiple admin roles with the `!set roles` commands.
 
 For example, in the mod cog, an admin can use the `!modset` command which defines the cog settings.
 
-#### Moderator
+### Moderator
 
 A moderator is a step above the average users. You can set multiple moderator roles with the !`set roles addmodrole` and !`set roles removemodrole` commands.
 
@@ -92,7 +92,7 @@ For example, in the filter cog, a mod will be able to use the various commands u
 
 
 
-### Updates
+## Updates
 
 Sentri's updated frequently with new and improved features! Thus, it's easy to sometimes miss out on changes we've made. However, we also solved our own problem of creation with update alerts! While not required, we **highly recommend** opting into update alerts, so we have a way to notify you of new, improved, or potentially leaving-soon features.&#x20;
 
