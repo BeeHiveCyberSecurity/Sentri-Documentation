@@ -57,6 +57,7 @@
 * [⌛ Time Channels](modules/time-channels.md)
 * [🎫 Ticketing](modules/ticketing.md)
 * [🛄 Translate](modules/translate.md)
+* [🔘 URL Buttons](modules/url-buttons.md)
 * [✅ Verifyer](modules/verifyer.md)
 * [⚠ Warnings](modules/warnings.md)
 * [👋 Welcomer](modules/welcomer.md)
