@@ -12,4 +12,4 @@ description: >-
 * Slash Usage: `/calculate [calculation]`
 * Aliases: `calc`
 
-Calculate a simple expression.
+Calculate a simple expression. Run this command with no input to generate a freehand calculator with buttons.&#x20;
