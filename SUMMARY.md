@@ -17,6 +17,7 @@
 * [🎉 Birthdays](modules/birthdays.md)
 * [🏧 Calculator](modules/calculator.md)
 * [🧹 Cleanup](modules/cleanup.md)
+* [🔘 Command Buttons](modules/command-buttons.md)
 * [🛡 Defender](modules/defender/README.md)
   * [👋 Introduction](modules/defender/introduction/README.md)
     * [💬 Chat Monitoring](modules/defender/introduction/chat-monitoring.md)
