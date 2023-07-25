@@ -4,6 +4,10 @@ description: Create embeds using buttons, modals and dropdowns!
 
 # 🟢 Embed Designer
 
+{% hint style="info" %}
+You can import an embed already sent by providing it's Message ID
+{% endhint %}
+
 ## embedcreate
 
 * Usage: `!embedcreate [embed_message=None]`
@@ -16,3 +20,6 @@ Create an embed.\
 
 \
 If supplied, the embed creator will use the message's first embed as the opening template.
+
+
+
