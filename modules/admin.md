@@ -34,17 +34,6 @@ If user is left blank it defaults to the author of the command.
 
 Edit role settings.
 
-### editrole name
-
-* Usage: `!editrole name <role> <name>`
-
-Edit a role's name.\
-\
-Use double quotes if the role or the name contain spaces.\
-\
-Example:\
-!editrole name "The Transistor" Test
-
 ### editrole colour
 
 * Usage: `!editrole colour <role> <value>`
@@ -59,6 +48,17 @@ Colour must be in hexadecimal format.\
 Examples:\
 !editrole colour "The Transistor" #ff0000\
 !editrole colour Test #ff9900
+
+### editrole name
+
+* Usage: `!editrole name <role> <name>`
+
+Edit a role's name.\
+\
+Use double quotes if the role or the name contain spaces.\
+\
+Example:\
+!editrole name "The Transistor" Test
 
 ## selfrole
 
@@ -83,6 +83,12 @@ Lists all available selfroles.
 
 Manage selfroles.
 
+### selfroleset clear
+
+* Usage: `!selfroleset clear`
+
+Clear the list of available selfroles for this server.
+
 ### selfroleset add
 
 * Usage: `!selfroleset add <roles>`
@@ -98,9 +104,3 @@ NOTE: The role is case sensitive!
 Remove a role, or a selection of roles, from the list of available selfroles.\
 \
 NOTE: The role is case sensitive!
-
-### selfroleset clear
-
-* Usage: `!selfroleset clear`
-
-Clear the list of available selfroles for this server.
