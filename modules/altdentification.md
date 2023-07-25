@@ -4,7 +4,7 @@ description: Check new users with AltDentifier API
 
 # 👮 AltDentification
 
-### altcheck
+## altcheck
 
 * Usage: `!altcheck [member]`
 * Restricted to: `MOD`
@@ -27,6 +27,13 @@ Manage AltDentifier Settings.
 
 Remove a user from the AltDentifier whitelist.
 
+### altset whitelist
+
+* Usage: `!altset whitelist <user_id>`
+* Aliases: `wl`
+
+Whitelist a user from AltDentifier actions.
+
 ### altset channel
 
 * Usage: `!altset channel [channel=None]`
@@ -40,13 +47,6 @@ This also works as a toggle, so if no channel is provided, it will disable join 
 * Usage: `!altset settings`
 
 View AltDentifier Settings.
-
-### altset whitelist
-
-* Usage: `!altset whitelist <user_id>`
-* Aliases: `wl`
-
-Whitelist a user from AltDentifier actions.
 
 ### altset action
 
