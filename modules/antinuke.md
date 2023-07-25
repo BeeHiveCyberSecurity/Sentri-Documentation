@@ -8,24 +8,55 @@ description: Prevent staff members from destroying what you've worked hard to bu
 
 * Usage: `!nonuke`
 * Restricted to: `GUILD_OWNER`
-* Checks: `server_only`\
-  \
-  Monitors the following events:\
-  Kicks & Bans\
-  Channel Creation/Edit/Deletion\
-  Role Creation/Edit/Deletion\
-  \
-  Set a cooldown(in seconds)\
-  Set an overload count(X events in X seconds)\
-  Set an action(kick, ban, strip, notify)\
-  \
-  If a user or bot exceeds X mod events within X seconds, the set action will be performed
+* Checks: `server_only`
 
-### nonuke logchannel
+Anti-Nuke System for lazy server owners!\
+\
+Monitors the following events:\
+Kicks & Bans\
+Channel Creation/Edit/Deletion\
+Role Creation/Edit/Deletion\
+\
+Set a cooldown(in seconds)\
+Set an overload count(X events in X seconds)\
+Set an action(kick, ban, strip, notify)\
+\
+If a user or bot exceeds X mod events within X seconds, the set action will be performed
 
-* Usage: `!nonuke logchannel <channel>`
+### nonuke whitelist
 
-Set the log channel for Anti-Nuke kicks
+* Usage: `!nonuke whitelist <user>`
+
+Add/Remove users from the whitelist
+
+### nonuke view
+
+* Usage: `!nonuke view`
+
+View the NoNuke settings
+
+### nonuke enable
+
+* Usage: `!nonuke enable`
+
+Enable/Disable the NoNuke system
+
+### nonuke cooldown
+
+* Usage: `!nonuke cooldown <cooldown>`
+
+Cooldown (in seconds) for NoNuke to trigger
+
+### nonuke overload
+
+* Usage: `!nonuke overload <overload>`
+
+How many mod actions can be done within the set cooldown\
+\
+**Mod actions include:**\
+Kicks & Bans\
+Channel Creation/Edit/Deletion\
+Role Creation/Edit/Deletion
 
 ### nonuke ignorebots
 
@@ -36,12 +67,6 @@ Toggle whether other bots are ignored\
 **NOTE:** Bot specific roles (the role created when the bot joins) cannot be removed.\
 If NoNuke is set to strip roles, and a bot triggers it while having an integrated role, NoNuke will fail\
 to remove the role from it.
-
-### nonuke whitelist
-
-* Usage: `!nonuke whitelist <user>`
-
-Add/Remove users from the whitelist
 
 ### nonuke action
 
@@ -55,37 +80,14 @@ ban - ban the user\
 strip - strip all roles with permissions from user\
 notify - just sends a report to the log channel
 
-### nonuke view
+### nonuke logchannel
 
-* Usage: `!nonuke view`
+* Usage: `!nonuke logchannel <channel>`
 
-View the NoNuke settings
+Set the log channel for Anti-Nuke kicks
 
 ### nonuke dm
 
 * Usage: `!nonuke dm`
 
 Toggle whether the bot sends the user a DM when a kick or ban action is performed
-
-### nonuke overload
-
-* Usage: `!nonuke overload <overload>`
-
-How many mod actions can be done within the set cooldown\
-\
-**Mod actions include:**\
-Kicks & Bans\
-Channel Creation/Edit/Deletion\
-Role Creation/Edit/Deletion
-
-### nonuke enable
-
-* Usage: `!nonuke enable`
-
-Enable/Disable the NoNuke system
-
-### nonuke cooldown
-
-* Usage: `!nonuke cooldown <cooldown>`
-
-Cooldown (in seconds) for NoNuke to trigger
