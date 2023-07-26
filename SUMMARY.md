@@ -8,6 +8,7 @@
 ## 🗃 Modules
 
 * [🎟 Admin](modules/admin.md)
+* [🧠 AI User](modules/ai-user.md)
 * [👮 AltDentification](modules/altdentification.md)
 * [🐟 AntiPhishing](modules/antiphishing.md)
 * [🔗 AntiLink](modules/antilink.md)
@@ -36,7 +37,6 @@
 * [🎉 Giveaways](modules/giveaways.md)
 * [ℹ Info Channels](modules/info-channels.md)
 * [💠 Invites](modules/invites.md)
-* [🧠 Language AI](modules/language-ai.md)
 * [↗ Leveling](modules/leveling.md)
 * [📜 Logging](modules/logging.md)
 * [🎧 Music](modules/music.md)
