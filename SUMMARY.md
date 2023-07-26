@@ -28,6 +28,7 @@
     * [Example Rules](modules/defender/warden/example-rules.md)
 * [📚 Dictionary](modules/dictionary.md)
 * [⏮ DISBOARD](modules/disboard.md)
+* [💰 Economy](modules/economy.md)
 * [🟢 Embed Designer](modules/embed-designer.md)
 * [🍋 Emoji AI](modules/emoji-ai.md)
 * [📁 Filter](modules/filter.md)
