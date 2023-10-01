@@ -4,11 +4,9 @@ description: Create user reports that server staff can respond to.
 
 # 📧 Reports
 
-### Usage[¶](broken-reference)
-
-Users can open reports using `[p]report`. These are then sent to a channel in the server for staff, and the report creator gets a DM. Both can be used to communicate.
-
-### Commands[¶](broken-reference)
+Users can open reports using `[p]report`. These are then sent\
+to a channel in the server for staff, and the report creator\
+gets a DM. Both can be used to communicate.
 
 ## reportset
 
@@ -18,13 +16,6 @@ Users can open reports using `[p]report`. These are then sent to a channel in th
 
 Manage Reports.
 
-### reportset output
-
-* Usage: `!reportset output <channel>`
-* Restricted to: `ADMIN`
-
-Set the channel where reports will be sent.
-
 ### reportset toggle
 
 * Usage: `!reportset toggle`
@@ -32,6 +23,13 @@ Set the channel where reports will be sent.
 * Aliases: `toggleactive`
 
 Enable or disable reporting for this server.
+
+### reportset output
+
+* Usage: `!reportset output <channel>`
+* Restricted to: `ADMIN`
+
+Set the channel where reports will be sent.
 
 ## report
 
