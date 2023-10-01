@@ -11,12 +11,17 @@ description: Track statistics of select invites
 
 Invite information.
 
-### invites listpin
+### invites pin
 
-* Usage: `!invites listpin`
-* Aliases: `listpinned`
+* Usage: `!invites pin <invite_code_or_url>`
 
-List pinned invites.
+Pin an invite to the leaderboard.
+
+### invites unpin
+
+* Usage: `!invites unpin <invite_code_or_url>`
+
+Unpin an invite from the leaderboard.
 
 ### invites leaderboard
 
@@ -30,14 +35,9 @@ List pinned invites or all invites in a leaderboard style.
 
 Show the stats for an invite, or show all invites.
 
-### invites unpin
+### invites listpin
 
-* Usage: `!invites unpin <invite_code_or_url>`
+* Usage: `!invites listpin`
+* Aliases: `listpinned`
 
-Unpin an invite from the leaderboard.
-
-### invites pin
-
-* Usage: `!invites pin <invite_code_or_url>`
-
-Pin an invite to the leaderboard.
+List pinned invites.
