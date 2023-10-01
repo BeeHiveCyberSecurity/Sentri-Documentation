@@ -33,6 +33,7 @@
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🎉 Giveaways](modules/giveaways.md)
+* [🔢 Guild Stats](modules/guild-stats.md)
 * [ℹ Info Channels](modules/info-channels.md)
 * [💠 Invites](modules/invites.md)
 * [↗ Leveling](modules/leveling.md)
