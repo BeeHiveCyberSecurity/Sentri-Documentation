@@ -413,16 +413,15 @@ If enabled this will also log to the modlog.\
 \- user A non-bot user to log for.\
 \- note The note to add to them.
 
-### modnote list
+### modnote remove
 
-* Usage: `!modnote list <user>`
+* Usage: `!modnote remove <user> <index>`
 
-List the notes on a certain user.\
-\
-This user cannot be a bot.\
+Remove a note from a user. This user cannot be a bot.\
 \
 **Arguments**\
-\- user The user to view notes of.
+\- user The user to remove a note from.\
+\- index The index of the note to remove.
 
 ### modnote edit
 
@@ -435,15 +434,16 @@ Edit a note on a user. This user cannot be a bot.\
 \- index The index of the reason to edit.\
 \- note The new note.
 
-### modnote remove
+### modnote list
 
-* Usage: `!modnote remove <user> <index>`
+* Usage: `!modnote list <user>`
 
-Remove a note from a user. This user cannot be a bot.\
+List the notes on a certain user.\
+\
+This user cannot be a bot.\
 \
 **Arguments**\
-\- user The user to remove a note from.\
-\- index The index of the note to remove.
+\- user The user to view notes of.
 
 ### modnote listall
 
