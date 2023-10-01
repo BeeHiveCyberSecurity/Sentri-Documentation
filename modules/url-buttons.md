@@ -36,9 +36,7 @@ Clear all url-buttons for a message.
 * Slash Usage: `/urlbuttons bulk <message> <url_buttons>`
 * Checks: `server_only`
 
-Add a url-button for a message.\
-\
-!urlbuttons bulk :red\_circle:|[https://github.com/Cog-Creators/Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) :smiley:|[https://github.com/Cog-Creators/Red-SmileyBot](https://github.com/Cog-Creators/Red-SmileyBot) :green\_circle:|[https://github.com/Cog-Creators/Green-DiscordBot](https://github.com/Cog-Creators/Green-DiscordBot)
+Add a url-button for a message.
 
 ### urlbuttons remove (Hybrid Command)
 
