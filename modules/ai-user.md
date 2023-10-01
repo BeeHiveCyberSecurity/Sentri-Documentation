@@ -20,16 +20,6 @@ Talk directly to this bot's AI. Ask it anything you want!
 
 Utilize OpenAI to reply to messages and images in approved channels and by opt-in users
 
-### aiuser forget
-
-* Usage: `!aiuser forget`
-* Aliases: `lobotomize`
-
-Forces the bot to forget the current conversation up to this point\
-\
-This is useful if the LLM is stuck doing unwanted behaviour or giving undesirable results.\
-See !aiuser triggers public\_forget to allow non-admins to use this command.
-
 ### aiuser config
 
 * Usage: `!aiuser config`
@@ -49,6 +39,14 @@ Remove a channel from the whitelist\
 **Arguments**\
 \- channel A mention of the channel
 
+### aiuser optout
+
+* Usage: `!aiuser optout`
+
+Opt out of sending your messages / images to OpenAI or another endpoint (bot-wide)\
+\
+This will prevent the bot from replying to your messages or using your messages.
+
 ### aiuser response
 
 * Usage: `!aiuser response`
@@ -57,6 +55,41 @@ Remove a channel from the whitelist\
 Change bot response settings\
 \
 (All subcommands are per server)
+
+#### aiuser response removelist
+
+* Usage: `!aiuser response removelist`
+* Restricted to: `ADMIN`
+
+Any string in a generated response matching these regex patterns will be removed
+
+**aiuser response removelist add**
+
+* Usage: `!aiuser response removelist add <regex_pattern>`
+* Restricted to: `ADMIN`
+
+Add a regex pattern to the removelist
+
+**aiuser response removelist show**
+
+* Usage: `!aiuser response removelist show`
+* Restricted to: `ADMIN`
+
+Show the current regex patterns in the removelist
+
+**aiuser response removelist reset**
+
+* Usage: `!aiuser response removelist reset`
+* Restricted to: `ADMIN`
+
+Reset the removelist to default
+
+**aiuser response removelist remove**
+
+* Usage: `!aiuser response removelist remove <regex_pattern>`
+* Restricted to: `ADMIN`
+
+Remove a regex pattern from the removelist
 
 #### aiuser response weights
 
@@ -102,41 +135,6 @@ Removes weight for a specific word\
 _Arguments_\
 \- word The word to remove
 
-#### aiuser response removelist
-
-* Usage: `!aiuser response removelist`
-* Restricted to: `ADMIN`
-
-Any string in a generated response matching these regex patterns will be removed
-
-**aiuser response removelist reset**
-
-* Usage: `!aiuser response removelist reset`
-* Restricted to: `ADMIN`
-
-Reset the removelist to default
-
-**aiuser response removelist show**
-
-* Usage: `!aiuser response removelist show`
-* Restricted to: `ADMIN`
-
-Show the current regex patterns in the removelist
-
-**aiuser response removelist remove**
-
-* Usage: `!aiuser response removelist remove <regex_pattern>`
-* Restricted to: `ADMIN`
-
-Remove a regex pattern from the removelist
-
-**aiuser response removelist add**
-
-* Usage: `!aiuser response removelist add <regex_pattern>`
-* Restricted to: `ADMIN`
-
-Add a regex pattern to the removelist
-
 ### aiuser optinbydefault
 
 * Usage: `!aiuser optinbydefault`
@@ -146,6 +144,55 @@ Toggles whether users are opted in by default in this server\
 \
 This command is disabled for servers with more than 150 members.
 
+### aiuser prompt
+
+* Usage: `!aiuser prompt`
+* Restricted to: `ADMIN`
+
+Change the prompt settings for the current server\
+\
+(All subcommands are per server)
+
+#### aiuser prompt preset
+
+* Usage: `!aiuser prompt preset <preset>`
+* Restricted to: `ADMIN`
+
+Set/list preset prompts\
+\
+Use !aiuser prompt preset list to see available presets.\
+\
+**Arguments**\
+\- preset The preset to use
+
+#### aiuser prompt show
+
+* Usage: `!aiuser prompt show <mention>`
+
+Show the prompt for the server (or provided mention)\
+**Arguments**\
+\- mention _(Optional)_ Mention of user or channel
+
+**aiuser prompt show members**
+
+* Usage: `!aiuser prompt show members`
+* Aliases: `users`
+
+Show all users with custom prompts
+
+**aiuser prompt show server**
+
+* Usage: `!aiuser prompt show server`
+* Aliases: `server`
+
+Show the current server prompt
+
+**aiuser prompt show channels**
+
+* Usage: `!aiuser prompt show channels`
+
+Show all channels with custom prompts
+
 ### aiuser trigger
 
 * Usage: `!aiuser trigger`
@@ -153,13 +200,6 @@ This command is disabled for servers with more than 150 members.
 Configure trigger settings for the bot to respond to\
 \
 (All subcommands per server)
-
-#### aiuser trigger public\_forget
-
-* Usage: `!aiuser trigger public_forget`
-* Restricted to: `ADMIN`
-
-Toggles whether anyone can use the forget command, or only moderators
 
 #### aiuser trigger random
 
@@ -169,6 +209,7 @@ Toggles whether anyone can use the forget command, or only moderators
 Configure the random trigger\
 \
 Every 33 minutes, a RNG roll will determine if a random message will be sent using a list of topics as a prompt.\
+The chosen channel must have a hour pass without a message sent in it for a random message to be sent.\
 \
 (All subcommands per server)
 
@@ -211,13 +252,22 @@ Lists topics to used in random messages
 
 Messages matching this regex won't be replied to or seen, by the bot
 
-### aiuser optout
+#### aiuser trigger public\_forget
 
-* Usage: `!aiuser optout`
+* Usage: `!aiuser trigger public_forget`
+* Restricted to: `ADMIN`
 
-Opt out of sending your messages / images to OpenAI or another endpoint (bot-wide)\
+Toggles whether anyone can use the forget command, or only moderators
+
+### aiuser forget
+
+* Usage: `!aiuser forget`
+* Aliases: `lobotomize`
+
+Forces the bot to forget the current conversation up to this point\
 \
-This will prevent the bot from replying to your messages or using your messages.
+This is useful if the LLM is stuck doing unwanted behaviour or giving undesirable results.\
+See !aiuser triggers public\_forget to allow non-admins to use this command.
 
 ### aiuser optin
 
@@ -226,52 +276,3 @@ This will prevent the bot from replying to your messages or using your messages.
 Opt in of sending your messages / images to OpenAI or another endpoint (bot-wide)\
 \
 This will allow the bot to reply to your messages or using your messages.
-
-### aiuser prompt
-
-* Usage: `!aiuser prompt`
-* Restricted to: `ADMIN`
-
-Change the prompt settings for the current server\
-\
-(All subcommands are per server)
-
-#### aiuser prompt show
-
-* Usage: `!aiuser prompt show <mention>`
-
-Show the prompt for the server (or provided mention)\
-**Arguments**\
-\- mention _(Optional)_ Mention of user or channel
-
-**aiuser prompt show server**
-
-* Usage: `!aiuser prompt show server`
-* Aliases: `server`
-
-Show the current server prompt
-
-**aiuser prompt show channels**
-
-* Usage: `!aiuser prompt show channels`
-
-Show all channels with custom prompts
-
-**aiuser prompt show members**
-
-* Usage: `!aiuser prompt show members`
-* Aliases: `users`
-
-Show all users with custom prompts
-
-#### aiuser prompt preset
-
-* Usage: `!aiuser prompt preset <preset>`
-* Restricted to: `ADMIN`
-
-Set/list preset prompts\
-\
-Use !aiuser prompt preset list to see available presets.\
-\
-**Arguments**\
-\- preset The preset to use
