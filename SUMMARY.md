@@ -30,6 +30,7 @@
 * [⏮ DISBOARD](modules/disboard.md)
 * [💰 Economy](modules/economy.md)
 * [🟢 Embed Designer](modules/embed-designer.md)
+* [📅 Events](modules/events.md)
 * [📁 Filter](modules/filter.md)
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🎉 Giveaways](modules/giveaways.md)
