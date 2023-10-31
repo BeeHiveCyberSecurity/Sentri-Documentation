@@ -33,6 +33,7 @@
 * [🟢 Embed Designer](modules/embed-designer.md)
 * [📅 Events](modules/events.md)
 * [📁 Filter](modules/filter.md)
+* [🤮 Freeloader Mode](modules/freeloader-mode.md)
 * [🎨 Generative AI](modules/generative-ai.md)
 * [🎉 Giveaways](modules/giveaways.md)
 * [🔢 Guild Stats](modules/guild-stats.md)
