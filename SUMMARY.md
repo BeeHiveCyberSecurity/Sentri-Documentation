@@ -53,6 +53,7 @@
 * [🔃 Server Management](modules/server-management.md)
 * [🌟 Starboard](modules/starboard.md)
 * [📸 Streams](modules/streams.md)
+* [⚡ Tags](modules/tags.md)
 * [🕐 Timeout](modules/timeout.md)
 * [⌛ Time Channels](modules/time-channels.md)
 * [🎫 Ticketing](modules/ticketing.md)
