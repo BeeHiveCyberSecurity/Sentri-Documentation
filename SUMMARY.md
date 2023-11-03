@@ -16,6 +16,7 @@
 * [🏒 AutoDisconnect](modules/autodisconnect.md)
 * [🎉 Birthdays](modules/birthdays.md)
 * [🏧 Calculator](modules/calculator.md)
+* [📅 Calendar](modules/calendar.md)
 * [🎒 Cartographer](modules/cartographer.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [🔘 Command Buttons](modules/command-buttons.md)
