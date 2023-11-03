@@ -52,6 +52,7 @@
 * [📜 Simplified ModLog](modules/simplified-modlog.md)
 * [🔃 Server Management](modules/server-management.md)
 * [🌟 Starboard](modules/starboard.md)
+* [Status](modules/status.md)
 * [📸 Streams](modules/streams.md)
 * [⚡ Tags](modules/tags.md)
 * [🕐 Timeout](modules/timeout.md)
