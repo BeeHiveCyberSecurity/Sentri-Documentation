@@ -2,7 +2,7 @@
 description: Automatically check for status updates.
 ---
 
-# Status
+# ℹ Status
 
 When there is one, it will send the update to all channels that\
 have registered to recieve updates from that service.\
