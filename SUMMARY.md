@@ -46,6 +46,7 @@
 * [⚒ Mod](modules/mod.md)
 * [🔳 Modals](modules/modals.md)
 * [🔇 Mutes](modules/mutes.md)
+* [🌊 OpenSea](modules/opensea.md)
 * [🔓 Permissions](modules/permissions.md)
 * [📔 Polls](modules/polls.md)
 * [📧 Reports](modules/reports.md)
