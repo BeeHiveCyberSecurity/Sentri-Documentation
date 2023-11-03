@@ -19,6 +19,7 @@
 * [🎒 Cartographer](modules/cartographer.md)
 * [🧹 Cleanup](modules/cleanup.md)
 * [🔘 Command Buttons](modules/command-buttons.md)
+* [🍪 Colors](modules/colors.md)
 * [🛡 Defender](modules/defender/README.md)
   * [👋 Introduction](modules/defender/introduction/README.md)
     * [💬 Chat Monitoring](modules/defender/introduction/chat-monitoring.md)
