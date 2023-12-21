@@ -45,55 +45,11 @@ Close your ticket\
 
 Base support ticket settings
 
-### tickets usethreads
+### tickets row
 
-* Usage: `!tickets usethreads <panel_name>`
+* Usage: `!tickets row <panel_name> <row>`
 
-Toggle whether a certain panel uses threads or channels
-
-### tickets closemodal
-
-* Usage: `!tickets closemodal <panel_name>`
-
-Throw a modal when the close button is clicked to enter a reason
-
-### tickets blacklist
-
-* Usage: `!tickets blacklist <user_or_role>`
-
-Add/Remove users or roles from the blacklist\
-\
-Users and roles in the blacklist will not be able to create a ticket
-
-### tickets embed
-
-* Usage: `!tickets embed <color> <channel> <title> <description>`
-
-Create an embed for ticket panel buttons to be added to
-
-### tickets viewmodal
-
-* Usage: `!tickets viewmodal <panel_name>`
-
-View/Delete a ticket message for a support ticket panel
-
-### tickets logchannel
-
-* Usage: `!tickets logchannel <panel_name> <channel>`
-
-Set the logging channel for each panel's tickets
-
-### tickets updatemessage
-
-* Usage: `!tickets updatemessage <source> <target>`
-
-Update a message with another message (Target gets updated using the source)
-
-### tickets cleanup
-
-* Usage: `!tickets cleanup`
-
-Cleanup tickets that no longer exist
+Set the row of a panel's button (0 - 4)
 
 ### tickets addmodal
 
@@ -115,52 +71,11 @@ it won't be shown in the modal and should not have spaces in it\
 \
 Specify an existing field name to delete a modal field (non-case-sensitive)
 
-### tickets overview
+### tickets selfclose
 
-* Usage: `!tickets overview [channel]`
+* Usage: `!tickets selfclose`
 
-Set a channel for the live overview message\
-\
-The overview message shows all active tickets across all configured panels for a server.
-
-### tickets modaltitle
-
-* Usage: `!tickets modaltitle <panel_name> [title]`
-
-Set a title for a ticket panel's modal
-
-### tickets noresponse
-
-* Usage: `!tickets noresponse <hours>`
-
-Auto-close ticket if opener doesn't say anything after X hours of opening\
-\
-Set to 0 to disable this
-
-### tickets panels
-
-* Usage: `!tickets panels`
-
-View/Delete currently configured support ticket panels
-
-### tickets panelmessage
-
-* Usage: `!tickets panelmessage <panel_name> <message>`
-
-Set the message ID of a ticket panel\
-Run this command in the same channel as the ticket panel message
-
-### tickets selfrename
-
-* Usage: `!tickets selfrename`
-
-(Toggle) If users can rename their own tickets
-
-### tickets viewmessages
-
-* Usage: `!tickets viewmessages <panel_name>`
-
-View/Delete a ticket message for a support ticket panel
+(Toggle) If users can close their own tickets
 
 ### tickets buttontext
 
@@ -168,11 +83,107 @@ View/Delete a ticket message for a support ticket panel
 
 Set the button text for a support ticket panel
 
-### tickets threadclose
+### tickets maxclaims
 
-* Usage: `!tickets threadclose`
+* Usage: `!tickets maxclaims <panel_name> <amount>`
 
-(Toggle) Thread tickets being closed & archived instead of deleted
+Set how many staff members can claim/join a ticket before the join button is disabled (If using threads)
+
+### tickets view
+
+* Usage: `!tickets view`
+
+View support ticket settings
+
+### tickets embed
+
+* Usage: `!tickets embed <color> <channel> <title> <description>`
+
+Create an embed for ticket panel buttons to be added to
+
+### tickets cleanup
+
+* Usage: `!tickets cleanup`
+
+Cleanup tickets that no longer exist
+
+### tickets usethreads
+
+* Usage: `!tickets usethreads <panel_name>`
+
+Toggle whether a certain panel uses threads or channels
+
+### tickets addpanel
+
+* Usage: `!tickets addpanel <panel_name>`
+
+Add a support ticket panel
+
+### tickets blacklist
+
+* Usage: `!tickets blacklist <user_or_role>`
+
+Add/Remove users or roles from the blacklist\
+\
+Users and roles in the blacklist will not be able to create a ticket
+
+### tickets buttoncolor
+
+* Usage: `!tickets buttoncolor <panel_name> <button_color>`
+
+Set the button color for a support ticket panel
+
+### tickets viewmodal
+
+* Usage: `!tickets viewmodal <panel_name>`
+
+View/Delete a ticket message for a support ticket panel
+
+### tickets selfmanage
+
+* Usage: `!tickets selfmanage`
+
+(Toggle) If users can manage their own tickets\
+\
+Users will be able to add/remove others to their support ticket
+
+### tickets openrole
+
+* Usage: `!tickets openrole <panel_name> <role>`
+
+Add/Remove roles required to open a ticket for a specific panel\
+\
+Specify the same role to remove it
+
+### tickets category
+
+* Usage: `!tickets category <panel_name> <category>`
+
+Set the category ID for a ticket panel
+
+### tickets closemodal
+
+* Usage: `!tickets closemodal <panel_name>`
+
+Throw a modal when the close button is clicked to enter a reason
+
+### tickets maxtickets
+
+* Usage: `!tickets maxtickets <amount>`
+
+Set the max tickets a user can have open at one time of any kind
+
+### tickets dm
+
+* Usage: `!tickets dm`
+
+(Toggle) The bot sending DM's for ticket alerts
+
+### tickets buttonemoji
+
+* Usage: `!tickets buttonemoji <panel_name> <emoji>`
+
+Set the button emoji for a support ticket panel
 
 ### tickets addmessage
 
@@ -187,67 +198,21 @@ You can include any of these in the embed to be replaced by their value when the
 \
 The bot will walk you through a few steps to set up the embed
 
-### tickets category
+### tickets noresponse
 
-* Usage: `!tickets category <panel_name> <category>`
+* Usage: `!tickets noresponse <hours>`
 
-Set the category ID for a ticket panel
-
-### tickets dm
-
-* Usage: `!tickets dm`
-
-(Toggle) The bot sending DM's for ticket alerts
-
-### tickets priority
-
-* Usage: `!tickets priority <panel_name> <priority>`
-
-Set the priority order of a panel's button
-
-### tickets channel
-
-* Usage: `!tickets channel <panel_name> <channel>`
-
-Set the channel ID where a ticket panel is located
-
-### tickets selfclose
-
-* Usage: `!tickets selfclose`
-
-(Toggle) If users can close their own tickets
-
-### tickets maxtickets
-
-* Usage: `!tickets maxtickets <amount>`
-
-Set the max tickets a user can have open at one time of any kind
-
-### tickets buttoncolor
-
-* Usage: `!tickets buttoncolor <panel_name> <button_color>`
-
-Set the button color for a support ticket panel
-
-### tickets selfmanage
-
-* Usage: `!tickets selfmanage`
-
-(Toggle) If users can manage their own tickets\
+Auto-close ticket if opener doesn't say anything after X hours of opening\
 \
-Users will be able to add/remove others to their support ticket
-
-### tickets view
-
-* Usage: `!tickets view`
-
-View support ticket settings
-
-### tickets buttonemoji
-
-* Usage: `!tickets buttonemoji <panel_name> <emoji>`
-
-Set the button emoji for a support ticket panel
+Set to 0 to disable this\
+\
+If using thread tickets, this translates to the thread's "Hide after inactivity" setting.\
+Your options are:\
+\- 1 hour\
+\- 24 hours (1 day)\
+\- 72 hours (3 days)\
+\- 168 hours (1 week)\
+Tickets will default to the closest value you select.
 
 ### tickets autoadd
 
@@ -256,22 +221,6 @@ Set the button emoji for a support ticket panel
 (Toggle) Auto-add support and panel roles to thread tickets\
 \
 Adding a user to a thread pings them, so this is off by default
-
-### tickets row
-
-* Usage: `!tickets row <panel_name> <row>`
-
-Set the row of a panel's button (0 - 4)
-
-### tickets supportrole
-
-* Usage: `!tickets supportrole <role> [mention=False]`
-
-Add/Remove ticket support roles (one at a time)\
-\
-**Optional**: include true for mention to have that role mentioned when a ticket is opened\
-\
-To remove a role, simply run this command with it again to remove it
 
 ### tickets altchannel
 
@@ -285,6 +234,126 @@ If the panel uses channels, this needs to be a category.\
 If the panel is a channel type and a channel is used, the bot will use the category associated with the channel.\
 \
 To remove the alt channel, specify the existing one
+
+### tickets channel
+
+* Usage: `!tickets channel <panel_name> <channel>`
+
+Set the channel ID where a ticket panel is located
+
+### tickets setuphelp
+
+* Usage: `!tickets setuphelp`
+
+Ticket Setup Guide
+
+### tickets logchannel
+
+* Usage: `!tickets logchannel <panel_name> <channel>`
+
+Set the logging channel for each panel's tickets
+
+### tickets supportrole
+
+* Usage: `!tickets supportrole <role> [mention=False]`
+
+Add/Remove ticket support roles (one at a time)\
+\
+**Optional**: include true for mention to have that role mentioned when a ticket is opened\
+\
+To remove a role, simply run this command with it again to remove it
+
+### tickets threadclose
+
+* Usage: `!tickets threadclose`
+
+(Toggle) Thread tickets being closed & archived instead of deleted
+
+### tickets viewmessages
+
+* Usage: `!tickets viewmessages <panel_name>`
+
+View/Delete a ticket message for a support ticket panel
+
+### tickets toggle
+
+* Usage: `!tickets toggle <panel_name>`
+
+Toggle a panel on/off\
+\
+Disabled panels will still show the button but it will be disabled
+
+### tickets overview
+
+* Usage: `!tickets overview [channel]`
+
+Set a channel for the live overview message\
+\
+The overview message shows all active tickets across all configured panels for a server.
+
+### tickets transcript
+
+* Usage: `!tickets transcript`
+
+(Toggle) Ticket transcripts\
+\
+Closed tickets will have their transcripts uploaded to the log channel
+
+### tickets priority
+
+* Usage: `!tickets priority <panel_name> <priority>`
+
+Set the priority order of a panel's button
+
+### tickets panelrole
+
+* Usage: `!tickets panelrole <panel_name> <role> [mention=False]`
+
+Add/Remove roles for a specific panel\
+\
+To remove a role, simply run this command with it again to remove it\
+\
+**Optional**: include true for mention to have that role mentioned when a ticket is opened\
+\
+These roles are a specialized subset of the main support roles.\
+Use this role type if you want to isolate specific groups to a certain panel.
+
+### tickets panelmessage
+
+* Usage: `!tickets panelmessage <panel_name> <message>`
+
+Set the message ID of a ticket panel\
+Run this command in the same channel as the ticket panel message
+
+### tickets modaltitle
+
+* Usage: `!tickets modaltitle <panel_name> [title]`
+
+Set a title for a ticket panel's modal
+
+### tickets selfrename
+
+* Usage: `!tickets selfrename`
+
+(Toggle) If users can rename their own tickets
+
+### tickets updatemessage
+
+* Usage: `!tickets updatemessage <source> <target>`
+
+Update a message with another message (Target gets updated using the source)
+
+### tickets panels
+
+* Usage: `!tickets panels`
+
+View/Delete currently configured support ticket panels
+
+### tickets overviewmention
+
+* Usage: `!tickets overviewmention`
+
+Toggle whether channels are mentioned in the active ticket overview
 
 ### tickets ticketname
 
@@ -302,44 +371,3 @@ You can include the following in the name\
 {time} - hh-mm AM/PM according to bot host system time\
 \
 You can set this to {default} to use default "Ticket-Username
-
-### tickets transcript
-
-* Usage: `!tickets transcript`
-
-(Toggle) Ticket transcripts\
-\
-Closed tickets will have their transcripts uploaded to the log channel
-
-### tickets panelrole
-
-* Usage: `!tickets panelrole <panel_name> <role> [mention=False]`
-
-Add/Remove roles for a specific panel\
-\
-To remove a role, simply run this command with it again to remove it\
-\
-**Optional**: include true for mention to have that role mentioned when a ticket is opened\
-\
-These roles are a specialized subset of the main support roles.\
-Use this role type if you want to isolate specific groups to a certain panel.
-
-### tickets setuphelp
-
-* Usage: `!tickets setuphelp`
-
-Ticket Setup Guide
-
-### tickets openrole
-
-* Usage: `!tickets openrole <panel_name> <role>`
-
-Add/Remove roles required to open a ticket for a specific panel\
-\
-Specify the same role to remove it
-
-### tickets addpanel
-
-* Usage: `!tickets addpanel <panel_name>`
-
-Add a support ticket panel
