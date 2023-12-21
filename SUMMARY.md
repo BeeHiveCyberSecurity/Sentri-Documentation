@@ -33,6 +33,7 @@
 * [⏮ DISBOARD](modules/disboard.md)
 * [💰 Economy](modules/economy.md)
 * [🟢 Embed Designer](modules/embed-designer.md)
+* [🕵 Encoder](modules/encoder.md)
 * [📅 Events](modules/events.md)
 * [📁 Filter](modules/filter.md)
 * [🤮 Freeloader Mode](modules/freeloader-mode.md)
