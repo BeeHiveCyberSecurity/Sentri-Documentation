@@ -16,6 +16,7 @@
 * [🏒 AutoDisconnect](modules/autodisconnect.md)
 * [🎉 Birthdays](modules/birthdays.md)
 * [🏧 Calculator](modules/calculator.md)
+* [🤖 Captcha](modules/captcha.md)
 * [📅 Calendar](modules/calendar.md)
 * [🎒 Cartographer](modules/cartographer.md)
 * [🧹 Cleanup](modules/cleanup.md)
@@ -68,4 +69,3 @@
 * [👋 Welcomer](modules/welcomer.md)
 * [☁ Weather](modules/weather.md)
 * [🪝 Webhooks](modules/webhooks.md)
-* [🤖 Captcha](modules/captcha.md)
