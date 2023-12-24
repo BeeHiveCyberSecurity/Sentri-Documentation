@@ -68,3 +68,4 @@
 * [👋 Welcomer](modules/welcomer.md)
 * [☁ Weather](modules/weather.md)
 * [🪝 Webhooks](modules/webhooks.md)
+* [🤖 Captcha](modules/captcha.md)
