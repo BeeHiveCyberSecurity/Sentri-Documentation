@@ -30,4 +30,4 @@ At BeeHive, we value our community and are always striving to make our products 
 
 Thank you for choosing Sentri, and we hope you find our documentation site helpful!
 
-{% @mailchimp/mailchimpSubscribe cta="Get periodic updates about Sentri" %}
+For more information about Sentri, please visit Sentri's page at [https://www.beehive.systems/sentri](https://www.beehive.systems/sentri)
