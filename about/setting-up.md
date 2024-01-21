@@ -27,7 +27,7 @@ The command you’re going to use the most is **help**. This command will show y
 ```
 
 {% hint style="info" %}
-The help message is generated dynamically and users will only see the commands they can use. If users roles change, they'll see additional commands unlock - equally, removing permissions may remove their ability to use particular commands inside your server. You can change what commands users can use with the permissions module, command is `!permissions`.
+The help message is generated dynamically, and users will only see the commands they can use. If users roles change, they'll see additional commands unlock - equally, removing permissions may remove their ability to use particular commands inside your server. You can change what commands users can use with the permissions module, command is `!permissions`.
 {% endhint %}
 
 
@@ -89,12 +89,4 @@ For example, in the mod cog, an admin can use the `!modset` command which define
 A moderator is a step above the average users. You can set multiple moderator roles with the !`set roles addmodrole` and !`set roles removemodrole` commands.
 
 For example, in the filter cog, a mod will be able to use the various commands under `!filter` (such as adding and removing filtered words), but they will not be able to modify the cog settings with the `!filterset` command.
-
-
-
-## Updates
-
-Sentri's updated frequently with new and improved features! Thus, it's easy to sometimes miss out on changes we've made. However, we also solved our own problem of creation with update alerts! While not required, we **highly recommend** opting into update alerts, so we have a way to notify you of new, improved, or potentially leaving-soon features.&#x20;
-
-To do so, run `!updatefeed #tagthechannelhere` in the channel you would like for Sentri to send it's update alerts to. Note that in order to be able to do this, Sentri needs to be able to access the channel, and send messages and embeds in the channel.
 
