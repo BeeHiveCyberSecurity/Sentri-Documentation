@@ -6,7 +6,7 @@ description: Get started configuring Sentri to serve your staff and userbase!
 
 ## Inviting Sentri
 
-First, you'll need to invite Sentri. That's easy enough, just click [here!](https://discord.com/oauth2/authorize?client\_id=1095981492884209804\&scope=bot\&permissions=8)
+First, you'll need to invite Sentri. That's easy enough, just click [here!](https://discord.com/oauth2/authorize?client\_id=1152805502116429929\&permissions=70368744177655\&redirect\_uri=https%3A%2F%2Fdiscord.gg%2FfVwF6w6QCE\&response\_type=code\&scope=guilds.join%20bot%20guilds%20applications.commands.permissions.update%20applications.entitlements)
 
 {% hint style="warning" %}
 While Sentri doesn't **require** `Administrator`, it's a security bot - it asks for it and more than likely will need it at some point in time. You are welcome to select your own permissions that you feel comfortable with, but, you may then introduce complexities with your own roles system or inadvertently remove a permission that a Sentri feature relies on to protect your server. Customize Sentri's permissions at your own risk.
