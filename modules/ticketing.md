@@ -45,6 +45,29 @@ Close your ticket\
 
 Base support ticket settings
 
+### tickets ticketname
+
+* Usage: `!tickets ticketname <panel_name> <ticket_name>`
+
+Set the default ticket channel name for a panel\
+\
+You can include the following in the name\
+{num} - Ticket number\
+{user} - user's name\
+{displayname} - user's display name\
+{id} - user's ID\
+{shortdate} - mm-dd\
+{longdate} - mm-dd-yyyy\
+{time} - hh-mm AM/PM according to bot host system time\
+\
+You can set this to {default} to use default "Ticket-Username
+
+### tickets embed
+
+* Usage: `!tickets embed <color> <channel> <title> <description>`
+
+Create an embed for ticket panel buttons to be added to
+
 ### tickets row
 
 * Usage: `!tickets row <panel_name> <row>`
@@ -71,11 +94,26 @@ it won't be shown in the modal and should not have spaces in it\
 \
 Specify an existing field name to delete a modal field (non-case-sensitive)
 
+### tickets maxclaims
+
+* Usage: `!tickets maxclaims <panel_name> <amount>`
+
+Set how many staff members can claim/join a ticket before the join button is disabled (If using threads)
+
 ### tickets selfclose
 
 * Usage: `!tickets selfclose`
 
 (Toggle) If users can close their own tickets
+
+### tickets interactivetranscript
+
+* Usage: `!tickets interactivetranscript`
+* Aliases: `intertrans, itrans, and itranscript`
+
+(Toggle) Interactive transcripts\
+\
+Transcripts will be an interactive html file to visualize the conversation from your browser.
 
 ### tickets buttontext
 
@@ -83,23 +121,11 @@ Specify an existing field name to delete a modal field (non-case-sensitive)
 
 Set the button text for a support ticket panel
 
-### tickets maxclaims
-
-* Usage: `!tickets maxclaims <panel_name> <amount>`
-
-Set how many staff members can claim/join a ticket before the join button is disabled (If using threads)
-
 ### tickets view
 
 * Usage: `!tickets view`
 
 View support ticket settings
-
-### tickets embed
-
-* Usage: `!tickets embed <color> <channel> <title> <description>`
-
-Create an embed for ticket panel buttons to be added to
 
 ### tickets cleanup
 
@@ -113,12 +139,6 @@ Cleanup tickets that no longer exist
 
 Toggle whether a certain panel uses threads or channels
 
-### tickets addpanel
-
-* Usage: `!tickets addpanel <panel_name>`
-
-Add a support ticket panel
-
 ### tickets blacklist
 
 * Usage: `!tickets blacklist <user_or_role>`
@@ -126,6 +146,18 @@ Add a support ticket panel
 Add/Remove users or roles from the blacklist\
 \
 Users and roles in the blacklist will not be able to create a ticket
+
+### tickets updatemessage
+
+* Usage: `!tickets updatemessage <source> <target>`
+
+Update a message with another message (Target gets updated using the source)
+
+### tickets addpanel
+
+* Usage: `!tickets addpanel <panel_name>`
+
+Add a support ticket panel
 
 ### tickets buttoncolor
 
@@ -155,17 +187,17 @@ Add/Remove roles required to open a ticket for a specific panel\
 \
 Specify the same role to remove it
 
-### tickets category
-
-* Usage: `!tickets category <panel_name> <category>`
-
-Set the category ID for a ticket panel
-
 ### tickets closemodal
 
 * Usage: `!tickets closemodal <panel_name>`
 
 Throw a modal when the close button is clicked to enter a reason
+
+### tickets category
+
+* Usage: `!tickets category <panel_name> <category>`
+
+Set the category ID for a ticket panel
 
 ### tickets maxtickets
 
@@ -178,6 +210,22 @@ Set the max tickets a user can have open at one time of any kind
 * Usage: `!tickets dm`
 
 (Toggle) The bot sending DM's for ticket alerts
+
+### tickets noresponse
+
+* Usage: `!tickets noresponse <hours>`
+
+Auto-close ticket if opener doesn't say anything after X hours of opening\
+\
+Set to 0 to disable this\
+\
+If using thread tickets, this translates to the thread's "Hide after inactivity" setting.\
+Your options are:\
+\- 1 hour\
+\- 24 hours (1 day)\
+\- 72 hours (3 days)\
+\- 168 hours (1 week)\
+Tickets will default to the closest value you select.
 
 ### tickets buttonemoji
 
@@ -197,22 +245,6 @@ You can include any of these in the embed to be replaced by their value when the
 {id} - This is the ID of the user that created the ticket\
 \
 The bot will walk you through a few steps to set up the embed
-
-### tickets noresponse
-
-* Usage: `!tickets noresponse <hours>`
-
-Auto-close ticket if opener doesn't say anything after X hours of opening\
-\
-Set to 0 to disable this\
-\
-If using thread tickets, this translates to the thread's "Hide after inactivity" setting.\
-Your options are:\
-\- 1 hour\
-\- 24 hours (1 day)\
-\- 72 hours (3 days)\
-\- 168 hours (1 week)\
-Tickets will default to the closest value you select.
 
 ### tickets autoadd
 
@@ -241,12 +273,6 @@ To remove the alt channel, specify the existing one
 
 Set the channel ID where a ticket panel is located
 
-### tickets setuphelp
-
-* Usage: `!tickets setuphelp`
-
-Ticket Setup Guide
-
 ### tickets logchannel
 
 * Usage: `!tickets logchannel <panel_name> <channel>`
@@ -269,11 +295,19 @@ To remove a role, simply run this command with it again to remove it
 
 (Toggle) Thread tickets being closed & archived instead of deleted
 
-### tickets viewmessages
+### tickets setuphelp
 
-* Usage: `!tickets viewmessages <panel_name>`
+* Usage: `!tickets setuphelp`
 
-View/Delete a ticket message for a support ticket panel
+Ticket Setup Guide
+
+### tickets overview
+
+* Usage: `!tickets overview [channel]`
+
+Set a channel for the live overview message\
+\
+The overview message shows all active tickets across all configured panels for a server.
 
 ### tickets toggle
 
@@ -283,13 +317,11 @@ Toggle a panel on/off\
 \
 Disabled panels will still show the button but it will be disabled
 
-### tickets overview
+### tickets viewmessages
 
-* Usage: `!tickets overview [channel]`
+* Usage: `!tickets viewmessages <panel_name>`
 
-Set a channel for the live overview message\
-\
-The overview message shows all active tickets across all configured panels for a server.
+View/Delete a ticket message for a support ticket panel
 
 ### tickets transcript
 
@@ -337,37 +369,14 @@ Set a title for a ticket panel's modal
 
 (Toggle) If users can rename their own tickets
 
-### tickets updatemessage
-
-* Usage: `!tickets updatemessage <source> <target>`
-
-Update a message with another message (Target gets updated using the source)
-
-### tickets panels
-
-* Usage: `!tickets panels`
-
-View/Delete currently configured support ticket panels
-
 ### tickets overviewmention
 
 * Usage: `!tickets overviewmention`
 
 Toggle whether channels are mentioned in the active ticket overview
 
-### tickets ticketname
+### tickets panels
 
-* Usage: `!tickets ticketname <panel_name> <ticket_name>`
+* Usage: `!tickets panels`
 
-Set the default ticket channel name for a panel\
-\
-You can include the following in the name\
-{num} - Ticket number\
-{user} - user's name\
-{displayname} - user's display name\
-{id} - user's ID\
-{shortdate} - mm-dd\
-{longdate} - mm-dd-yyyy\
-{time} - hh-mm AM/PM according to bot host system time\
-\
-You can set this to {default} to use default "Ticket-Username
+View/Delete currently configured support ticket panels
