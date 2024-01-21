@@ -28,6 +28,18 @@ Leave the channel blank to turn it off.
 
 Whitelist options.
 
+#### antilinks whitelist user
+
+* Usage: `!antilinks whitelist user <add_or_remove> [members=None]`
+
+Add or remove users from the whitelist.
+
+**antilinks whitelist user list**
+
+* Usage: `!antilinks whitelist user list`
+
+List whitelisted users.
+
 #### antilinks whitelist role
 
 * Usage: `!antilinks whitelist role <add_or_remove> [roles=None]`
@@ -40,18 +52,6 @@ Add or remove roles from the whitelist.
 * Aliases: `view`
 
 List whitelisted roles.
-
-#### antilinks whitelist user
-
-* Usage: `!antilinks whitelist user <add_or_remove> [members=None]`
-
-Add or remove users from the whitelist.
-
-**antilinks whitelist user list**
-
-* Usage: `!antilinks whitelist user list`
-
-List whitelisted users.
 
 ### antilinks watch
 

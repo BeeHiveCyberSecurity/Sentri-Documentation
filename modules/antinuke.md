@@ -23,17 +23,17 @@ Set an action(kick, ban, strip, notify)\
 \
 If a user or bot exceeds X mod events within X seconds, the set action will be performed
 
-### nonuke whitelist
+### nonuke logchannel
 
-* Usage: `!nonuke whitelist <user>`
+* Usage: `!nonuke logchannel <channel>`
 
-Add/Remove users from the whitelist
+Set the log channel for Anti-Nuke kicks
 
-### nonuke view
+### nonuke dm
 
-* Usage: `!nonuke view`
+* Usage: `!nonuke dm`
 
-View the NoNuke settings
+Toggle whether the bot sends the user a DM when a kick or ban action is performed
 
 ### nonuke enable
 
@@ -41,11 +41,27 @@ View the NoNuke settings
 
 Enable/Disable the NoNuke system
 
-### nonuke cooldown
+### nonuke view
 
-* Usage: `!nonuke cooldown <cooldown>`
+* Usage: `!nonuke view`
 
-Cooldown (in seconds) for NoNuke to trigger
+View the NoNuke settings
+
+### nonuke ignorebots
+
+* Usage: `!nonuke ignorebots`
+
+Toggle whether other bots are ignored\
+\
+**NOTE:** Bot specific roles (the role created when the bot joins) cannot be removed.\
+If NoNuke is set to strip roles, and a bot triggers it while having an integrated role, NoNuke will fail\
+to remove the role from it.
+
+### nonuke whitelist
+
+* Usage: `!nonuke whitelist <user>`
+
+Add/Remove users from the whitelist
 
 ### nonuke overload
 
@@ -57,16 +73,6 @@ How many mod actions can be done within the set cooldown\
 Kicks & Bans\
 Channel Creation/Edit/Deletion\
 Role Creation/Edit/Deletion
-
-### nonuke ignorebots
-
-* Usage: `!nonuke ignorebots`
-
-Toggle whether other bots are ignored\
-\
-**NOTE:** Bot specific roles (the role created when the bot joins) cannot be removed.\
-If NoNuke is set to strip roles, and a bot triggers it while having an integrated role, NoNuke will fail\
-to remove the role from it.
 
 ### nonuke action
 
@@ -80,14 +86,8 @@ ban - ban the user\
 strip - strip all roles with permissions from user\
 notify - just sends a report to the log channel
 
-### nonuke logchannel
+### nonuke cooldown
 
-* Usage: `!nonuke logchannel <channel>`
+* Usage: `!nonuke cooldown <cooldown>`
 
-Set the log channel for Anti-Nuke kicks
-
-### nonuke dm
-
-* Usage: `!nonuke dm`
-
-Toggle whether the bot sends the user a DM when a kick or ban action is performed
+Cooldown (in seconds) for NoNuke to trigger

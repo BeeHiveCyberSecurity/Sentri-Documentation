@@ -83,6 +83,14 @@ Lists all available selfroles.
 
 Manage selfroles.
 
+### selfroleset remove
+
+* Usage: `!selfroleset remove <roles>`
+
+Remove a role, or a selection of roles, from the list of available selfroles.\
+\
+NOTE: The role is case sensitive!
+
 ### selfroleset clear
 
 * Usage: `!selfroleset clear`
@@ -94,13 +102,5 @@ Clear the list of available selfroles for this server.
 * Usage: `!selfroleset add <roles>`
 
 Add a role, or a selection of roles, to the list of available selfroles.\
-\
-NOTE: The role is case sensitive!
-
-### selfroleset remove
-
-* Usage: `!selfroleset remove <roles>`
-
-Remove a role, or a selection of roles, from the list of available selfroles.\
 \
 NOTE: The role is case sensitive!

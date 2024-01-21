@@ -20,6 +20,26 @@ Check a user on AltDentifier.
 
 Manage AltDentifier Settings.
 
+### altset action
+
+* Usage: `!altset action <level> [action=None]`
+
+Specify what actions to take when a member joins and has a certain Trust Level.\
+\
+Leave this empty to remove actions for the Level.\
+The available actions are:\
+kick\
+ban\
+role (don't say 'role' for this, pass an actual role)
+
+### altset channel
+
+* Usage: `!altset channel [channel=None]`
+
+Set the channel to send AltDentifier join checks to.\
+\
+This also works as a toggle, so if no channel is provided, it will disable join checks for this server.
+
 ### altset unwhitelist
 
 * Usage: `!altset unwhitelist <user_id>`
@@ -34,28 +54,8 @@ Remove a user from the AltDentifier whitelist.
 
 Whitelist a user from AltDentifier actions.
 
-### altset channel
-
-* Usage: `!altset channel [channel=None]`
-
-Set the channel to send AltDentifier join checks to.\
-\
-This also works as a toggle, so if no channel is provided, it will disable join checks for this server.
-
 ### altset settings
 
 * Usage: `!altset settings`
 
 View AltDentifier Settings.
-
-### altset action
-
-* Usage: `!altset action <level> [action=None]`
-
-Specify what actions to take when a member joins and has a certain Trust Level.\
-\
-Leave this empty to remove actions for the Level.\
-The available actions are:\
-kick\
-ban\
-role (don't say 'role' for this, pass an actual role)
