@@ -26,47 +26,6 @@ Reroll a giveaway.
 
 End a giveaway.
 
-### giveaway entrants (Hybrid Command)
-
-* Usage: `!giveaway entrants <msgid>`
-* Slash Usage: `/giveaway entrants <msgid>`
-
-List all entrants for a giveaway.
-
-### giveaway explain (Hybrid Command)
-
-* Usage: `!giveaway explain`
-* Slash Usage: `/giveaway explain`
-
-Explanation of giveaway advanced and the arguements it supports.
-
-### giveaway start (Hybrid Command)
-
-* Usage: `!giveaway start <channel> <time> <prize>`
-* Slash Usage: `/giveaway start <channel> <time> <prize>`
-
-Start a giveaway.\
-\
-This by default will DM the winner and also DM a user if they cannot enter the giveaway.
-
-### giveaway advanced (Hybrid Command)
-
-* Usage: `!giveaway advanced <arguments>`
-* Slash Usage: `/giveaway advanced <arguments>`
-* Aliases: `adv`
-
-Advanced creation of Giveaways.\
-\
-\
-!gw explain for a further full listing of the arguments.
-
-### giveaway integrations (Hybrid Command)
-
-* Usage: `!giveaway integrations`
-* Slash Usage: `/giveaway integrations`
-
-Various 3rd party integrations for giveaways.
-
 ### giveaway info (Hybrid Command)
 
 * Usage: `!giveaway info <msgid>`
@@ -80,3 +39,53 @@ Information about a giveaway.
 * Slash Usage: `/giveaway list`
 
 List all giveaways in the server.
+
+### giveaway integrations (Hybrid Command)
+
+* Usage: `!giveaway integrations`
+* Slash Usage: `/giveaway integrations`
+
+Various 3rd party integrations for giveaways.
+
+### giveaway explain (Hybrid Command)
+
+* Usage: `!giveaway explain`
+* Slash Usage: `/giveaway explain`
+
+Explanation of giveaway advanced and the arguements it supports.
+
+### giveaway entrants (Hybrid Command)
+
+* Usage: `!giveaway entrants <msgid>`
+* Slash Usage: `/giveaway entrants <msgid>`
+
+List all entrants for a giveaway.
+
+### giveaway edit (Hybrid Command)
+
+* Usage: `!giveaway edit <msgid> <flags>`
+* Slash Usage: `/giveaway edit <msgid> <flags>`
+
+Edit a giveaway.\
+\
+See !gw explain for more info on the flags.
+
+### giveaway advanced (Hybrid Command)
+
+* Usage: `!giveaway advanced <arguments>`
+* Slash Usage: `/giveaway advanced <arguments>`
+* Aliases: `adv`
+
+Advanced creation of Giveaways.\
+\
+\
+!gw explain for a further full listing of the arguments.
+
+### giveaway start (Hybrid Command)
+
+* Usage: `!giveaway start <channel> <time> <prize>`
+* Slash Usage: `/giveaway start <channel> <time> <prize>`
+
+Start a giveaway.\
+\
+This by default will DM the winner and also DM a user if they cannot enter the giveaway.
