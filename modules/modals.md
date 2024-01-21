@@ -13,15 +13,6 @@ description: Create customizable forms and more using Discord interactions
 
 Group of commands to use DiscordModals.
 
-### discordmodals remove (Hybrid Command)
-
-* Usage: `!discordmodals remove <message>`
-* Slash Usage: `/discordmodals remove <message>`
-* Aliases: `-`
-* Checks: `server_only`
-
-Remove a Modal for a message.
-
 ### discordmodals add (Hybrid Command)
 
 * Usage: `!discordmodals add <message> <argument>`
@@ -55,5 +46,24 @@ messages:\
 error: Error!\
 submit: Form submitted.\
 pings: user1, user2, role1, role2\
+whitelist\_roles: role1, role2\
+blacklist\_roles: role3, role4\
 \
-The emoji, style, required, default, placeholder, min\_length, max\_length, channel, anonymous, messages and pings are not required.
+The emoji, style, required, default, placeholder, min\_length, max\_length, channel, anonymous, messages, pings, whitelist\_roles and blacklist\_roles are not required.
+
+### discordmodals remove (Hybrid Command)
+
+* Usage: `!discordmodals remove <message>`
+* Slash Usage: `/discordmodals remove <message>`
+* Aliases: `-`
+* Checks: `server_only`
+
+Remove a Modal for a message.
+
+### discordmodals list (Hybrid Command)
+
+* Usage: `!discordmodals list [message=None]`
+* Slash Usage: `/discordmodals list [message=None]`
+* Checks: `server_only`
+
+List all Modals of this server or display the settings for a specific one.
