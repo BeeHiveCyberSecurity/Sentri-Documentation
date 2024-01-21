@@ -30,34 +30,21 @@ Enter an event if one exists
 
 Create, manage and view events
 
-### events staffrole
+### events view
 
-* Usage: `!events staffrole <role>`
+* Usage: `!events view`
 
-Add/Remove staff roles\
+View the current events and settings
+
+### events shorten
+
+* Usage: `!events shorten <time_string>`
+
+Shorten the runtime of an event\
 \
-If ping staff is enabled, these roles will be pinged on event completion
-
-### events delete
-
-* Usage: `!events delete`
-
-Delete an event outright
-
-### events resultdelete
-
-* Usage: `!events resultdelete`
-
-(Toggle) Include event results in the messages to delete on cleanup\
-\
-If this is on when an event is deleted and the user chooses to clean up the messages,\
-the results announcement will also be deleted
-
-### events pingstaff
-
-* Usage: `!events pingstaff`
-
-(Toggle) Ping staff on event completion
+**Examples**\
+10d - 10 days\
+7d4h - 7 days 4 hours
 
 ### events emoji
 
@@ -74,6 +61,20 @@ Existing events will still use the previous emoji for votes
 
 Create a new event
 
+### events autodelete
+
+* Usage: `!events autodelete`
+
+(Toggle) Auto delete events from config when they complete\
+\
+If auto delete is enabled, the messages in the event channel will need to be cleaned up manually
+
+### events remove
+
+* Usage: `!events remove <user>`
+
+Remove a user from an active event
+
 ### events notifyrole
 
 * Usage: `!events notifyrole <role>`
@@ -82,11 +83,21 @@ Add/Remove notify roles\
 \
 These roles will be pinged on event start and completion
 
-### events view
+### events pingstaff
 
-* Usage: `!events view`
+* Usage: `!events pingstaff`
 
-View the current events and settings
+(Toggle) Ping staff on event completion
+
+### events extend
+
+* Usage: `!events extend <time_string>`
+
+Extend the runtime of an event\
+\
+**Examples**\
+10d - 10 days\
+7d4h - 7 days 4 hours
 
 ### events blacklistrole
 
@@ -104,16 +115,6 @@ Add/Remove blacklisted users\
 \
 These users are not allowed to enter events, but can still vote on them
 
-### events extend
-
-* Usage: `!events extend <time_string>`
-
-Extend the runtime of an event\
-\
-**Examples**\
-10d - 10 days\
-7d4h - 7 days 4 hours
-
 ### events end
 
 * Usage: `!events end`
@@ -122,26 +123,25 @@ End an event early, counting votes/announcing the winner\
 \
 This will also delete the event afterwards
 
-### events remove
+### events delete
 
-* Usage: `!events remove <user>`
+* Usage: `!events delete`
 
-Remove a user from an active event
+Delete an event outright
 
-### events autodelete
+### events staffrole
 
-* Usage: `!events autodelete`
+* Usage: `!events staffrole <role>`
 
-(Toggle) Auto delete events from config when they complete\
+Add/Remove staff roles\
 \
-If auto delete is enabled, the messages in the event channel will need to be cleaned up manually
+If ping staff is enabled, these roles will be pinged on event completion
 
-### events shorten
+### events resultdelete
 
-* Usage: `!events shorten <time_string>`
+* Usage: `!events resultdelete`
 
-Shorten the runtime of an event\
+(Toggle) Include event results in the messages to delete on cleanup\
 \
-**Examples**\
-10d - 10 days\
-7d4h - 7 days 4 hours
+If this is on when an event is deleted and the user chooses to clean up the messages,\
+the results announcement will also be deleted
