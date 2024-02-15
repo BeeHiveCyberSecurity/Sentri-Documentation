@@ -38,6 +38,7 @@
 * [🎉 Giveaways](modules/giveaways.md)
 * [🔢 Guild Stats](modules/guild-stats.md)
 * [ℹ Info Channels](modules/info-channels.md)
+* [📋 IdeaBoard](modules/ideaboard.md)
 * [💠 Invites](modules/invites.md)
 * [↗ Leveling](modules/leveling.md)
 * [📜 Logging](modules/logging.md)
