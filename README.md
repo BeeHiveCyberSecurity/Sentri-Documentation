@@ -2,12 +2,7 @@
 description: >-
   We are thrilled to have you join us on this journey to learn more about Sentri
   and how it can help you and your community.
-cover: .gitbook/assets/twitterbanner.png
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:
