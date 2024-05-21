@@ -8,7 +8,6 @@
 ## 🗃️ Modules
 
 * [🎟️ Admin](modules/admin.md)
-* [🧠 AI User](modules/ai-user.md)
 * [👮 AltDentification](modules/altdentification.md)
 * [🐟 AntiPhishing](modules/antiphishing.md)
 * [🔗 AntiLink](modules/antilink.md)
