@@ -2,7 +2,7 @@
 description: Prevent staff members from destroying what you've worked hard to build
 ---
 
-# ☢ AntiNuke
+# AntiNuke
 
 ## nonuke
 

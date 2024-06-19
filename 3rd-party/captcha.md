@@ -2,7 +2,7 @@
 description: Detect and stop automated users trying to infiltrate your community!
 ---
 
-# 🤖 Captcha
+# Captcha
 
 ## captcha
 

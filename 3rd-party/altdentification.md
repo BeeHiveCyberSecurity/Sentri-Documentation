@@ -2,7 +2,7 @@
 description: Check new users with AltDentifier API
 ---
 
-# 👮 AltDentification
+# AltDentification
 
 ## altcheck
 

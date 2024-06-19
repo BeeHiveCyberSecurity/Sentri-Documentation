@@ -2,22 +2,23 @@
 
 ## About
 
-* [👋 Welcome!](README.md)
-* [😨 Setting Up](about/setting-up.md)
+* [Welcome!](README.md)
+* [Setting Up](about/setting-up.md)
 
 ## In-House
 
 * [AntiPhishing](in-house/antiphishing.md)
 * [SkySearch](in-house/skysearch.md)
+* [VirusTotal](in-house/virustotal.md)
 
 ## 3rd party
 
-* [🎟️ Admin](3rd-party/admin.md)
-* [👮 AltDentification](3rd-party/altdentification.md)
-* [🔗 AntiLink](3rd-party/antilink.md)
-* [☢️ AntiNuke](3rd-party/antinuke.md)
-* [🏧 Calculator](3rd-party/calculator.md)
-* [🤖 Captcha](3rd-party/captcha.md)
+* [Admin](3rd-party/admin.md)
+* [AltDentification](3rd-party/altdentification.md)
+* [AntiLink](3rd-party/antilink.md)
+* [AntiNuke](3rd-party/antinuke.md)
+* [Calculator](3rd-party/calculator.md)
+* [Captcha](3rd-party/captcha.md)
 * [🎒 Cartographer](3rd-party/cartographer.md)
 * [🧹 Cleanup](3rd-party/cleanup.md)
 * [🍪 Colors](3rd-party/colors.md)

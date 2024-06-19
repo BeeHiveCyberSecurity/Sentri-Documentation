@@ -2,7 +2,7 @@
 description: Hulk-smash links out of existence in your server.
 ---
 
-# 🔗 AntiLink
+# AntiLink
 
 ## antilinks
 

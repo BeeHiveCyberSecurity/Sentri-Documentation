@@ -4,7 +4,7 @@ description: >-
   interactions.
 ---
 
-# 🏧 Calculator
+# Calculator
 
 ## calculate (Hybrid Command)
 

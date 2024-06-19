@@ -2,7 +2,7 @@
 description: Get started configuring Sentri to serve your staff and userbase!
 ---
 
-# 😨 Setting Up
+# Setting Up
 
 ## Inviting Sentri
 
