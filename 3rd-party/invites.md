@@ -2,7 +2,7 @@
 description: Track statistics of select invites
 ---
 
-# 💠 Invites
+# Invites
 
 ## invites
 

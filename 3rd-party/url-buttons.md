@@ -2,7 +2,7 @@
 description: Create clickable buttons attached to messages
 ---
 
-# 🔘 URL Buttons
+# URL Buttons
 
 ## urlbuttons (Hybrid Command)
 

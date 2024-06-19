@@ -2,7 +2,7 @@
 description: Issue timeouts to individual members or entire roles
 ---
 
-# 🕐 Timeout
+# Timeout
 
 ## timeout
 

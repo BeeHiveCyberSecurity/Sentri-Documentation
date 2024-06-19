@@ -2,7 +2,7 @@
 description: A pretty fantastic leveling and prestige system
 ---
 
-# ↗ Leveling
+# Leveling
 
 Earn experience by chatting in text and voice channels, compare levels with your friends, customize your profile and view various leaderboards!
 

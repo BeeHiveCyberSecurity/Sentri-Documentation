@@ -4,7 +4,7 @@ description: >-
   future forecast without leaving your conversation!
 ---
 
-# ☁ Weather
+# Weather
 
 ## weather (Hybrid Command)
 

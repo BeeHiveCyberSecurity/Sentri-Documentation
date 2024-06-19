@@ -2,7 +2,7 @@
 description: Announce when users join or leave a server.
 ---
 
-# 👋 Welcomer
+# Welcomer
 
 ## welcome
 

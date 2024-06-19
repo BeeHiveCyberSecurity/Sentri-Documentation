@@ -2,7 +2,7 @@
 description: Utility commands for webhooks per-server
 ---
 
-# 🪝 Webhooks
+# Webhooks
 
 ## webhook
 

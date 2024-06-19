@@ -4,7 +4,7 @@ description: >-
   well, saves logs for staff.
 ---
 
-# 🎫 Ticketing
+# Ticketing
 
 ## add (Hybrid Command)
 

@@ -2,7 +2,7 @@
 description: Get alerts about, and check the status of, streamers on various sites!
 ---
 
-# 📸 Streams
+# Streams
 
 ## twitchstream
 

@@ -4,7 +4,7 @@ description: >-
   needs and usage
 ---
 
-# 🔓 Permissions
+# Permissions
 
 ### Usage[¶](broken-reference)
 

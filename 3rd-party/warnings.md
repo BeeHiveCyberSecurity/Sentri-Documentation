@@ -2,7 +2,7 @@
 description: Warn misbehaving users and take automated actions.
 ---
 
-# ⚠ Warnings
+# Warnings
 
 
 

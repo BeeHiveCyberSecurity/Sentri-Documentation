@@ -2,7 +2,7 @@
 description: The tag related commands.
 ---
 
-# ⚡ Tags
+# Tags
 
 ## tag
 

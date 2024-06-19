@@ -2,7 +2,7 @@
 description: Manage your server's roles, reaction roles, and more!
 ---
 
-# 🚎 Role Management
+# Role Management
 
 ## roletools
 

@@ -4,7 +4,7 @@ description: >-
   from users who cannot follow the rules.
 ---
 
-# ⚒ Mod
+# Mod
 
 ## slowmode
 

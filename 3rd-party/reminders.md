@@ -4,7 +4,7 @@ description: >-
   scheduler, say scheduler... With 'Me Too', snooze and buttons.
 ---
 
-# ⏰ Reminders
+# Reminders
 
 ## remindme (Hybrid Command)
 

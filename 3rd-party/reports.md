@@ -2,7 +2,7 @@
 description: Create user reports that server staff can respond to.
 ---
 
-# 📧 Reports
+# Reports
 
 Report system\
 \

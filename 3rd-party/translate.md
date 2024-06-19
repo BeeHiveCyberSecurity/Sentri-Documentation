@@ -4,7 +4,7 @@ description: >-
   learning translation!
 ---
 
-# 🛄 Translate
+# Translate
 
 ## translate (Hybrid Command)
 

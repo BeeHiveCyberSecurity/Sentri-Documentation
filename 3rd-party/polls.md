@@ -4,7 +4,7 @@ description: >-
   customizable, much good.
 ---
 
-# 📔 Polls
+# Polls
 
 ## buttonpoll
 

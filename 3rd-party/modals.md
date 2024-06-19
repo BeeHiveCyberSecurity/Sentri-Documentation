@@ -2,7 +2,7 @@
 description: Create customizable forms and more using Discord interactions
 ---
 
-# 🔳 Modals
+# Modals
 
 ## discordmodals (Hybrid Command)
 

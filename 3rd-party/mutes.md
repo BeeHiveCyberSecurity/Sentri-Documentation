@@ -2,7 +2,7 @@
 description: Temporarily or permanently remove a user's text or voice ability.
 ---
 
-# 🔇 Mutes
+# Mutes
 
 ## voicemute
 

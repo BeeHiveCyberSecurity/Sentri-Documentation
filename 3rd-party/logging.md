@@ -2,7 +2,7 @@
 description: Keep track of all the happenings inside your server!
 ---
 
-# 📜 Logging
+# Logging
 
 ## modlog
 

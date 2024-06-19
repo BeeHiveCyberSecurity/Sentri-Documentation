@@ -4,7 +4,7 @@ description: >-
   Updates every hour.
 ---
 
-# ⌛ Time Channels
+# Time Channels
 
 ## timezones
 

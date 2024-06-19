@@ -1,4 +1,4 @@
-# 📜 ModLog
+# Simplified ModLog
 
 ### Usage[¶](broken-reference)
 

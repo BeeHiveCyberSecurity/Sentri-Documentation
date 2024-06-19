@@ -4,7 +4,7 @@ description: >-
   channel for all to review and laugh at.
 ---
 
-# 🌟 Starboard
+# Starboard
 
 ## starboard
 

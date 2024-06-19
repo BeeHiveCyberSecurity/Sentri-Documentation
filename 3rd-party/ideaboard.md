@@ -2,7 +2,7 @@
 description: Customizable per-server suggestions capabilities
 ---
 
-# 📋 IdeaBoard
+# IdeaBoard
 
 ## idea (Hybrid Command)
 
