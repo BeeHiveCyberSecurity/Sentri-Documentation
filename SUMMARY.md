@@ -1,13 +1,14 @@
 # Table of contents
 
-## ℹ️ About
+## About
 
 * [👋 Welcome!](README.md)
 * [😨 Setting Up](about/setting-up.md)
 
 ## In-House
 
-* [🐟 AntiPhishing](in-house/antiphishing.md)
+* [AntiPhishing](in-house/antiphishing.md)
+* [SkySearch](in-house/skysearch.md)
 
 ## 3rd party
 
