@@ -2,7 +2,7 @@
 description: View embeds showcasing the supplied color and information about it
 ---
 
-# 🍪 Colors
+# Colors
 
 ## color
 

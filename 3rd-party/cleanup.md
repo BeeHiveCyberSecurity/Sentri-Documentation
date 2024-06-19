@@ -2,7 +2,7 @@
 description: Tools for cleaning up messages within your server
 ---
 
-# 🧹 Cleanup
+# Cleanup
 
 
 

@@ -11,6 +11,7 @@
 * [SkySearch](in-house/skysearch.md)
 * [VirusTotal](in-house/virustotal.md)
 * [URLScan.io](in-house/urlscan.io.md)
+* [Cloudflare](in-house/cloudflare.md)
 
 ## 3rd party
 
@@ -20,10 +21,10 @@
 * [AntiNuke](3rd-party/antinuke.md)
 * [Calculator](3rd-party/calculator.md)
 * [Captcha](3rd-party/captcha.md)
-* [🎒 Cartographer](3rd-party/cartographer.md)
-* [🧹 Cleanup](3rd-party/cleanup.md)
-* [🍪 Colors](3rd-party/colors.md)
-* [🛡️ Defender](3rd-party/defender/README.md)
+* [Cartographer](3rd-party/cartographer.md)
+* [Cleanup](3rd-party/cleanup.md)
+* [Colors](3rd-party/colors.md)
+* [Defender](3rd-party/defender/README.md)
   * [👋 Introduction](3rd-party/defender/introduction/README.md)
     * [💬 Chat Monitoring](3rd-party/defender/introduction/chat-monitoring.md)
   * [⚙️ Configuration](3rd-party/defender/configuration.md)
@@ -31,8 +32,8 @@
   * [🚨 Warden](3rd-party/defender/warden/README.md)
     * [Actions and Conditions](3rd-party/defender/warden/actions-and-conditions.md)
     * [Example Rules](3rd-party/defender/warden/example-rules.md)
-* [⏮️ DISBOARD](3rd-party/disboard.md)
-* [🟢 Embed Designer](3rd-party/embed-designer.md)
+* [DISBOARD](3rd-party/disboard.md)
+* [Embed Designer](3rd-party/embed-designer.md)
 * [🕵️ Encoder](3rd-party/encoder.md)
 * [📅 Events](3rd-party/events.md)
 * [📁 Filter](3rd-party/filter.md)

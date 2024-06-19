@@ -2,7 +2,7 @@
 description: Set a reminder to bump on Disboard.
 ---
 
-# ⏮ DISBOARD
+# DISBOARD
 
 ## bumpreminder
 

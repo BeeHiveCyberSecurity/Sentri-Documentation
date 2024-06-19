@@ -2,7 +2,7 @@
 description: Create embeds using buttons, modals and dropdowns!
 ---
 
-# 🟢 Embed Designer
+# Embed Designer
 
 {% hint style="info" %}
 You can import an embed already sent by providing it's Message ID

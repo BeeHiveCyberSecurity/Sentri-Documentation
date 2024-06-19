@@ -2,7 +2,7 @@
 description: Backup & Restore tools for Discord servers.
 ---
 
-# 🎒 Cartographer
+# Cartographer
 
 ## cartographer
 
