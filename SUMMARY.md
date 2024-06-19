@@ -49,7 +49,6 @@
 * [🚎 Role Management](modules/role-management.md)
 * [⏰ Reminders](modules/reminders.md)
 * [📜 Simplified ModLog](modules/simplified-modlog.md)
-* [🔃 Server Management](modules/server-management.md)
 * [🌟 Starboard](modules/starboard.md)
 * [ℹ️ Status](modules/status.md)
 * [📸 Streams](modules/streams.md)
