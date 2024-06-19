@@ -2,7 +2,7 @@
 description: Stat channels for your server.
 ---
 
-# ℹ Info Channels
+# Info Channels
 
 Create a channel with updating server info\
 

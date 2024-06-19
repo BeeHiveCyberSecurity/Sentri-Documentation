@@ -2,7 +2,7 @@
 description: Basic encode/decode functions for use in research
 ---
 
-# 🕵 Encoder
+# Encoder
 
 ## hash
 

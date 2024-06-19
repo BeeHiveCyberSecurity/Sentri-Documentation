@@ -4,7 +4,7 @@ description: >-
   categories, text channels, voice channels and activities!
 ---
 
-# 🔢 Guild Stats
+# Guild Stats
 
 ## serverstats (Hybrid Command)
 

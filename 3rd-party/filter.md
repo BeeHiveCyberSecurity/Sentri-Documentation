@@ -5,7 +5,7 @@ description: >-
   automatic actions to be taken against.
 ---
 
-# 📁 Filter
+# Filter
 
 ## filterset
 

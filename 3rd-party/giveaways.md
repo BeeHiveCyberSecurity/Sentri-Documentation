@@ -2,7 +2,7 @@
 description: Setup and manage giveaways in your community
 ---
 
-# 🎉 Giveaways
+# Giveaways
 
 ## giveaway (Hybrid Command)
 

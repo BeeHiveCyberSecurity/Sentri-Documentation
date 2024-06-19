@@ -4,7 +4,7 @@ description: >-
   right after a certain point.
 ---
 
-# 🤮 Freeloader Mode
+# Freeloader Mode
 
 ## freeloader
 

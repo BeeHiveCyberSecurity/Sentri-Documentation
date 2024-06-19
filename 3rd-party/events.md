@@ -2,7 +2,7 @@
 description: Host and manage events in your server with a variety of customization options
 ---
 
-# 📅 Events
+# Events
 
 Create an event, set a channel for submissions and entry requirements/options.\
 Users can enter the event and make submissions according to the parameters set.
