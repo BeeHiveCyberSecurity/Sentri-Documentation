@@ -23,6 +23,12 @@ You can either provide a url or reply to a message containing a url.
 
 Settings to configure phishing protection in this server.
 
+### antiphishing maxlinks
+
+* Usage: `!antiphishing maxlinks <max_links>`
+
+Set the maximum number of malicious links a user can share before being banned.
+
 ### antiphishing action
 
 * Usage: `!antiphishing action <action>`
@@ -35,6 +41,12 @@ Options:\
 **delete** - Deletes the message\
 **kick** - Delete message and kick sender\
 **ban** - Delete message and ban sender (recommended)
+
+### antiphishing safeemoji
+
+* Usage: `!antiphishing safeemoji <safe_emoji>`
+
+Toggle the safe emoji functionality.
 
 ### antiphishing stats
 
