@@ -2,6 +2,7 @@
 description: >-
   Guard users from malicious links and phishing attempts with customizable
   protection options.
+icon: globe-pointer
 ---
 
 # AntiPhishing

@@ -1,5 +1,6 @@
 ---
 description: URL analysis via Discord powered by URLScan.io
+icon: link
 ---
 
 # URLScan.io

@@ -1,5 +1,6 @@
 ---
 description: Cloudflare Intelligence but via Discord
+icon: cloudflare
 ---
 
 # Cloudflare

@@ -1,5 +1,6 @@
 ---
 description: Interact with the sky by getting information on aircraft and airports easily.
+icon: plane-engines
 ---
 
 # SkySearch
