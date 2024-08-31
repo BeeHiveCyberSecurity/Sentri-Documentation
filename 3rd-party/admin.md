@@ -2,7 +2,7 @@
 description: A collection of server administration utilities
 ---
 
-# 🎟 Admin
+# Admin
 
 ## addrole
 

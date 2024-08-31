@@ -12,6 +12,7 @@
 * [VirusTotal](in-house/virustotal.md)
 * [URLScan.io](in-house/urlscan.io.md)
 * [Cloudflare](in-house/cloudflare.md)
+* [Weather](in-house/weather.md)
 
 ## 3rd party
 
@@ -65,5 +66,4 @@
 * [URL Buttons](3rd-party/url-buttons.md)
 * [Warnings](3rd-party/warnings.md)
 * [Welcomer](3rd-party/welcomer.md)
-* [Weather](3rd-party/weather.md)
 * [Webhooks](3rd-party/webhooks.md)

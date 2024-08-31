@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# 👋 Welcome!
+# Welcome!
 
 Sentri's an extremely powerful security, moderation, and management bot designed to protect your community in innovative and usefully appliable ways. It's a mixture of open-source and closed-source modules to provide a complete feature-set for server management, configuration, and growth.&#x20;
 
