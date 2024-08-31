@@ -11,7 +11,34 @@ description: >-
 
 * Usage: `!weatherset`
 
-Set your weather preferences
+Configure settings and features of weather
+
+### weatherset severealerts
+
+* Usage: `!weatherset severealerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle severe alerts for your saved location
+
+### weatherset freezealerts
+
+* Usage: `!weatherset freezealerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle freeze alerts for your saved location
+
+### weatherset heatalerts
+
+* Usage: `!weatherset heatalerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle heat alerts for your saved location
+
+### weatherset profile
+
+* Usage: `!weatherset profile`
+
+View your weather profile
 
 ### weatherset stats
 
@@ -23,39 +50,20 @@ Show statistics about weather feature usage
 
 * Usage: `!weatherset zip <zip_code>`
 
-Save your zip code to the bot's config
-
-### weatherset severealerts
-
-* Usage: `!weatherset severealerts <enable>`
-
-Enable or disable weather alerts for your saved zip code
+Set your zip code for queries
 
 ## weather
 
 * Usage: `!weather`
 
-Interact with the weather.gov API to fetch weather data via Discord
+Fetch current and upcoming conditions, search and explore hundreds of weather-focused words, check alert statistics across the country, and fetch information on observation stations and radar installations
 
-### weather alerts
+### weather glossary
 
-* Usage: `!weather alerts`
+* Usage: `!weather glossary [search_term]`
 * Checks: `server_only`
 
-Shows a statistical summary of active weather alerts
-
-### weather now
-
-* Usage: `!weather now`
-
-Fetch your current conditions and now-cast
-
-### weather radars
-
-* Usage: `!weather radars`
-* Checks: `server_only`
-
-Fetch and display radar stations information.
+Show a glossary, or specify a word to search
 
 ### weather forecast
 
@@ -64,16 +72,29 @@ Fetch and display radar stations information.
 
 Fetch your future forecast
 
+### weather radars
+
+* Usage: `!weather radars`
+* Checks: `server_only`
+
+Explore US weather radar installations
+
 ### weather stations
 
 * Usage: `!weather stations`
 * Checks: `server_only`
 
-Fetch and display weather observation stations.
+Explore US weather observation stations
 
-### weather glossary
+### weather now
 
-* Usage: `!weather glossary [search_term]`
+* Usage: `!weather now`
+
+Fetch your current conditions and now-cast
+
+### weather alerts
+
+* Usage: `!weather alerts`
 * Checks: `server_only`
 
-Show a glossary, or specify a word to search
+Shows a statistical summary of active weather alerts
