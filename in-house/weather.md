@@ -1,8 +1,8 @@
 ---
+icon: cloud-bolt-moon
 description: >-
   Check the weather, get information on ongoing severe weather, and check the
   future forecast without leaving your conversation!
-icon: cloud-bolt-moon
 ---
 
 # Weather
@@ -17,7 +17,7 @@ Set your weather preferences
 
 * Usage: `!weatherset stats`
 
-Show statistics about zip code subscriptions and alert subscriptions
+Show statistics about weather feature usage
 
 ### weatherset zip
 
@@ -25,42 +25,17 @@ Show statistics about zip code subscriptions and alert subscriptions
 
 Save your zip code to the bot's config
 
-> #### zip\_code: str
->
-> ```
-> A single word, if not using slash and multiple words are necessary use a quote e.g "Hello world".
-> ```
+### weatherset severealerts
 
-### weatherset alerts
-
-* Usage: `!weatherset alerts <enable>`
+* Usage: `!weatherset severealerts <enable>`
 
 Enable or disable weather alerts for your saved zip code
-
-> #### enable: bool
->
-> ```
-> Can be 1, 0, true, false, t, f
-> ```
 
 ## weather
 
 * Usage: `!weather`
 
 Interact with the weather.gov API to fetch weather data via Discord
-
-### weather now
-
-* Usage: `!weather now`
-
-Fetch your current conditions and now-cast
-
-### weather forecast
-
-* Usage: `!weather forecast`
-* Checks: `server_only`
-
-Fetch your future forecast
 
 ### weather alerts
 
@@ -69,6 +44,12 @@ Fetch your future forecast
 
 Shows a statistical summary of active weather alerts
 
+### weather now
+
+* Usage: `!weather now`
+
+Fetch your current conditions and now-cast
+
 ### weather radars
 
 * Usage: `!weather radars`
@@ -76,18 +57,12 @@ Shows a statistical summary of active weather alerts
 
 Fetch and display radar stations information.
 
-### weather glossary
+### weather forecast
 
-* Usage: `!weather glossary [search_term]`
+* Usage: `!weather forecast`
 * Checks: `server_only`
 
-Show a glossary, or specify a word to search
-
-> #### search\_term: str = None
->
-> ```
-> A single word, if not using slash and multiple words are necessary use a quote e.g "Hello world".
-> ```
+Fetch your future forecast
 
 ### weather stations
 
@@ -95,3 +70,10 @@ Show a glossary, or specify a word to search
 * Checks: `server_only`
 
 Fetch and display weather observation stations.
+
+### weather glossary
+
+* Usage: `!weather glossary [search_term]`
+* Checks: `server_only`
+
+Show a glossary, or specify a word to search
