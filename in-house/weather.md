@@ -7,51 +7,6 @@ description: >-
 
 # Weather
 
-## weatherset
-
-* Usage: `!weatherset`
-
-Configure settings and features of weather
-
-### weatherset severealerts
-
-* Usage: `!weatherset severealerts`
-* Cooldown: `1 per 900.0 seconds`
-
-Toggle severe alerts for your saved location
-
-### weatherset freezealerts
-
-* Usage: `!weatherset freezealerts`
-* Cooldown: `1 per 900.0 seconds`
-
-Toggle freeze alerts for your saved location
-
-### weatherset heatalerts
-
-* Usage: `!weatherset heatalerts`
-* Cooldown: `1 per 900.0 seconds`
-
-Toggle heat alerts for your saved location
-
-### weatherset profile
-
-* Usage: `!weatherset profile`
-
-View your weather profile
-
-### weatherset stats
-
-* Usage: `!weatherset stats`
-
-Show statistics about weather feature usage
-
-### weatherset zip
-
-* Usage: `!weatherset zip <zip_code>`
-
-Set your zip code for queries
-
 ## weather
 
 * Usage: `!weather`
@@ -65,6 +20,13 @@ Fetch current and upcoming conditions, search and explore hundreds of weather-fo
 
 Show a glossary, or specify a word to search
 
+### weather radars
+
+* Usage: `!weather radars`
+* Checks: `server_only`
+
+Explore US weather radar installations
+
 ### weather forecast
 
 * Usage: `!weather forecast`
@@ -72,12 +34,11 @@ Show a glossary, or specify a word to search
 
 Fetch your future forecast
 
-### weather radars
+### weather now
 
-* Usage: `!weather radars`
-* Checks: `server_only`
+* Usage: `!weather now`
 
-Explore US weather radar installations
+Fetch your current conditions and now-cast
 
 ### weather stations
 
@@ -86,11 +47,11 @@ Explore US weather radar installations
 
 Explore US weather observation stations
 
-### weather now
+### weather stats
 
-* Usage: `!weather now`
+* Usage: `!weather stats`
 
-Fetch your current conditions and now-cast
+Show statistics about weather feature usage
 
 ### weather alerts
 
@@ -98,3 +59,42 @@ Fetch your current conditions and now-cast
 * Checks: `server_only`
 
 Shows a statistical summary of active weather alerts
+
+## weatherset
+
+* Usage: `!weatherset`
+
+Configure settings and features of weather
+
+### weatherset freezealerts
+
+* Usage: `!weatherset freezealerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle freeze alerts for your saved location
+
+### weatherset zip
+
+* Usage: `!weatherset zip <zip_code>`
+
+Set your zip code for queries
+
+### weatherset severealerts
+
+* Usage: `!weatherset severealerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle severe alerts for your saved location
+
+### weatherset heatalerts
+
+* Usage: `!weatherset heatalerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle heat alerts for your saved location
+
+### weatherset profile
+
+* Usage: `!weatherset profile`
+
+View your weather profile
