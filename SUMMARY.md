@@ -13,6 +13,7 @@
 * [URLScan.io](in-house/urlscan.io.md)
 * [Cloudflare](in-house/cloudflare.md)
 * [Weather](in-house/weather.md)
+* [Holidays](in-house/holidays.md)
 
 ## 3rd party
 
