@@ -1,8 +1,8 @@
 ---
+icon: lights-holiday
 description: >-
   Check holidays from around the world and get alerted when there's one that
   matters to you
-icon: lights-holiday
 ---
 
 # Holidays
@@ -13,11 +13,11 @@ icon: lights-holiday
 
 Group command for interacting with holidays.
 
-### holiday upcoming
+### holiday next
 
-* Usage: `!holiday upcoming`
+* Usage: `!holiday next`
 
-Fetch upcoming public holidays worldwide.
+Fetch the next public holiday for your saved region.
 
 ### holiday regions
 
@@ -25,11 +25,17 @@ Fetch upcoming public holidays worldwide.
 
 Show a directory of all settable country codes and country names.
 
-### holiday next
+### holiday upcoming
 
-* Usage: `!holiday next`
+* Usage: `!holiday upcoming`
 
-Fetch the next public holiday for your saved region.
+Fetch upcoming public holidays worldwide.
+
+### holiday weekends
+
+* Usage: `!holiday weekends [year=None] [country_code=None]`
+
+Fetch long weekends for a given year and country.
 
 ### holiday list
 
