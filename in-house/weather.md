@@ -13,32 +13,12 @@ description: >-
 
 Fetch current and upcoming conditions, search and explore hundreds of weather-focused words, check alert statistics across the country, and fetch information on observation stations and radar installations
 
-### weather glossary
+### weather alerts
 
-* Usage: `!weather glossary [search_term]`
+* Usage: `!weather alerts`
 * Checks: `server_only`
 
-Show a glossary, or specify a word to search
-
-### weather radars
-
-* Usage: `!weather radars`
-* Checks: `server_only`
-
-Explore US weather radar installations
-
-### weather forecast
-
-* Usage: `!weather forecast`
-* Checks: `server_only`
-
-Fetch your future forecast
-
-### weather now
-
-* Usage: `!weather now`
-
-Fetch your current conditions and now-cast
+Shows a statistical summary of active weather alerts
 
 ### weather stations
 
@@ -53,18 +33,57 @@ Explore US weather observation stations
 
 Show statistics about weather feature usage
 
-### weather alerts
+### weather glossary
 
-* Usage: `!weather alerts`
+* Usage: `!weather glossary [search_term]`
 * Checks: `server_only`
 
-Shows a statistical summary of active weather alerts
+Show a glossary, or specify a word to search
+
+### weather now
+
+* Usage: `!weather now [zip_code=None]`
+
+Check current conditions and alerts, specify a zip for conditions at that location
+
+### weather forecast
+
+* Usage: `!weather forecast [zip_code=None]`
+* Checks: `server_only`
+
+Fetch your future forecast
+
+### weather profile
+
+* Usage: `!weather profile`
+
+View your weather profile
+
+### weather radars
+
+* Usage: `!weather radars`
+* Checks: `server_only`
+
+Explore US weather radar installations
+
+### weather records
+
+* Usage: `!weather records`
+
+Show historical weather records
 
 ## weatherset
 
 * Usage: `!weatherset`
 
 Configure settings and features of weather
+
+### weatherset heatalerts
+
+* Usage: `!weatherset heatalerts`
+* Cooldown: `1 per 900.0 seconds`
+
+Toggle heat alerts for your saved location
 
 ### weatherset freezealerts
 
@@ -85,16 +104,3 @@ Set your zip code for queries
 * Cooldown: `1 per 900.0 seconds`
 
 Toggle severe alerts for your saved location
-
-### weatherset heatalerts
-
-* Usage: `!weatherset heatalerts`
-* Cooldown: `1 per 900.0 seconds`
-
-Toggle heat alerts for your saved location
-
-### weatherset profile
-
-* Usage: `!weatherset profile`
-
-View your weather profile
