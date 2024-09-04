@@ -14,6 +14,7 @@
 * [Cloudflare](in-house/cloudflare.md)
 * [Weather](in-house/weather.md)
 * [Holidays](in-house/holidays.md)
+* [Meetings](in-house/meetings.md)
 
 ## 3rd party
 
