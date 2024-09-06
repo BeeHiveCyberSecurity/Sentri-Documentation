@@ -15,6 +15,7 @@
 * [Weather](in-house/weather.md)
 * [Holidays](in-house/holidays.md)
 * [Meetings](in-house/meetings.md)
+* [InfoControl](in-house/infocontrol.md)
 
 ## 3rd party
 
