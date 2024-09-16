@@ -7,6 +7,7 @@
 
 ## In-House
 
+* [AbuseIPDB](in-house/abuseipdb.md)
 * [AntiPhishing](in-house/antiphishing.md)
 * [SkySearch](in-house/skysearch.md)
 * [VirusTotal](in-house/virustotal.md)
