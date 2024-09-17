@@ -22,7 +22,6 @@
 
 * [Admin](3rd-party/admin.md)
 * [AltDentification](3rd-party/altdentification.md)
-* [AntiLink](3rd-party/antilink.md)
 * [AntiNuke](3rd-party/antinuke.md)
 * [Calculator](3rd-party/calculator.md)
 * [Captcha](3rd-party/captcha.md)
