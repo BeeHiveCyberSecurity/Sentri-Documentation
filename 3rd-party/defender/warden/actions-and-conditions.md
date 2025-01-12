@@ -56,7 +56,7 @@
   **Accepts:** A number representing the number of role mentions\
   **Context:** `message`
 * `message-contains-more-than-emojis`\
-  Will check if the message contains more than X emojis. **Important:** emojis with [modifiers](https://en.wikipedia.org/wiki/Emoticons\_\(Unicode\_block\)#Emoji\_modifiers), such as a thumbs up emoji with custom skin color, will be considered 2 separate emojis.\
+  Will check if the message contains more than X emojis. **Important:** emojis with [modifiers](https://en.wikipedia.org/wiki/Emoticons_\(Unicode_block\)#Emoji_modifiers), such as a thumbs up emoji with custom skin color, will be considered 2 separate emojis.\
   **Accepts:** A number representing the number of emojis.\
   **Context:** `message`
 * `message-has-more-than-characters`\
@@ -189,7 +189,7 @@
 
 *   `compare`\
     Compares two values. Supports a variety of operators, textual and numeric. The comparison is case sensitive. This is most useful when used in conjunction with context variables. Using numeric operators with non-numeric values will raise an error.\
-    _Supported operators:_ `==`, `!=`, `contains`, `contains-pattern`, `>=`, `<=`, `<`, `>`\
+    &#xNAN;_&#x53;upported operators:_ `==`, `!=`, `contains`, `contains-pattern`, `>=`, `<=`, `<`, `>`\
     `contains-pattern` supports a pattern, just like the condition `message-matches-any` and it's case insensitive.\
     **Example:**\
 

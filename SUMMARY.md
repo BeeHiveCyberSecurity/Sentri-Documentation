@@ -60,7 +60,6 @@
 * [Reminders](3rd-party/reminders.md)
 * [Simplified ModLog](3rd-party/simplified-modlog.md)
 * [Starboard](3rd-party/starboard.md)
-* [Status](3rd-party/status.md)
 * [Streams](3rd-party/streams.md)
 * [Tags](3rd-party/tags.md)
 * [Timeout](3rd-party/timeout.md)
