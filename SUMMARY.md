@@ -17,6 +17,7 @@
 * [Holidays](in-house/holidays.md)
 * [Meetings](in-house/meetings.md)
 * [InfoControl](in-house/infocontrol.md)
+* [VanityGuard](in-house/vanityguard.md)
 
 ## 3rd party
 
