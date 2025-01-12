@@ -24,7 +24,6 @@
 * [Admin](3rd-party/admin.md)
 * [AltDentification](3rd-party/altdentification.md)
 * [AntiNuke](3rd-party/antinuke.md)
-* [Calculator](3rd-party/calculator.md)
 * [Captcha](3rd-party/captcha.md)
 * [Cartographer](3rd-party/cartographer.md)
 * [Cleanup](3rd-party/cleanup.md)
