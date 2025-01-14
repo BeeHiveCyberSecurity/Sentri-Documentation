@@ -4,6 +4,7 @@
 
 * [Welcome!](README.md)
 * [Setting Up](about/setting-up.md)
+* [Moderating](about/moderating.md)
 
 ## In-House
 
